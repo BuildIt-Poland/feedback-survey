@@ -1,0 +1,103 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "type": "open-ended",
+      "content": "Current Role",
+      "required": true
+    },
+    {
+      "id": 2,
+      "type": "date",
+      "content": "Date",
+      "required": true
+    },
+    {
+      "id": 3,
+      "type": "open-ended",
+      "content": "Your Name",
+      "required": true
+    },
+    {
+      "id": 4,
+      "type": "select",
+      "content": "What kind of feedback are you providing?",
+      "required": true,
+      "answers": ["monthly", "quaterly", "annual"]
+    },
+    {
+      "id": 5,
+      "type": "radio",
+      "content": "Please state if you would like this feedback directly to be shared with the individual",
+      "required": true,
+      "answers": ["Yes", "No"]
+    },
+    {
+      "id": 6,
+      "type": "radio",
+      "content": "Please state if you would like to receive copy of this feedback",
+      "required": true,
+      "answers": ["Yes", "No"]
+    },
+    {
+      "id": 7,
+      "type": "rating",
+      "content": "How would you rate overall performance of this individual?",
+      "required": true
+    },
+    {
+      "id": 8,
+      "type": "rating",
+      "content": "Based on the role this individual performing in your organisation how satisfied are you that their performing their role to their best abilities?",
+      "required": true
+    },
+    {
+      "id": 9,
+      "type": "rating",
+      "content": "How would you rate individual contribution to your team, the company or to your customer?",
+      "required": true
+    },
+    {
+      "id": 10,
+      "type": "rating",
+      "content": "Given what you know of this person’s performance, would you want this individual always on you team",
+      "required": true
+    },
+    {
+      "id": 11,
+      "type": "open-ended",
+      "content": "Are there areas of improvement that you would recommend for this individual that would help them to accomplish work more effectively?",
+      "required": false
+    },
+    {
+      "id": 12,
+      "type": "open-ended",
+      "content": "Please provide any information where an individual has gone above and beyond and you would like them to be recognised?",
+      "required": false
+    },
+    {
+      "id": 13,
+      "type": "open-ended",
+      "content": "Any additional information you would like to provide",
+      "required": false
+    }
+  ],
+  "ratingAnswers": [
+    {
+      "label": "Bad",
+      "img": "URL_LINK"
+    },
+    {
+      "label": "Average",
+      "img": "URL_LINK"
+    },
+    {
+      "label": "Good",
+      "img": "URL_LINK"
+    },
+    {
+      "label": "Excellent",
+      "img": "URL_LINK"
+    }
+  ]
+}
