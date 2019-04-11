@@ -5,8 +5,8 @@ import { Grommet } from 'grommet';
 import Welcome from '../Welcome';
 import GlobalStyle from '../GlobalStyle/GlobalStyle';
 import theme from '../../styles/globalTheme';
-import Main from '../Main/Main';
-import Agreed from '../Agreed/Agreed';
+import Survey from '../Survey';
+import Agreed from '../Agreed';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <GlobalStyle />
         <Route exact path="/" component={Welcome} />
         <Route exact path="/agreed" component={Agreed} />
-        <Route exact path="/survey" component={Main} />
+        <Route exact path="/survey" component={Survey} />
       </Grommet>
     </Router>
   );
