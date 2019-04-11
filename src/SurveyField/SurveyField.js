@@ -1,11 +1,32 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FormField, RadioButtonGroup, Select } from 'grommet';
+
 import { spacingLarge } from '../styles/variables';
 
 const Wrapper = styled.div`
   margin: 50rem ${spacingLarge};
 `;
+
+const renderImageOption = option => {
+  return (
+    <>
+      <img width="50" src={'./image/' + option.toLowerCase() + '.svg'} alt={option} />
+      <span>{option}</span>
+    </>
+  );
+};
+
+const buildAnswerOptions = (field, answerOptions) => {
+  return answerOptions[field.answerOptions].map(option => {
+    const label = field.type === 'rating' ? renderImageOption(option) : option;
+    return {
+      id: option + '_' + field.id,
+      value: option,
+      label
+    };
+  });
+};
 
 const renderFieldByType = (field, answerOptions) => {
   switch (field.type) {
@@ -30,7 +51,7 @@ const renderFieldByType = (field, answerOptions) => {
           label={field.content}
           required={field.required}
           component={RadioButtonGroup}
-          options={answerOptions[field.answerOptions]}
+          options={buildAnswerOptions(field, answerOptions)}
         />
       );
     }
@@ -39,9 +60,9 @@ const renderFieldByType = (field, answerOptions) => {
         <FormField
           name={field.name}
           label={field.content}
-          required={field.required}
+          required={true}
           component={RadioButtonGroup}
-          options={answerOptions[field.answerOptions]}
+          options={buildAnswerOptions(field, answerOptions)}
         />
       );
     }

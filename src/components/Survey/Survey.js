@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Form, Box } from 'grommet';
 
-import { colorDarkBlue } from '../../styles/variables';
+import { colorDarkBlue, colorWhite } from '../../styles/variables';
 import { fetchQuestions } from '../../services/api';
 import SurveyField from '../../SurveyField/SurveyField';
 
@@ -30,7 +30,7 @@ const Survey = function() {
     <Box align="center" justify="center" pad="medium" background={colorDarkBlue}>
       <Form onSubmit={({ value }) => console.log('Submit: ', value)} messages={messages}>
         {renderFormFields(data)}
-        <Button type="submit" label="Submit" primary={true} />
+        <Button type="submit" label="Submit" color={colorWhite} margin="xlarge" />
       </Form>
     </Box>
   );
