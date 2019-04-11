@@ -1,6 +1,3 @@
-import React from 'react';
+import App from './App';
 
-function App() {
-  return <h1>Consultant Feedback Form</h1>;
-}
 export default App;
