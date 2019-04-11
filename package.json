@@ -48,9 +48,12 @@
     ]
   },
   "dependencies": {
+    "grommet": "^2.6.5",
+    "grommet-icons": "^4.2.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "styled-components": "^4.2.0"
   },
   "devDependencies": {
     "eslint-config-prettier": "^4.1.0",
