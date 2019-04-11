@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Box, Button, Heading } from 'grommet';
 
 import { colorDarkBlue, colorRed, colorWhite } from '../../styles/variables';
@@ -12,7 +13,9 @@ const Welcome = function() {
       <Heading level="2" color={colorRed}>
         John Doe
       </Heading>
-      <Button label="start" color={colorWhite} margin="xlarge" />
+      <Link to="/agreed">
+        <Button label="start" color={colorWhite} margin="xlarge" />
+      </Link>
     </Box>
   );
 };
