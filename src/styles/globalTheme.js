@@ -1,4 +1,5 @@
 import { colorWhite, spacingSmall, spacingLarge } from './variables';
+import { inputTheme } from '../components/SurveyField/ShortInputField';
 
 const theme = {
   button: {
@@ -10,7 +11,8 @@ const theme = {
       horizontal: spacingLarge,
       vertical: spacingSmall
     }
-  }
+  },
+  ...inputTheme
 };
 
 export default theme;

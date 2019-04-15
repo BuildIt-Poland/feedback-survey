@@ -1,8 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FormField, RadioButtonGroup, Select } from 'grommet';
 
-import { spacingLarge } from '../styles/variables';
+import { spacingLarge } from '../../styles/variables';
+import RatingField from './RatingField';
+import ShortInputField from './ShortInputField';
+import LongInputField from './LongInputField';
+import SelectField from './SelectField';
+import YesNoField from './YesNoField';
 
 const Wrapper = styled.div`
   margin: 50rem ${spacingLarge};
@@ -31,43 +35,19 @@ const buildAnswerOptions = (field, answerOptions) => {
 const renderFieldByType = (field, answerOptions) => {
   switch (field.type) {
     case 'open-ended': {
-      return <FormField name={field.name} label={field.content} required={field.required} />;
+      return <LongInputField field={field} />;
     }
     case 'select': {
-      return (
-        <FormField
-          name={field.name}
-          label={field.content}
-          required={field.required}
-          component={Select}
-          options={answerOptions[field.answerOptions]}
-        />
-      );
+      return <SelectField field={field} options={answerOptions[field.answerOptions]} />;
     }
     case 'radio': {
-      return (
-        <FormField
-          name={field.name}
-          label={field.content}
-          required={field.required}
-          component={RadioButtonGroup}
-          options={buildAnswerOptions(field, answerOptions)}
-        />
-      );
+      return <YesNoField field={field} options={buildAnswerOptions(field, answerOptions)} />;
     }
     case 'rating': {
-      return (
-        <FormField
-          name={field.name}
-          label={field.content}
-          required={true}
-          component={RadioButtonGroup}
-          options={buildAnswerOptions(field, answerOptions)}
-        />
-      );
+      return <RatingField field={field} options={buildAnswerOptions(field, answerOptions)} />;
     }
     default: {
-      return null;
+      return <ShortInputField field={field} />;
     }
   }
 };
