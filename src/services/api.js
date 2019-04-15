@@ -7,3 +7,9 @@ export const fetchQuestions = async function() {
 
   return questions;
 };
+
+export const saveSurvey = async function(data) {
+  const questions = await axios.post(`${API_URL}/saveSurvey`, data);
+
+  return questions;
+};

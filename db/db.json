@@ -3,7 +3,7 @@
     "list": [
       {
         "id": 1,
-        "type": "open-ended",
+        "type": "",
         "content": "Current Role",
         "required": true,
         "name": "current-role",
@@ -11,7 +11,7 @@
       },
       {
         "id": 3,
-        "type": "open-ended",
+        "type": "",
         "content": "Your Name",
         "required": true,
         "name": "name",
@@ -115,5 +115,7 @@
         "Excellent"
       ]
     }
-  }
+  },
+  "saveSurvey": [
+  ]
 }

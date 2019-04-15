@@ -2,16 +2,23 @@ import React, { useState, useEffect } from 'react';
 import { Button, Form, Box } from 'grommet';
 
 import { colorDarkBlue, colorWhite } from '../../styles/variables';
-import { fetchQuestions } from '../../services/api';
-import SurveyField from '../../SurveyField/SurveyField';
+import { fetchQuestions, saveSurvey } from '../../services/api';
+import SurveyField from '../SurveyField/SurveyField';
 
 const messages = {
-  required: 'To pole jest wymagane',
-  invalid: 'Upsss, błąd!'
+  required: 'This field is required'
 };
 
-const renderFormFields = function(data) {
+const renderFormFields = data => {
   return data.list.map((field, index) => <SurveyField key={index} field={field} answerOptions={data.answerOptions} />);
+};
+
+const handleSubmit = event => {
+  const data = {
+    clientName: 'John',
+    answers: event.value
+  };
+  saveSurvey(data).then(res => console.log('Submit:', event.value));
 };
 
 const Survey = function() {
@@ -28,7 +35,7 @@ const Survey = function() {
 
   return (
     <Box align="center" justify="center" pad="medium" background={colorDarkBlue}>
-      <Form onSubmit={({ value }) => console.log('Submit: ', value)} messages={messages}>
+      <Form onSubmit={handleSubmit} messages={messages}>
         {renderFormFields(data)}
         <Button type="submit" label="Submit" color={colorWhite} margin="xlarge" />
       </Form>
