@@ -1,6 +1,6 @@
 {
-  "questions": {
-    "list": [
+  "getQuestions": {
+    "questions": [
       {
         "id": 1,
         "type": "",

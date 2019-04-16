@@ -3,12 +3,7 @@ import axios from 'axios';
 import { API_URL } from '../config/config';
 
 export const fetchQuestions = async function() {
-  const questions = await axios.get(`https://kxnm8p2g1a.execute-api.us-east-1.amazonaws.com/dev/getQuestions`, {
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-      'Content-Type': 'application/json'
-    }
-  });
+  const questions = await axios.get(`${API_URL}/getQuestions`);
 
   return questions;
 };
