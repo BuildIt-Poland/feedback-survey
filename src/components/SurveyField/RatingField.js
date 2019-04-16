@@ -6,7 +6,7 @@ const RatingField = function({ field, options }) {
     <FormField
       name={field.id.toString()}
       label={field.content}
-      required={true}
+      required={field.required}
       component={RadioButtonGroup}
       options={options}
     />

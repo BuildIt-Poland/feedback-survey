@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { Redirect } from 'react-router-dom';
+
 import { Button, Form, Box } from 'grommet';
 
 import { colorDarkBlue, colorWhite } from '../../styles/variables';
@@ -9,38 +11,67 @@ const messages = {
   required: 'This field is required'
 };
 
-const renderFormFields = data => {
-  return data.questions.map((field, index) => <SurveyField key={index} field={field} answerTypes={data.answerTypes} />);
-};
+class Survey extends React.Component {
+  state = { data: { questions: [], answerTypes: {} }, submitted: false, success: false, error: null };
 
-const handleSubmit = event => {
-  const data = {
-    clientName: 'John',
-    answers: event.value
-  };
-  saveSurvey(data).then(res => console.log('Submit:', event.value));
-};
-
-const Survey = function() {
-  const [data, setData] = useState({ questions: [], answerTypes: {} });
-
-  useEffect(() => {
-    const fetchData = async () =>
-      await fetchQuestions().then(res => {
-        setData(res.data);
+  componentDidMount() {
+    fetchQuestions().then(res => {
+      this.setState({
+        data: res.data
       });
+    });
+  }
 
-    fetchData();
-  }, []);
+  renderFormFields(data) {
+    return data.questions.map((field, index) => (
+      <SurveyField key={index} field={field} answerTypes={data.answerTypes} />
+    ));
+  }
 
-  return (
-    <Box align="center" justify="center" pad="medium" background={colorDarkBlue}>
-      <Form onSubmit={handleSubmit} messages={messages}>
-        {renderFormFields(data)}
-        <Button type="submit" label="Submit" color={colorWhite} margin="xlarge" />
-      </Form>
-    </Box>
-  );
-};
+  handleSuccess = () => {
+    this.setState({
+      submitted: true,
+      success: true
+    });
+  };
+
+  handleError = error => {
+    this.setState({
+      submitted: true,
+      error: error.message
+    });
+  };
+
+  handleSubmit = event => {
+    const data = {
+      clientName: 'John',
+      answers: event.value
+    };
+    saveSurvey(data).then(res => this.handleSuccess(), err => this.handleError(err));
+  };
+
+  render() {
+    const { submitted, success, error, data } = this.state;
+    if (submitted) {
+      return (
+        <Redirect
+          to={{
+            pathname: '/final',
+            state: { success, error }
+          }}
+        />
+      );
+    } else {
+      return (
+        <Box align="center" justify="center" pad="medium" background={colorDarkBlue}>
+          <Form onSubmit={this.handleSubmit} messages={messages}>
+            {this.renderFormFields(data)}
+            <Button type="submit" label="Submit" color={colorWhite} margin="xlarge" />
+          </Form>
+        </Box>
+      );
+    }
+  }
+}
 
 export default Survey;

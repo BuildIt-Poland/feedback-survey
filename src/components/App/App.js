@@ -7,6 +7,7 @@ import GlobalStyle from '../GlobalStyle/GlobalStyle';
 import theme from '../../styles/globalTheme';
 import Survey from '../Survey';
 import Agreed from '../Agreed';
+import FinalPage from '../FinalPage';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route exact path="/" component={Welcome} />
         <Route exact path="/agreed" component={Agreed} />
         <Route exact path="/survey" component={Survey} />
+        <Route exact path="/final" component={FinalPage} />
       </Grommet>
     </Router>
   );
