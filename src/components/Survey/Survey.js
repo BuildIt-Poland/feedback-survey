@@ -10,9 +10,7 @@ const messages = {
 };
 
 const renderFormFields = data => {
-  return data.questions.map((field, index) => (
-    <SurveyField key={index} field={field} answerOptions={data.answerOptions} />
-  ));
+  return data.questions.map((field, index) => <SurveyField key={index} field={field} answerTypes={data.answerTypes} />);
 };
 
 const handleSubmit = event => {
@@ -24,7 +22,7 @@ const handleSubmit = event => {
 };
 
 const Survey = function() {
-  const [data, setData] = useState({ questions: [], answerOptions: {} });
+  const [data, setData] = useState({ questions: [], answerTypes: {} });
 
   useEffect(() => {
     const fetchData = async () =>

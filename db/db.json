@@ -7,7 +7,7 @@
         "content": "Current Role",
         "required": true,
         "name": "current-role",
-        "answerOptions": null
+        "answerType": null
       },
       {
         "id": 3,
@@ -15,7 +15,7 @@
         "content": "Your Name",
         "required": true,
         "name": "name",
-        "answerOptions": null
+        "answerType": null
       },
       {
         "id": 4,
@@ -23,7 +23,7 @@
         "content": "What kind of feedback are you providing?",
         "required": true,
         "name": "kind-of-feedback",
-        "answerOptions": "kindOfFeedback"
+        "answerType": "kindOfFeedback"
       },
       {
         "id": 5,
@@ -31,7 +31,7 @@
         "content": "Please state if you would like this feedback directly to be shared with the individual",
         "required": true,
         "name": "shared",
-        "answerOptions": "yesNo"
+        "answerType": "yesNo"
       },
       {
         "id": 6,
@@ -39,7 +39,7 @@
         "content": "Please state if you would like to receive copy of this feedback",
         "required": true,
         "name": "receive-copy",
-        "answerOptions": "yesNo"
+        "answerType": "yesNo"
       },
       {
         "id": 8,
@@ -47,7 +47,7 @@
         "content": "How would you rate overall performance of this individual?",
         "required": true,
         "name": "overall-performance",
-        "answerOptions": "rating"
+        "answerType": "rating"
       },
       {
         "id": 9,
@@ -55,7 +55,7 @@
         "content": "Based on the role this individual performing in your organisation how satisfied are you that their performing their role to their best abilities?",
         "required": true,
         "name": "satisfied",
-        "answerOptions": "rating"
+        "answerType": "rating"
       },
       {
         "id": 10,
@@ -63,7 +63,7 @@
         "content": "How would you rate individual contribution to your team, the company or to your customer?",
         "required": true,
         "name": "contribution",
-        "answerOptions": "rating"
+        "answerType": "rating"
       },
       {
         "id": 11,
@@ -71,7 +71,7 @@
         "content": "Given what you know of this person’s performance, would you want this individual always on you team?",
         "required": true,
         "name": "performance",
-        "answerOptions": "rating"
+        "answerType": "rating"
       },
       {
         "id": 12,
@@ -79,7 +79,7 @@
         "content": "Are there areas of improvement that you would recommend for this individual that would help them to accomplish work more effectively?",
         "required": false,
         "name": " areas-of-improvement",
-        "answerOptions": null
+        "answerType": null
       },
       {
         "id": 13,
@@ -87,7 +87,7 @@
         "content": "Please provide any information where an individual has gone above and beyond and you would like them to be recognised?",
         "required": false,
         "name": "test13",
-        "answerOptions": null
+        "answerType": null
       },
       {
         "id": 14,
@@ -95,27 +95,51 @@
         "content": "Any additional information you would like to provide",
         "required": false,
         "name": "additional-information",
-        "answerOptions": null
+        "answerType": null
       }
     ],
-    "answerOptions": {
-      "kindOfFeedback": [
-        "monthly",
-        "quaterly",
-        "annual"
-      ],
-      "yesNo": [
-        "Yes",
-        "No"
-      ],
-      "rating": [
-        "Bad",
-        "Average",
-        "Good",
-        "Excellent"
-      ]
-    }
+    "answerTypes": [
+      {
+        "type": "kindOfFeedback",
+        "values": [
+          "monthly",
+          "quaterly",
+          "annual"
+        ]
+      },
+      {
+        "type": "yesNo",
+        "values": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "type": "rating",
+        "values": [
+          "Bad",
+          "Average",
+          "Good",
+          "Excellent"
+        ]
+      }
+    ]
   },
   "saveSurvey": [
+    {
+      "clientName": "John",
+      "answers": {
+        "1": "dlsk",
+        "3": "kdkd",
+        "4": "monthly",
+        "5": "Yes",
+        "6": "Yes",
+        "8": "Average",
+        "9": "Bad",
+        "10": "Excellent",
+        "11": "Good"
+      },
+      "id": 1
+    }
   ]
 }

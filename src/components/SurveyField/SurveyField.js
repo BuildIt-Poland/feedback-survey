@@ -9,7 +9,7 @@ import SelectField from './SelectField';
 import YesNoField from './YesNoField';
 
 const Wrapper = styled.div`
-  margin: 50rem ${spacingLarge};
+  margin: 15rem ${spacingLarge};
 `;
 
 const renderImageOption = option => {
@@ -21,8 +21,13 @@ const renderImageOption = option => {
   );
 };
 
-const buildAnswerOptions = (field, answerOptions) => {
-  return answerOptions[field.answerOptions].map(option => {
+const getAnswerTypes = (array, answerType) => {
+  return array.find(item => item.type === answerType).values;
+};
+
+const buildAnswerTypes = (field, answerTypes) => {
+  const types = getAnswerTypes(answerTypes, field.answerType);
+  return types.map(option => {
     const label = field.type === 'rating' ? renderImageOption(option) : option;
     return {
       id: option + '_' + field.id,
@@ -32,19 +37,19 @@ const buildAnswerOptions = (field, answerOptions) => {
   });
 };
 
-const renderFieldByType = (field, answerOptions) => {
+const renderFieldByType = (field, answerTypes) => {
   switch (field.type) {
     case 'open-ended': {
       return <LongInputField field={field} />;
     }
     case 'select': {
-      return <SelectField field={field} options={answerOptions[field.answerOptions]} />;
+      return <SelectField field={field} options={getAnswerTypes(answerTypes, field.answerType)} />;
     }
     case 'radio': {
-      return <YesNoField field={field} options={buildAnswerOptions(field, answerOptions)} />;
+      return <YesNoField field={field} options={buildAnswerTypes(field, answerTypes)} />;
     }
     case 'rating': {
-      return <RatingField field={field} options={buildAnswerOptions(field, answerOptions)} />;
+      return <RatingField field={field} options={buildAnswerTypes(field, answerTypes)} />;
     }
     default: {
       return <ShortInputField field={field} />;
@@ -52,11 +57,11 @@ const renderFieldByType = (field, answerOptions) => {
   }
 };
 
-const SurveyField = function({ field, answerOptions }) {
+const SurveyField = function({ field, answerTypes }) {
   if (!field) {
     return null;
   }
-  return <Wrapper>{renderFieldByType(field, answerOptions)}</Wrapper>;
+  return <Wrapper>{renderFieldByType(field, answerTypes)}</Wrapper>;
 };
 
 export default SurveyField;
