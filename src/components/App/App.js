@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Grommet } from 'grommet';
 
 import Welcome from '../Welcome';
@@ -18,9 +18,11 @@ function App() {
         <Header bgColor={colorDarkBlue} logoColor="light">
           Randstat
         </Header>
-        <Route exact path="/:surveyId/:clientName" component={Welcome} />
-        <Route exact path="/survey/:surveyId/:clientName" component={Survey} />
-        <Route exact path="/final" component={FinalPage} />
+        <Switch>
+          <Route exact path="/survey/:surveyId?/:clientName?" component={Survey} />
+          <Route exact path="/final" component={FinalPage} />
+          <Route exact path="/:surveyId?/:clientName?" component={Welcome} />
+        </Switch>
       </Grommet>
     </Router>
   );

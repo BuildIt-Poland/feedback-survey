@@ -39,6 +39,7 @@ class Welcome extends React.Component {
   }
   render() {
     const { surveyId, clientName } = this.state;
+    const path = surveyId && clientName ? `/survey/${surveyId}/${clientName}` : '/survey';
     return (
       <Grommet theme={theme}>
         <Box align="center" justify="center" pad="medium" height="100vh">
@@ -49,7 +50,7 @@ class Welcome extends React.Component {
             {clientName}
           </Heading>
           <Agreed />
-          <LinkButton linkTo={`/survey/${surveyId}/${clientName}`} label="start" />
+          <LinkButton linkTo={path} label="start" />
         </Box>
       </Grommet>
     );
