@@ -1,22 +1,47 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Box, Button, Heading } from 'grommet';
+import { Box, Heading, Grommet } from 'grommet';
 
-import { colorDarkBlue, colorRed, colorWhite } from '../../styles/variables';
+import { spacingSmall, spacingLarge, fontXLarge, fontLarge } from '../../styles/variables';
+import Agreed from '../Agreed/Agreed';
+import LinkButton from '../Button/LinkButton';
+
+const theme = {
+  heading: {
+    weight: 500,
+    level: {
+      1: {
+        medium: {
+          size: fontXLarge
+        }
+      },
+      2: {
+        medium: {
+          size: fontLarge
+        }
+      }
+    }
+  },
+  paragraph: {
+    extend: {
+      'max-width': 'none'
+    }
+  }
+};
 
 const Welcome = function() {
   return (
-    <Box align="center" justify="center" pad="medium" background={colorDarkBlue} height="100vh">
-      <Heading level="1" textAlign="center">
-        Performance Snapshot on RSR Consultant:
-      </Heading>
-      <Heading level="2" color={colorRed}>
-        John Doe
-      </Heading>
-      <Link to="/agreed">
-        <Button label="start" color={colorWhite} margin="xlarge" />
-      </Link>
-    </Box>
+    <Grommet theme={theme}>
+      <Box align="center" justify="center" pad="medium" height="100vh">
+        <Heading level="1" margin={{ bottom: 'none' }}>
+          Performance Snapshot on RSR Consultant:
+        </Heading>
+        <Heading level="2" margin={{ top: spacingSmall, bottom: spacingLarge }}>
+          John Doe
+        </Heading>
+        <Agreed />
+        <LinkButton linkTo="/survey" label="start" />
+      </Box>
+    </Grommet>
   );
 };
 

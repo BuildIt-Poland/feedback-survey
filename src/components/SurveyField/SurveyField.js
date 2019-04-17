@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Grommet } from 'grommet';
 
-import { spacingLarge } from '../../styles/variables';
+import { spacingLarge, fontMedium, spacingMedium } from '../../styles/variables';
 import RatingField from './RatingField';
 import ShortInputField from './ShortInputField';
 import LongInputField from './LongInputField';
@@ -9,8 +10,20 @@ import SelectField from './SelectField';
 import YesNoField from './YesNoField';
 
 const Wrapper = styled.div`
-  margin: 15rem ${spacingLarge};
+  margin: 5rem ${spacingLarge};
 `;
+
+const theme = {
+  formField: {
+    extend: {
+      'font-weight': 400,
+      label: {
+        'font-size': fontMedium,
+        'margin-bottom': spacingMedium
+      }
+    }
+  }
+};
 
 const renderImageOption = option => {
   return (
@@ -61,7 +74,11 @@ const SurveyField = function({ field, answerTypes }) {
   if (!field) {
     return null;
   }
-  return <Wrapper>{renderFieldByType(field, answerTypes)}</Wrapper>;
+  return (
+    <Grommet theme={theme}>
+      <Wrapper>{renderFieldByType(field, answerTypes)}</Wrapper>
+    </Grommet>
+  );
 };
 
 export default SurveyField;

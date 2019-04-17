@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-import { fontWeightNormal, fontWeightBold, fontMedium } from '../../styles/variables';
+import { fontWeightNormal, fontWeightBold, fontMedium, colorWhite, colorDarkBlue } from '../../styles/variables';
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -17,6 +17,8 @@ const GlobalStyle = createGlobalStyle`
     font-weight: ${fontWeightNormal};
     font-size: ${fontMedium};
     line-height: 1.4;
+    background-color: ${colorWhite};
+    color: ${colorDarkBlue};
   }
 
   strong {

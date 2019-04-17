@@ -9,6 +9,7 @@ const RatingField = function({ field, options }) {
       required={field.required}
       component={RadioButtonGroup}
       options={options}
+      direction="row-responsive"
     />
   );
 };

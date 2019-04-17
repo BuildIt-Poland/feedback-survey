@@ -9,6 +9,7 @@ const SelectField = function({ field, options }) {
       required={field.required}
       component={Select}
       options={options}
+      placeholder="Select"
     />
   );
 };

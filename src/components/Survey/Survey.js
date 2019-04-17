@@ -1,11 +1,11 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
 
-import { Button, Form, Box } from 'grommet';
+import { Form, Box } from 'grommet';
 
-import { colorDarkBlue, colorWhite } from '../../styles/variables';
 import { fetchQuestions, saveSurvey } from '../../services/api';
 import SurveyField from '../SurveyField/SurveyField';
+import SurveyButton from '../Button/SurveyButton';
 
 const messages = {
   required: 'This field is required'
@@ -63,10 +63,12 @@ class Survey extends React.Component {
       );
     } else {
       return (
-        <Box align="center" justify="center" pad="medium" background={colorDarkBlue}>
+        <Box align="center" justify="center" pad="medium">
           <Form onSubmit={this.handleSubmit} messages={messages}>
             {this.renderFormFields(data)}
-            <Button type="submit" label="Submit" color={colorWhite} margin="xlarge" />
+            <Box align="center">
+              <SurveyButton type="submit" label="submit" margin="xlarge" />
+            </Box>
           </Form>
         </Box>
       );
