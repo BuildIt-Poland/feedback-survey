@@ -18,8 +18,8 @@ function App() {
         <Header bgColor={colorDarkBlue} logoColor="light">
           Randstat
         </Header>
-        <Route exact path="/" component={Welcome} />
-        <Route exact path="/survey" component={Survey} />
+        <Route exact path="/:surveyId/:clientName" component={Welcome} />
+        <Route exact path="/survey/:surveyId/:clientName" component={Survey} />
         <Route exact path="/final" component={FinalPage} />
       </Grommet>
     </Router>

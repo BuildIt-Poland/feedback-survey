@@ -28,21 +28,32 @@ const theme = {
   }
 };
 
-const Welcome = function() {
-  return (
-    <Grommet theme={theme}>
-      <Box align="center" justify="center" pad="medium" height="100vh">
-        <Heading level="1" margin={{ bottom: 'none' }}>
-          Performance Snapshot on RSR Consultant:
-        </Heading>
-        <Heading level="2" margin={{ top: spacingSmall, bottom: spacingLarge }}>
-          John Doe
-        </Heading>
-        <Agreed />
-        <LinkButton linkTo="/survey" label="start" />
-      </Box>
-    </Grommet>
-  );
-};
+class Welcome extends React.Component {
+  state = { surveyId: '', clientName: '' };
+  componentDidMount() {
+    const { surveyId, clientName } = this.props.match.params;
+    this.setState({
+      surveyId,
+      clientName
+    });
+  }
+  render() {
+    const { surveyId, clientName } = this.state;
+    return (
+      <Grommet theme={theme}>
+        <Box align="center" justify="center" pad="medium" height="100vh">
+          <Heading level="1" margin={{ bottom: 'none' }}>
+            Performance Snapshot on RSR Consultant:
+          </Heading>
+          <Heading level="2" margin={{ top: spacingSmall, bottom: spacingLarge }}>
+            {clientName}
+          </Heading>
+          <Agreed />
+          <LinkButton linkTo={`/survey/${surveyId}/${clientName}`} label="start" />
+        </Box>
+      </Grommet>
+    );
+  }
+}
 
 export default Welcome;
