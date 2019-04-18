@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Heading, Paragraph } from 'grommet';
 
-import { colorDarkBlue, colorRed } from '../../styles/variables';
+import { colorRed } from '../../styles/variables';
 
 const renderFinalMessage = location => {
   if (location.state.success) {
@@ -21,7 +21,7 @@ const renderFinalMessage = location => {
 
 const FinalPage = function({ location }) {
   return (
-    <Box align="center" justify="center" pad="medium" background={colorDarkBlue} height="100vh">
+    <Box align="center" justify="center" pad="medium" height="90vh">
       {renderFinalMessage(location)}
     </Box>
   );
