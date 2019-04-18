@@ -25,6 +25,13 @@ const theme = {
     extend: {
       'max-width': 'none'
     }
+  },
+  box: {
+    extend: {
+      background: 'url("/image/human_in_hand.png") no-repeat',
+      'background-position-x': '1rem',
+      'background-position-y': 'calc(100% - 3rem)'
+    }
   }
 };
 

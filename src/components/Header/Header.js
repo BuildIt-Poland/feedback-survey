@@ -17,7 +17,7 @@ function Header() {
   return (
     <Grommet theme={theme}>
       <Box background={colorDarkBlue}>
-        <img src={'/image/logo-light.svg'} alt="randstad logo" />
+        <img src={'/image/logo.svg'} alt="randstad logo" />
       </Box>
     </Grommet>
   );
