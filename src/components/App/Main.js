@@ -6,7 +6,7 @@ import Footer from '../Footer/Footer';
 const Main = function({ children }) {
   return (
     <Grid
-      rows={['auto', '100vh', 'auto']}
+      rows={['auto', '1fr', 'auto']}
       columns={['100%']}
       areas={[
         { name: 'header', start: [0, 0], end: [0, 0] },

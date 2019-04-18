@@ -44,7 +44,7 @@ class Survey extends React.Component {
 
   handleSubmit = event => {
     const data = {
-      clientName: 'John',
+      surveyId: this.props.match.params.surveyId || '',
       answers: event.value
     };
     saveSurvey(data).then(res => this.handleSuccess(), err => this.handleError(err));
