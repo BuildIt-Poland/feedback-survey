@@ -1,7 +1,7 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
 
-import { Form, Box } from 'grommet';
+import { Form, Box, Heading } from 'grommet';
 
 import { fetchQuestions, saveSurvey } from '../../services/api';
 import SurveyField from '../SurveyField/SurveyField';
@@ -12,14 +12,48 @@ const messages = {
 };
 
 class Survey extends React.Component {
-  state = { data: { questions: [], answerTypes: {} }, submitted: false, success: false, error: null };
+  state = { isLoading: true, data: { questions: [], answerTypes: {} }, submitted: false, success: false, error: null };
 
   componentDidMount() {
     fetchQuestions().then(res => {
       this.setState({
-        data: res.data
+        data: res.data,
+        isLoading: false
       });
     });
+  }
+
+  renderSurvey() {
+    const { submitted, success, error, data, isLoading } = this.state;
+    if (submitted) {
+      return (
+        <Redirect
+          to={{
+            pathname: '/final',
+            state: { success, error }
+          }}
+        />
+      );
+    } else {
+      if (isLoading) {
+        return (
+          <Box animation="pulse" align="center" justify="center" pad="medium" height="90vh">
+            <Heading level="4">Loading...</Heading>
+          </Box>
+        );
+      } else {
+        return (
+          <Box align="center" justify="center" pad="medium">
+            <Form onSubmit={this.handleSubmit} messages={messages}>
+              {this.renderFormFields(data)}
+              <Box align="center">
+                <SurveyButton type="submit" label="submit" margin="xlarge" />
+              </Box>
+            </Form>
+          </Box>
+        );
+      }
+    }
   }
 
   renderFormFields(data) {
@@ -51,28 +85,7 @@ class Survey extends React.Component {
   };
 
   render() {
-    const { submitted, success, error, data } = this.state;
-    if (submitted) {
-      return (
-        <Redirect
-          to={{
-            pathname: '/final',
-            state: { success, error }
-          }}
-        />
-      );
-    } else {
-      return (
-        <Box align="center" justify="center" pad="medium">
-          <Form onSubmit={this.handleSubmit} messages={messages}>
-            {this.renderFormFields(data)}
-            <Box align="center">
-              <SurveyButton type="submit" label="submit" margin="xlarge" />
-            </Box>
-          </Form>
-        </Box>
-      );
-    }
+    return this.renderSurvey();
   }
 }
 
