@@ -1,7 +1,16 @@
 import React from 'react';
-import { Box, Heading, Paragraph } from 'grommet';
+import { Box, Heading, Paragraph, Grommet } from 'grommet';
 
 import { colorRed } from '../../styles/variables';
+
+const theme = {
+  box: {
+    extend: {
+      background: 'url("/image/BinarycodeWithHearts.png") no-repeat',
+      'background-size': '80%'
+    }
+  }
+};
 
 const renderFinalMessage = location => {
   if (location.state.success) {
@@ -21,9 +30,11 @@ const renderFinalMessage = location => {
 
 const FinalPage = function({ location }) {
   return (
-    <Box align="center" justify="center" pad="medium" height="90vh">
-      {renderFinalMessage(location)}
-    </Box>
+    <Grommet theme={theme}>
+      <Box align="center" justify="center" pad="medium" height="90vh">
+        {renderFinalMessage(location)}
+      </Box>
+    </Grommet>
   );
 };
 
