@@ -1,5 +1,7 @@
 import React from 'react';
-import { FormField, RadioButtonGroup } from 'grommet';
+import { FormField } from 'grommet';
+
+import CustomRadioButtonGroup from '../CustomRadioButtonGroup';
 
 const YesNoField = function({ field, options }) {
   return (
@@ -7,8 +9,10 @@ const YesNoField = function({ field, options }) {
       name={field.id.toString()}
       label={field.content}
       required={field.required}
-      component={RadioButtonGroup}
+      component={CustomRadioButtonGroup}
       options={options}
+      width="medium"
+      withIcon={false}
     />
   );
 };

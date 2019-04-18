@@ -2,9 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Grommet } from 'grommet';
 
-import Welcome from '../Welcome';
-import GlobalStyle from '../GlobalStyle/GlobalStyle';
 import theme from '../../styles/globalTheme';
+import GlobalStyle from '../GlobalStyle/GlobalStyle';
+import Welcome from '../Welcome';
 import Survey from '../Survey';
 import FinalPage from '../FinalPage';
 import Main from './Main';

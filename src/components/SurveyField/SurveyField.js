@@ -29,7 +29,6 @@ const renderImageOption = option => {
   return (
     <>
       <img width="50" src={'./image/' + option.toLowerCase() + '.svg'} alt={option} />
-      <span>{option}</span>
     </>
   );
 };
@@ -51,6 +50,7 @@ const buildAnswerTypes = (field, answerTypes) => {
 };
 
 const renderFieldByType = (field, answerTypes) => {
+  // field.required = false;
   switch (field.type) {
     case 'open-ended': {
       return <LongInputField field={field} />;
