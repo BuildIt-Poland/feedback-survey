@@ -12,9 +12,6 @@ const preparedSurveyData = data => {
 export const fetchQuestions = async function() {
   const questions = await axios.get(`${API_URL}/getQuestions`);
 
-  // Temporary await for async delay simulation
-  await new Promise(resolve => setTimeout(resolve, 2000));
-
   return questions;
 };
 
