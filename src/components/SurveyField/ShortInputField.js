@@ -17,6 +17,9 @@ export const inputTheme = {
 };
 
 const ShortInputField = function({ field }) {
+  if (!field) {
+    return null;
+  }
   return (
     <FormField
       name={field.id.toString()}

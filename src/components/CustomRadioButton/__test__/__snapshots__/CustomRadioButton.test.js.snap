@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - CustomRadioButton renders correctly 1`] = `
+Array [
+  <input
+    className="sc-bdVaJa hoFWaF"
+    type="radio"
+  />,
+  <label
+    className="sc-htpNat dkbVkt"
+  />,
+]
+`;

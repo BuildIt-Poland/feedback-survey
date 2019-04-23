@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Box } from 'grommet';
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
+import Header from '../Header';
+import Footer from '../Footer';
 
 const Main = function({ children }) {
   return (

@@ -2,6 +2,9 @@ import React from 'react';
 import { FormField, Select } from 'grommet';
 
 const SelectField = function({ field, options }) {
+  if (!field) {
+    return null;
+  }
   return (
     <FormField
       name={field.id.toString()}

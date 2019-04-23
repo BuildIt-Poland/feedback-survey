@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - App renders correctly default route, which should contain correct headline 1`] = `
+<div
+  className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
+>
+  <div
+    className="StyledGrid-sc-1wofa1l-0 jKsEMO"
+  >
+    <div
+      className="StyledBox-sc-13pk1d4-0 egWecb"
+    >
+      <div
+        className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
+      >
+        <div
+          className="StyledBox-sc-13pk1d4-0 bNlcVt"
+        >
+          <img
+            alt="randstad logo"
+            src="/image/logo.svg"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="StyledBox-sc-13pk1d4-0 kIDBNV"
+    >
+      <div
+        className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
+      >
+        <div
+          className="StyledBox-sc-13pk1d4-0 lcYpOF"
+        >
+          <h1
+            className="StyledHeading-sc-1rdh4aw-0 jIghTj"
+          >
+            Performance Snapshot on RSR Consultant:
+          </h1>
+          <h2
+            className="StyledHeading-sc-1rdh4aw-0 fDHdzw"
+          />
+          <section
+            className="sc-ifAKCX koMkwN"
+          >
+            <p
+              className="StyledParagraph-tbetod-0 hAoEMb"
+              size="large"
+            >
+              The feedback you provide will be used for individual development and career pathway and forms part of RSR Reward and Recognition scheme.
+            </p>
+            <p
+              className="StyledParagraph-tbetod-0 hAoEMb"
+              size="large"
+            >
+              Feedback will also be used to enhance and evolve individual contribution to your organisation.
+            </p>
+            <p
+              className="StyledParagraph-tbetod-0 hAoEMb"
+              size="large"
+            >
+              We therefore ask you to provide feedback based on factual evidence only and we may ask you for further information in some individual performance feedback.
+            </p>
+          </section>
+          <a
+            href="/survey"
+            onClick={[Function]}
+          >
+            <div
+              className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
+            >
+              <button
+                className="StyledButton-sc-323bzc-0 hlJKLl"
+                onBlur={[Function]}
+                onFocus={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                size="large"
+                type="button"
+              >
+                start
+              </button>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      className="StyledBox-sc-13pk1d4-0 fqJPBM"
+    >
+      <div
+        className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
+      >
+        <div
+          className="StyledBox-sc-13pk1d4-0 gQCTx"
+        >
+          <span
+            className="StyledText-sc-1sadyjn-0 hUyidw"
+            size="medium"
+          >
+            Randstad Sourceright (Hong Kong SAR) EA Licence No. 57155 | Randstad Sourceright (Singapore) EA
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

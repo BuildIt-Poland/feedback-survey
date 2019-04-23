@@ -4,6 +4,9 @@ import { FormField } from 'grommet';
 import CustomRadioButtonGroup from '../CustomRadioButtonGroup';
 
 const RatingField = function({ field, options }) {
+  if (!field) {
+    return null;
+  }
   return (
     <FormField
       name={field.id.toString()}

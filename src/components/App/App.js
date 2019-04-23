@@ -4,10 +4,10 @@ import { Grommet } from 'grommet';
 
 import theme from '../../styles/globalTheme';
 import GlobalStyle from '../GlobalStyle/GlobalStyle';
-import Welcome from '../Welcome';
 import Survey from '../Survey';
 import FinalPage from '../FinalPage';
 import Main from './Main';
+import Welcome from '../Welcome';
 
 function App() {
   return (

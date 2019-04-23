@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Heading, Grommet } from 'grommet';
 
 import { spacingSmall, spacingLarge, fontXLarge, fontLarge } from '../../styles/variables';
-import Agreed from '../Agreed/Agreed';
+import Agreed from '../Agreed';
 import LinkButton from '../Button/LinkButton';
 
 const theme = {

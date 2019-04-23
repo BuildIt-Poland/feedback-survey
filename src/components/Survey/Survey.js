@@ -5,7 +5,7 @@ import { Form, Box, Heading } from 'grommet';
 
 import { fetchQuestions, saveSurvey } from '../../services/api';
 import SurveyField from '../SurveyField/SurveyField';
-import SurveyButton from '../Button/SurveyButton';
+import SurveyButton from '../Button';
 
 const messages = {
   required: 'This field is required'

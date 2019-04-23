@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - Welcome renders correctly with params 1`] = `
+<div
+  className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
+>
+  <div
+    className="StyledBox-sc-13pk1d4-0 lcYpOF"
+  >
+    <h1
+      className="StyledHeading-sc-1rdh4aw-0 jIghTj"
+    >
+      Performance Snapshot on RSR Consultant:
+    </h1>
+    <h2
+      className="StyledHeading-sc-1rdh4aw-0 fDHdzw"
+    >
+      John
+    </h2>
+    <section
+      className="sc-bdVaJa gPpPXU"
+    >
+      <p
+        className="StyledParagraph-tbetod-0 hAoEMb"
+        size="large"
+      >
+        The feedback you provide will be used for individual development and career pathway and forms part of RSR Reward and Recognition scheme.
+      </p>
+      <p
+        className="StyledParagraph-tbetod-0 hAoEMb"
+        size="large"
+      >
+        Feedback will also be used to enhance and evolve individual contribution to your organisation.
+      </p>
+      <p
+        className="StyledParagraph-tbetod-0 hAoEMb"
+        size="large"
+      >
+        We therefore ask you to provide feedback based on factual evidence only and we may ask you for further information in some individual performance feedback.
+      </p>
+    </section>
+    <Link
+      to="/survey/12345/John"
+    >
+      <div
+        className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
+      >
+        <button
+          className="StyledButton-sc-323bzc-0 hlJKLl"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          size="large"
+          type="button"
+        >
+          start
+        </button>
+      </div>
+    </Link>
+  </div>
+</div>
+`;
+
+exports[`COMPONENT - Welcome renders correctly without params 1`] = `
+<div
+  className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
+>
+  <div
+    className="StyledBox-sc-13pk1d4-0 lcYpOF"
+  >
+    <h1
+      className="StyledHeading-sc-1rdh4aw-0 jIghTj"
+    >
+      Performance Snapshot on RSR Consultant:
+    </h1>
+    <h2
+      className="StyledHeading-sc-1rdh4aw-0 fDHdzw"
+    />
+    <section
+      className="sc-bdVaJa gPpPXU"
+    >
+      <p
+        className="StyledParagraph-tbetod-0 hAoEMb"
+        size="large"
+      >
+        The feedback you provide will be used for individual development and career pathway and forms part of RSR Reward and Recognition scheme.
+      </p>
+      <p
+        className="StyledParagraph-tbetod-0 hAoEMb"
+        size="large"
+      >
+        Feedback will also be used to enhance and evolve individual contribution to your organisation.
+      </p>
+      <p
+        className="StyledParagraph-tbetod-0 hAoEMb"
+        size="large"
+      >
+        We therefore ask you to provide feedback based on factual evidence only and we may ask you for further information in some individual performance feedback.
+      </p>
+    </section>
+    <Link
+      to="/survey"
+    >
+      <div
+        className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
+      >
+        <button
+          className="StyledButton-sc-323bzc-0 hlJKLl"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          size="large"
+          type="button"
+        >
+          start
+        </button>
+      </div>
+    </Link>
+  </div>
+</div>
+`;
