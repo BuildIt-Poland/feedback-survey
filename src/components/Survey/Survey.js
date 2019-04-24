@@ -12,15 +12,26 @@ const messages = {
 };
 
 class Survey extends React.Component {
-  state = { isLoading: true, data: { questions: [], answerTypes: {} }, submitted: false, success: false, error: null };
+  constructor(props) {
+    super(props);
+    this.state = {
+      isLoading: props.isLoading || true,
+      data: { questions: [], answerTypes: {} },
+      submitted: false,
+      success: false,
+      error: null
+    };
+  }
 
   componentDidMount() {
-    fetchQuestions().then(res => {
-      this.setState({
-        data: res.data,
-        isLoading: false
+    if (this.state.isLoading) {
+      fetchQuestions().then(res => {
+        this.setState({
+          data: res.data,
+          isLoading: false
+        });
       });
-    });
+    }
   }
 
   renderSurvey() {
@@ -47,7 +58,7 @@ class Survey extends React.Component {
             <Form onSubmit={this.handleSubmit} messages={messages}>
               {this.renderFormFields(data)}
               <Box align="center">
-                <SurveyButton type="submit" label="submit" margin="xlarge" />
+                <SurveyButton type="submit" label="submit" margin="xlarge" data-testid="survey-submit-button" />
               </Box>
             </Form>
           </Box>
