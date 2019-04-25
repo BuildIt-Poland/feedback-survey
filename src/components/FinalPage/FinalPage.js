@@ -13,7 +13,7 @@ const theme = {
 };
 
 const renderFinalMessage = location => {
-  if (location.state.success) {
+  if (location && location.state.success) {
     return (
       <Heading level="1" textAlign="center">
         Thank you!

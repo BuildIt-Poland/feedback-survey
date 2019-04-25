@@ -1,26 +1,22 @@
-// import React from 'react';
-// import { create } from 'react-test-renderer';
-// import { MemoryRouter } from 'react-router-dom';
+import React from 'react';
+import { create } from 'react-test-renderer';
 
-// import FinalPage from '../FinalPage';
+import FinalPage from '../FinalPage';
+
+jest.mock('react-router-dom', () => ({
+  Link: 'Link'
+}));
 
 describe('COMPONENT - FinalPage', () => {
   it('renders correctly', () => {
-    // const props = {
-    //   location: {
-    //     state: {
-    //       success: true
-    //     }
-    //   }
-    // };
+    const location = {
+      state: {
+        success: true
+      }
+    };
 
-    // const component = create(
-    //   <MemoryRouter initialEntries={props}>
-    //     <FinalPage />
-    //   </MemoryRouter>
-    // );
+    const component = create(<FinalPage location={location} />);
 
-    // expect(component.toJSON()).toMatchSnapshot();
-    expect(true).toBe(true);
+    expect(component.toJSON()).toMatchSnapshot();
   });
 });

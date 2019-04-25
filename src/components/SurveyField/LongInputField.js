@@ -1,16 +1,15 @@
 import React from 'react';
-import { FormField, TextArea } from 'grommet';
+import { FormField } from 'grommet';
+
+import CustomTextArea from '../CustomTextArea';
 
 const LonfInputField = function({ field }) {
-  if (!field) {
-    return null;
-  }
   return (
     <FormField
       name={field.id.toString()}
       label={field.content}
       required={field.required}
-      component={TextArea}
+      component={CustomTextArea}
       placeholder="Type your answer here"
     />
   );

@@ -1,3 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - SurveyField YesNoField renders correctly 1`] = `null`;
+
+exports[`COMPONENT - SurveyField YesNoField renders correctly with field 1`] = `
+<div
+  className="FormField__FormFieldBox-m9hood-0 eshLKp StyledBox-sc-13pk1d4-0 CAsMy"
+>
+  <label
+    className="StyledText-sc-1sadyjn-0 bMXxti"
+  >
+    Question content
+  </label>
+  <div
+    className="StyledBox-sc-13pk1d4-0 gZSidW"
+  />
+</div>
+`;

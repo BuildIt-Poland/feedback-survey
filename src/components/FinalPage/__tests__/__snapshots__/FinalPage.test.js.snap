@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - FinalPage renders correctly 1`] = `
+<div
+  className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
+>
+  <div
+    className="StyledBox-sc-13pk1d4-0 fEZYsh"
+  >
+    <h1
+      className="StyledHeading-sc-1rdh4aw-0 iDyXcl"
+    >
+      Thank you!
+    </h1>
+  </div>
+</div>
+`;

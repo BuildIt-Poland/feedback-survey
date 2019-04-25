@@ -14,10 +14,4 @@ describe('COMPONENT - SurveyField LongInputField', () => {
 
     expect(component.toJSON()).toMatchSnapshot();
   });
-
-  it('does not render without field', () => {
-    const component = create(<LongInputField />);
-
-    expect(component.toJSON()).toMatchSnapshot();
-  });
 });

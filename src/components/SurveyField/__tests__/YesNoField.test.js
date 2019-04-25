@@ -9,4 +9,16 @@ describe('COMPONENT - SurveyField YesNoField', () => {
 
     expect(component.toJSON()).toMatchSnapshot();
   });
+
+  it('renders correctly with field', () => {
+    const field = {
+      id: '123',
+      content: 'Question content',
+      required: false,
+      options: ['Bad', 'Average']
+    };
+    const component = create(<YesNoField field={field} />);
+
+    expect(component.toJSON()).toMatchSnapshot();
+  });
 });

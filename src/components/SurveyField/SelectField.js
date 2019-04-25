@@ -1,5 +1,7 @@
 import React from 'react';
-import { FormField, Select } from 'grommet';
+import { FormField } from 'grommet';
+
+import CustomSelect from '../CustomSelect';
 
 const SelectField = function({ field, options }) {
   if (!field) {
@@ -10,7 +12,7 @@ const SelectField = function({ field, options }) {
       name={field.id.toString()}
       label={field.content}
       required={field.required}
-      component={Select}
+      component={CustomSelect}
       options={options}
       placeholder="Select"
     />
