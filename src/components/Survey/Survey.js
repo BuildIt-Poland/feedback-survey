@@ -3,7 +3,7 @@ import { Redirect } from 'react-router-dom';
 
 import { Form, Box, Heading } from 'grommet';
 
-import { fetchQuestions, saveSurvey } from '../../services/api';
+import { saveSurvey } from '../../services/api';
 import SurveyField from '../SurveyField/SurveyField';
 import SurveyButton from '../Button';
 
@@ -15,27 +15,15 @@ class Survey extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isLoading: props.isLoading || true,
-      data: { questions: [], answerTypes: {} },
+      data: props.data,
       submitted: false,
       success: false,
       error: null
     };
   }
 
-  componentDidMount() {
-    if (this.state.isLoading) {
-      fetchQuestions().then(res => {
-        this.setState({
-          data: res.data,
-          isLoading: false
-        });
-      });
-    }
-  }
-
   renderSurvey() {
-    const { submitted, success, error, data, isLoading } = this.state;
+    const { submitted, success, error, data } = this.state;
     if (submitted) {
       return (
         <Redirect
@@ -45,26 +33,29 @@ class Survey extends React.Component {
           }}
         />
       );
-    } else {
-      if (isLoading) {
-        return (
-          <Box animation="pulse" align="center" justify="center" pad="medium" height="90vh">
-            <Heading level="4">Loading...</Heading>
-          </Box>
-        );
-      } else {
-        return (
-          <Box align="center" justify="center" pad="medium">
-            <Form onSubmit={this.handleSubmit} messages={messages}>
-              {this.renderFormFields(data)}
-              <Box align="center">
-                <SurveyButton type="submit" label="submit" margin="xlarge" data-testid="survey-submit-button" />
-              </Box>
-            </Form>
-          </Box>
-        );
-      }
     }
+    if (!data) {
+      return null;
+    }
+    if (data && !data.questions.length) {
+      return (
+        <Box align="center" justify="center" pad="medium" height="90vh">
+          <Heading level="4" textAlign="center">
+            Oops, something went wrong, there is no questions
+          </Heading>
+        </Box>
+      );
+    }
+    return (
+      <Box align="center" justify="center" pad="medium">
+        <Form onSubmit={this.handleSubmit} messages={messages}>
+          {this.renderFormFields(data)}
+          <Box align="center">
+            <SurveyButton type="submit" label="submit" margin="xlarge" />
+          </Box>
+        </Form>
+      </Box>
+    );
   }
 
   renderFormFields(data) {
@@ -89,7 +80,7 @@ class Survey extends React.Component {
 
   handleSubmit = event => {
     const data = {
-      surveyId: this.props.match.params.surveyId || '',
+      surveyId: this.props.match ? this.props.match.params.surveyId : '',
       answers: event.value
     };
     saveSurvey(data).then(res => this.handleSuccess(), err => this.handleError(err));
