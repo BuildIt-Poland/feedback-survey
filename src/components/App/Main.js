@@ -3,7 +3,7 @@ import { Grid, Box } from 'grommet';
 import Header from '../Header';
 import Footer from '../Footer';
 
-const Main = function({ children }) {
+const Main = ({ children }) => {
   return (
     <Grid
       rows={['auto', '1fr', 'auto']}

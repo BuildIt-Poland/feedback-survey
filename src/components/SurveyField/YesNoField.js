@@ -3,7 +3,7 @@ import { FormField } from 'grommet';
 
 import CustomRadioButtonGroup from '../CustomRadioButtonGroup';
 
-const YesNoField = function({ field, options }) {
+const YesNoField = ({ field, options }) => {
   if (!field) {
     return null;
   }

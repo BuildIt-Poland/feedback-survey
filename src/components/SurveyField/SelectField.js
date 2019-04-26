@@ -3,7 +3,7 @@ import { FormField } from 'grommet';
 
 import CustomSelect from '../CustomSelect';
 
-const SelectField = function({ field, options }) {
+const SelectField = ({ field, options }) => {
   if (!field) {
     return null;
   }

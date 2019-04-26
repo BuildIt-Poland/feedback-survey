@@ -3,8 +3,8 @@ import { Box } from 'grommet';
 
 import CustomRadioButton from '../CustomRadioButton';
 
-const renderRadioButtons = (options, name, withIcon) => {
-  return options.map(radio => (
+const renderRadioButtons = (options, name, withIcon) =>
+  options.map(radio => (
     <CustomRadioButton
       key={radio.id}
       name={name}
@@ -14,9 +14,8 @@ const renderRadioButtons = (options, name, withIcon) => {
       withIcon={withIcon}
     />
   ));
-};
 
-const CustomRadioButtonGroup = function({ options = [], name = '', withIcon = false, ...rest }) {
+const CustomRadioButtonGroup = ({ options = [], name = '', withIcon = false, ...rest }) => {
   return (
     <Box direction="row-responsive" alignSelf="center" justify="between" wrap={true} {...rest}>
       {renderRadioButtons(options, name, withIcon)}

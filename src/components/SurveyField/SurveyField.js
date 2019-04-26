@@ -25,17 +25,9 @@ const theme = {
   }
 };
 
-const renderImageOption = option => {
-  return (
-    <>
-      <img width="50" src={'./image/' + option.toLowerCase() + '.svg'} alt={option} />
-    </>
-  );
-};
+const renderImageOption = option => <img width="50" src={'./image/' + option.toLowerCase() + '.svg'} alt={option} />;
 
-const getAnswerTypes = (array, answerType) => {
-  return array.find(item => item.type === answerType).values;
-};
+const getAnswerTypes = (array, answerType) => array.find(item => item.type === answerType).values;
 
 const buildAnswerTypes = (field, answerTypes) => {
   const types = getAnswerTypes(answerTypes, field.answerType);
@@ -50,7 +42,6 @@ const buildAnswerTypes = (field, answerTypes) => {
 };
 
 const renderFieldByType = (field, answerTypes) => {
-  // field.required = false;
   switch (field.type) {
     case 'open-ended': {
       return <LongInputField field={field} />;
@@ -70,7 +61,7 @@ const renderFieldByType = (field, answerTypes) => {
   }
 };
 
-const SurveyField = function({ field, answerTypes }) {
+const SurveyField = ({ field, answerTypes }) => {
   if (!field) {
     return null;
   }

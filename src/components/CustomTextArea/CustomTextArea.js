@@ -1,7 +1,7 @@
 import React from 'react';
 import { TextArea } from 'grommet';
 
-const CustomTextArea = function({ ...rest }) {
+const CustomTextArea = ({ ...rest }) => {
   return <TextArea {...rest} />;
 };
 

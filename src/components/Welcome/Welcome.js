@@ -37,6 +37,7 @@ const theme = {
 
 class Welcome extends React.Component {
   state = { surveyId: '', clientName: '' };
+
   componentDidMount() {
     const { surveyId, clientName } = this.props.match.params;
     this.setState({
@@ -44,6 +45,7 @@ class Welcome extends React.Component {
       clientName
     });
   }
+
   render() {
     const { surveyId, clientName } = this.state;
     const path = surveyId && clientName ? `/survey/${surveyId}/${clientName}` : '/survey';

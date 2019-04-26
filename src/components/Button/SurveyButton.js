@@ -26,12 +26,12 @@ const theme = {
   }
 };
 
-function SurveyButton({ label, type }) {
+const SurveyButton = ({ label, type }) => {
   return (
     <Grommet theme={theme}>
       <Button label={label} color={colorBlue} type={type} hoverIndicator="background" size="large" />
     </Grommet>
   );
-}
+};
 
 export default SurveyButton;

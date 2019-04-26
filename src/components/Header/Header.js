@@ -13,7 +13,7 @@ const theme = {
   }
 };
 
-function Header() {
+const Header = () => {
   return (
     <Grommet theme={theme}>
       <Box background={colorDarkBlue}>
@@ -21,6 +21,6 @@ function Header() {
       </Box>
     </Grommet>
   );
-}
+};
 
 export default Header;

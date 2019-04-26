@@ -10,7 +10,7 @@ import Main from './Main';
 import Welcome from '../Welcome';
 import { fetchQuestions } from '../../services/api';
 
-function App() {
+const App = () => {
   const [data, setData] = useState({ questions: [], answerTypes: {} });
 
   useEffect(() => {
@@ -33,5 +33,6 @@ function App() {
       </Grommet>
     </Router>
   );
-}
+};
+
 export default App;

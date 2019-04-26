@@ -3,7 +3,7 @@ import { FormField } from 'grommet';
 
 import CustomRadioButtonGroup from '../CustomRadioButtonGroup';
 
-const RatingField = function({ field, options }) {
+const RatingField = ({ field, options }) => {
   if (!field) {
     return null;
   }

@@ -3,7 +3,7 @@ import { FormField } from 'grommet';
 
 import CustomTextArea from '../CustomTextArea';
 
-const LonfInputField = function({ field }) {
+const LonfInputField = ({ field }) => {
   return (
     <FormField
       name={field.id.toString()}

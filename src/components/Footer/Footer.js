@@ -10,7 +10,7 @@ const theme = {
   }
 };
 
-function Footer() {
+const Footer = () => {
   return (
     <Grommet theme={theme}>
       <Box background={colorDarkBlue} align="center" pad="medium">
@@ -20,6 +20,6 @@ function Footer() {
       </Box>
     </Grommet>
   );
-}
+};
 
 export default Footer;

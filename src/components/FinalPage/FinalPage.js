@@ -28,7 +28,7 @@ const renderFinalMessage = location => {
   }
 };
 
-const FinalPage = function({ location }) {
+const FinalPage = ({ location }) => {
   return (
     <Grommet theme={theme}>
       <Box align="center" justify="center" pad="medium" height="90vh">

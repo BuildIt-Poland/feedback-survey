@@ -16,7 +16,7 @@ export const inputTheme = {
   }
 };
 
-const ShortInputField = function({ field }) {
+const ShortInputField = ({ field }) => {
   if (!field) {
     return null;
   }

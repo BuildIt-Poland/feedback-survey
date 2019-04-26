@@ -8,7 +8,7 @@ const Wrapper = styled.section`
   margin: ${spacingLarge} auto;
 `;
 
-const Agreed = function() {
+const Agreed = () => {
   return (
     <Wrapper>
       <Paragraph size="large">

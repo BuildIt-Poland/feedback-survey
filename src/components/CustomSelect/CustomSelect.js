@@ -1,7 +1,7 @@
 import React from 'react';
 import { Select } from 'grommet';
 
-const CustomSelect = function({ options, ...rest }) {
+const CustomSelect = ({ options, ...rest }) => {
   return <Select options={options} {...rest} />;
 };
 
