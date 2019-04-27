@@ -4,15 +4,10 @@ import { create } from 'react-test-renderer';
 import ShortInputField from '../ShortInputField';
 
 describe('COMPONENT - SurveyField ShortInputField', () => {
-  it('does not render without field', () => {
-    const component = create(<ShortInputField />);
-
-    expect(component.toJSON()).toMatchSnapshot();
-  });
-
-  it('renders correctly with field', () => {
+  it('renders correctly', () => {
     const field = {
       id: '123',
+      type: '',
       content: 'Question content',
       required: false
     };

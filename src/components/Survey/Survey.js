@@ -1,10 +1,10 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
-
 import { Form, Box, Heading } from 'grommet';
 
 import { saveSurvey } from '../../services/api';
-import SurveyField from '../SurveyField/SurveyField';
+import { surveyData } from '../../types';
+import SurveyField from '../SurveyField';
 import SurveyButton from '../Button';
 
 const messages = {
@@ -24,6 +24,16 @@ class Survey extends React.Component {
 
   renderSurvey() {
     const { submitted, success, error, data } = this.state;
+
+    if (data && !data.questions.length) {
+      return (
+        <Box align="center" justify="center" pad="medium" height="90vh">
+          <Heading level="4" textAlign="center">
+            Oops, something went wrong, there is no questions
+          </Heading>
+        </Box>
+      );
+    }
     if (submitted) {
       return (
         <Redirect
@@ -34,24 +44,12 @@ class Survey extends React.Component {
         />
       );
     }
-    if (!data) {
-      return null;
-    }
-    if (data && !data.questions.length) {
-      return (
-        <Box align="center" justify="center" pad="medium" height="90vh">
-          <Heading level="4" textAlign="center">
-            Oops, something went wrong, there is no questions
-          </Heading>
-        </Box>
-      );
-    }
     return (
       <Box align="center" justify="center" pad="medium">
         <Form onSubmit={this.handleSubmit} messages={messages}>
           {this.renderFormFields(data)}
           <Box align="center">
-            <SurveyButton type="submit" label="submit" margin="xlarge" />
+            <SurveyButton buttonType="submit" label="submit" margin="xlarge" />
           </Box>
         </Form>
       </Box>
@@ -71,17 +69,17 @@ class Survey extends React.Component {
     });
   };
 
-  handleError = error => {
+  handleError = ({ message }) => {
     this.setState({
       submitted: true,
-      error: error.message
+      error: message
     });
   };
 
-  handleSubmit = event => {
+  handleSubmit = ({ value }) => {
     const data = {
       surveyId: this.props.match ? this.props.match.params.surveyId : '',
-      answers: event.value
+      answers: value
     };
     saveSurvey(data).then(res => this.handleSuccess(), err => this.handleError(err));
   };
@@ -90,5 +88,9 @@ class Survey extends React.Component {
     return this.renderSurvey();
   }
 }
+
+Survey.propTypes = {
+  data: surveyData
+};
 
 export default Survey;

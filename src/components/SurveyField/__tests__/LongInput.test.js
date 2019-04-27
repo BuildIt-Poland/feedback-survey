@@ -7,6 +7,7 @@ describe('COMPONENT - SurveyField LongInputField', () => {
   it('renders correctly', () => {
     const field = {
       id: '13',
+      type: 'open-ended',
       content: 'Why?',
       required: false
     };

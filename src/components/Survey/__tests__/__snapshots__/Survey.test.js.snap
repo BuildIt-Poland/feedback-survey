@@ -124,5 +124,3 @@ exports[`COMPONENT - Survey renders info message if there are no questions  1`] 
   </h4>
 </div>
 `;
-
-exports[`COMPONENT - Survey renders nothing if there were no data provided 1`] = `null`;

@@ -1,5 +1,7 @@
 import React from 'react';
+import { element } from 'prop-types';
 import { Grid, Box } from 'grommet';
+
 import Header from '../Header';
 import Footer from '../Footer';
 
@@ -23,6 +25,10 @@ const Main = ({ children }) => {
       </Box>
     </Grid>
   );
+};
+
+Main.protoTypes = {
+  children: element.isRequired
 };
 
 export default Main;

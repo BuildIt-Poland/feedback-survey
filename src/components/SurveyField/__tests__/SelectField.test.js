@@ -5,14 +5,9 @@ import SelectField from '../SelectField';
 
 describe('COMPONENT - SurveyField SelectField', () => {
   it('does not render without field', () => {
-    const component = create(<SelectField />);
-
-    expect(component.toJSON()).toMatchSnapshot();
-  });
-
-  it('renders correctly with field', () => {
     const field = {
       id: '123',
+      type: 'select',
       content: 'Question content',
       required: false,
       options: ['One', 'Two']

@@ -4,11 +4,6 @@ import { create } from 'react-test-renderer';
 import Survey from '../Survey';
 
 describe('COMPONENT - Survey', () => {
-  it('renders nothing if there were no data provided', () => {
-    const component = create(<Survey />);
-
-    expect(component.toJSON()).toMatchSnapshot();
-  });
   it('renders info message if there are no questions ', () => {
     const data = {
       questions: [],
@@ -23,7 +18,7 @@ describe('COMPONENT - Survey', () => {
     const data = {
       questions: [
         {
-          id: 4,
+          id: '4',
           type: 'select',
           content: 'What kind of feedback are you providing?',
           required: true,

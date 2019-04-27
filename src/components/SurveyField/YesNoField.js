@@ -1,15 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { FormField } from 'grommet';
 
+import { formField, radioOption } from '../../types';
 import CustomRadioButtonGroup from '../CustomRadioButtonGroup';
 
 const YesNoField = ({ field, options }) => {
-  if (!field) {
-    return null;
-  }
   return (
     <FormField
-      name={field.id.toString()}
+      name={field.id}
       label={field.content}
       required={field.required}
       component={CustomRadioButtonGroup}
@@ -18,6 +17,11 @@ const YesNoField = ({ field, options }) => {
       withIcon={false}
     />
   );
+};
+
+YesNoField.propTypes = {
+  field: formField.isRequired,
+  options: PropTypes.arrayOf(radioOption)
 };
 
 export default YesNoField;

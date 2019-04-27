@@ -6,9 +6,14 @@ import LinkButton from '../LinkButton';
 
 describe('COMPONENT - SurveyButton LinkButton', () => {
   it('renders correctly', () => {
+    const props = {
+      linkTo: '/',
+      label: 'test'
+    };
+
     const component = create(
-      <MemoryRouter initialEntries={['/survey']}>
-        <LinkButton />
+      <MemoryRouter>
+        <LinkButton {...props} />
       </MemoryRouter>
     );
 

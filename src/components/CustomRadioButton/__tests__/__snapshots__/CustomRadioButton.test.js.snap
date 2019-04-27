@@ -4,10 +4,16 @@ exports[`COMPONENT - CustomRadioButton renders correctly 1`] = `
 Array [
   <input
     className="sc-bdVaJa hoFWaF"
+    id="123"
+    name="name123"
     type="radio"
+    value="value123"
   />,
   <label
     className="sc-htpNat dkbVkt"
-  />,
+    htmlFor="123"
+  >
+    label123
+  </label>,
 ]
 `;

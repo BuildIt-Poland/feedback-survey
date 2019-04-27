@@ -1,8 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - SurveyField renders correctly 1`] = `null`;
-
-exports[`COMPONENT - SurveyField renders correctly with field 1`] = `
+exports[`COMPONENT - SurveyField renders correctly 1`] = `
 <div
   className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
 >

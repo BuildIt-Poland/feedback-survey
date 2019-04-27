@@ -4,16 +4,7 @@ import { Box } from 'grommet';
 import CustomRadioButton from '../CustomRadioButton';
 
 const renderRadioButtons = (options, name, withIcon) =>
-  options.map(radio => (
-    <CustomRadioButton
-      key={radio.id}
-      name={name}
-      label={radio.label}
-      id={radio.id}
-      value={radio.value}
-      withIcon={withIcon}
-    />
-  ));
+  options.map(radio => <CustomRadioButton key={radio.id} name={name} radio={radio} withIcon={withIcon} />);
 
 const CustomRadioButtonGroup = ({ options = [], name = '', withIcon = false, ...rest }) => {
   return (

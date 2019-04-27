@@ -12,6 +12,8 @@ exports[`COMPONENT - SurveyButton renders correctly 1`] = `
     onMouseOver={[Function]}
     size="large"
     type="button"
-  />
+  >
+    test
+  </button>
 </div>
 `;

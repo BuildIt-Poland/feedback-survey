@@ -5,12 +5,6 @@ import SurveyField from '../SurveyField';
 
 describe('COMPONENT - SurveyField', () => {
   it('renders correctly', () => {
-    const component = create(<SurveyField />);
-
-    expect(component.toJSON()).toMatchSnapshot();
-  });
-
-  it('renders correctly with field', () => {
     const field = {
       id: '123',
       content: 'Question content',

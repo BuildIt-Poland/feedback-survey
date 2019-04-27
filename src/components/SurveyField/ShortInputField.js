@@ -2,6 +2,7 @@ import React from 'react';
 import { FormField } from 'grommet';
 
 import { fontWeightNormal, colorWhite } from '../../styles/variables';
+import { formField } from '../../types';
 
 export const inputTheme = {
   global: {
@@ -17,17 +18,13 @@ export const inputTheme = {
 };
 
 const ShortInputField = ({ field }) => {
-  if (!field) {
-    return null;
-  }
   return (
-    <FormField
-      name={field.id.toString()}
-      label={field.content}
-      required={field.required}
-      placeholder="Type your answer here"
-    />
+    <FormField name={field.id} label={field.content} required={field.required} placeholder="Type your answer here" />
   );
+};
+
+ShortInputField.propTypes = {
+  field: formField.isRequired
 };
 
 export default ShortInputField;

@@ -1,8 +1,10 @@
 import React from 'react';
+import { arrayOf } from 'prop-types';
 import styled from 'styled-components';
 import { Grommet } from 'grommet';
 
 import { spacingLarge, fontMedium, spacingMedium } from '../../styles/variables';
+import { formField, answerType } from '../../types';
 import RatingField from './RatingField';
 import ShortInputField from './ShortInputField';
 import LongInputField from './LongInputField';
@@ -25,16 +27,16 @@ const theme = {
   }
 };
 
-const renderImageOption = option => <img width="50" src={'./image/' + option.toLowerCase() + '.svg'} alt={option} />;
+const renderImageOption = option => <img width="50" src={`./image/${option.toLowerCase()}.svg`} alt={option} />;
 
 const getAnswerTypes = (array, answerType) => array.find(item => item.type === answerType).values;
 
-const buildAnswerTypes = (field, answerTypes) => {
-  const types = getAnswerTypes(answerTypes, field.answerType);
+const buildAnswerTypes = ({ answerType, type, id }, answerTypes) => {
+  const types = getAnswerTypes(answerTypes, answerType);
   return types.map(option => {
-    const label = field.type === 'rating' ? renderImageOption(option) : option;
+    const label = type === 'rating' ? renderImageOption(option) : option;
     return {
-      id: option + '_' + field.id,
+      id: `${option}_${id}`,
       value: option,
       label
     };
@@ -62,14 +64,16 @@ const renderFieldByType = (field, answerTypes) => {
 };
 
 const SurveyField = ({ field, answerTypes }) => {
-  if (!field) {
-    return null;
-  }
   return (
     <Grommet theme={theme}>
       <Wrapper>{renderFieldByType(field, answerTypes)}</Wrapper>
     </Grommet>
   );
+};
+
+SurveyField.propTypes = {
+  field: formField.isRequired,
+  answerTypes: arrayOf(answerType)
 };
 
 export default SurveyField;

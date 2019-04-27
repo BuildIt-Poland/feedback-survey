@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes, { object } from 'prop-types';
 import { Box, Heading, Paragraph, Grommet } from 'grommet';
 
 import { colorRed } from '../../styles/variables';
@@ -19,13 +20,12 @@ const renderFinalMessage = location => {
         Thank you!
       </Heading>
     );
-  } else {
-    return (
-      <Paragraph color={colorRed} textAlign="center">
-        Error occured :( {location.state.error}
-      </Paragraph>
-    );
   }
+  return (
+    <Paragraph color={colorRed} textAlign="center">
+      Error occured :( {location.state.error}
+    </Paragraph>
+  );
 };
 
 const FinalPage = ({ location }) => {
@@ -36,6 +36,10 @@ const FinalPage = ({ location }) => {
       </Box>
     </Grommet>
   );
+};
+
+FinalPage.propTypes = {
+  location: PropTypes.shape({ state: object.isRequired })
 };
 
 export default FinalPage;

@@ -5,14 +5,9 @@ import RatingField from '../RatingField';
 
 describe('COMPONENT - SurveyField RatingField', () => {
   it('does not render without field', () => {
-    const component = create(<RatingField />);
-
-    expect(component.toJSON()).toMatchSnapshot();
-  });
-
-  it('renders correctly with field', () => {
     const field = {
       id: '123',
+      type: 'rating',
       content: 'Question content',
       required: false,
       options: ['Bad', 'Average']

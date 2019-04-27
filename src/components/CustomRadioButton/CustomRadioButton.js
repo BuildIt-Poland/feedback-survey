@@ -1,5 +1,7 @@
 import React from 'react';
+import { bool, string } from 'prop-types';
 
+import { radioOption } from '../../types';
 import InputRadio from './InputRadio';
 import LabelIcon from './LabelIcon';
 import LabelText from './LabelText';
@@ -7,13 +9,20 @@ import LabelText from './LabelText';
 const renderLabel = (label, id, withIcon) =>
   withIcon ? <LabelIcon htmlFor={id}>{label}</LabelIcon> : <LabelText htmlFor={id}>{label}</LabelText>;
 
-const CustomRadioButton = ({ name, value, label, id, withIcon }) => {
+const CustomRadioButton = ({ radio, name, withIcon }) => {
+  const { value, label, id } = radio;
   return (
     <>
       <InputRadio type="radio" name={name} value={value} id={id} />
       {renderLabel(label, id, withIcon)}
     </>
   );
+};
+
+CustomRadioButton.propTypes = {
+  radio: radioOption.isRequired,
+  name: string.isRequired,
+  withIcon: bool.isRequired
 };
 
 export default CustomRadioButton;

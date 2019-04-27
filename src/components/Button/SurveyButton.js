@@ -1,5 +1,7 @@
 import React from 'react';
 import { Grommet, Button } from 'grommet';
+import { string } from 'prop-types';
+
 import { colorBlue, colorWhite, spacingLarge, spacingXLarge, fontMedium, fontWeightBold } from '../../styles/variables';
 
 const theme = {
@@ -26,12 +28,21 @@ const theme = {
   }
 };
 
-const SurveyButton = ({ label, type }) => {
+const SurveyButton = ({ label, buttonType }) => {
   return (
     <Grommet theme={theme}>
-      <Button label={label} color={colorBlue} type={type} hoverIndicator="background" size="large" />
+      <Button label={label} color={colorBlue} type={buttonType} hoverIndicator="background" size="large" />
     </Grommet>
   );
+};
+
+SurveyButton.defaultProps = {
+  buttonType: 'button'
+};
+
+SurveyButton.protoTypes = {
+  label: string.isRequired,
+  buttonType: string
 };
 
 export default SurveyButton;
