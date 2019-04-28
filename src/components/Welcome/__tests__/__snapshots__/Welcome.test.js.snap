@@ -40,7 +40,7 @@ exports[`COMPONENT - Welcome renders correctly with params 1`] = `
       </p>
     </section>
     <Link
-      to="/survey/12345/John"
+      to="/survey"
     >
       <div
         className="StyledGrommet-sc-19lkkz7-0 eUfLDp"

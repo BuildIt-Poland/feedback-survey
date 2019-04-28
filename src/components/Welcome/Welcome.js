@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Box, Heading, Grommet } from 'grommet';
 
 import { spacingSmall, spacingLarge, fontXLarge, fontLarge } from '../../styles/variables';
@@ -35,35 +35,31 @@ const theme = {
   }
 };
 
-class Welcome extends React.Component {
-  state = { surveyId: '', clientName: '' };
+const Welcome = ({ match }) => {
+  const [surveyId, setSurveyID] = useState('');
+  const [clientName, setClientName] = useState('');
+  const [path, setPath] = useState('');
 
-  componentDidMount() {
-    const { surveyId, clientName } = this.props.match.params;
-    this.setState({
-      surveyId,
-      clientName
-    });
-  }
+  useEffect(() => {
+    setSurveyID(match.params.surveyId);
+    setClientName(match.params.clientName);
+    setPath(surveyId && clientName ? `/survey/${surveyId}/${clientName}` : '/survey');
+  });
 
-  render() {
-    const { surveyId, clientName } = this.state;
-    const path = surveyId && clientName ? `/survey/${surveyId}/${clientName}` : '/survey';
-    return (
-      <Grommet theme={theme}>
-        <Box align="center" justify="center" pad="medium" height="100vh">
-          <Heading level="1" margin={{ bottom: 'none' }}>
-            Performance Snapshot on RSR Consultant:
-          </Heading>
-          <Heading level="2" margin={{ top: spacingSmall, bottom: spacingLarge }}>
-            {clientName}
-          </Heading>
-          <Agreed />
-          <LinkButton linkTo={path} label="start" />
-        </Box>
-      </Grommet>
-    );
-  }
-}
+  return (
+    <Grommet theme={theme}>
+      <Box align="center" justify="center" pad="medium" height="100vh">
+        <Heading level="1" margin={{ bottom: 'none' }}>
+          Performance Snapshot on RSR Consultant:
+        </Heading>
+        <Heading level="2" margin={{ top: spacingSmall, bottom: spacingLarge }}>
+          {clientName}
+        </Heading>
+        <Agreed />
+        <LinkButton linkTo={path} label="start" />
+      </Box>
+    </Grommet>
+  );
+};
 
 export default Welcome;
