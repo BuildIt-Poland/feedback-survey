@@ -63,13 +63,11 @@ const renderFieldByType = (field, answerTypes) => {
   }
 };
 
-const SurveyField = ({ field, answerTypes }) => {
-  return (
-    <Grommet theme={theme}>
-      <Wrapper>{renderFieldByType(field, answerTypes)}</Wrapper>
-    </Grommet>
-  );
-};
+const SurveyField = ({ field, answerTypes }) => (
+  <Grommet theme={theme}>
+    <Wrapper>{renderFieldByType(field, answerTypes)}</Wrapper>
+  </Grommet>
+);
 
 SurveyField.propTypes = {
   field: formField.isRequired,

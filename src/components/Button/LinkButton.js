@@ -4,13 +4,11 @@ import { string } from 'prop-types';
 
 import SurveyButton from '.';
 
-const LinkButton = ({ linkTo, label }) => {
-  return (
-    <Link to={linkTo}>
-      <SurveyButton label={label} />
-    </Link>
-  );
-};
+const LinkButton = ({ linkTo, label }) => (
+  <Link to={linkTo}>
+    <SurveyButton label={label} />
+  </Link>
+);
 
 LinkButton.propTypes = {
   linkTo: string.isRequired,

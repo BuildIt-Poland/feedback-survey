@@ -17,11 +17,9 @@ export const inputTheme = {
   }
 };
 
-const ShortInputField = ({ field }) => {
-  return (
-    <FormField name={field.id} label={field.content} required={field.required} placeholder="Type your answer here" />
-  );
-};
+const ShortInputField = ({ field }) => (
+  <FormField name={field.id} label={field.content} required={field.required} placeholder="Type your answer here" />
+);
 
 ShortInputField.propTypes = {
   field: formField.isRequired

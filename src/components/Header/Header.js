@@ -13,14 +13,12 @@ const theme = {
   }
 };
 
-const Header = () => {
-  return (
-    <Grommet theme={theme}>
-      <Box background={colorDarkBlue}>
-        <img src={'/image/logo.svg'} alt="randstad logo" />
-      </Box>
-    </Grommet>
-  );
-};
+const Header = () => (
+  <Grommet theme={theme}>
+    <Box background={colorDarkBlue}>
+      <img src={'/image/logo.svg'} alt="randstad logo" />
+    </Box>
+  </Grommet>
+);
 
 export default Header;

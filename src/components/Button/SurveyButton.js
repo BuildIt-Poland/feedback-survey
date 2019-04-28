@@ -28,13 +28,11 @@ const theme = {
   }
 };
 
-const SurveyButton = ({ label, buttonType }) => {
-  return (
-    <Grommet theme={theme}>
-      <Button label={label} color={colorBlue} type={buttonType} hoverIndicator="background" size="large" />
-    </Grommet>
-  );
-};
+const SurveyButton = ({ label, buttonType }) => (
+  <Grommet theme={theme}>
+    <Button label={label} color={colorBlue} type={buttonType} hoverIndicator="background" size="large" />
+  </Grommet>
+);
 
 SurveyButton.defaultProps = {
   buttonType: 'button'

@@ -5,18 +5,16 @@ import { FormField } from 'grommet';
 import { formField } from '../../types';
 import CustomSelect from '../CustomSelect';
 
-const SelectField = ({ field, options }) => {
-  return (
-    <FormField
-      name={field.id}
-      label={field.content}
-      required={field.required}
-      component={CustomSelect}
-      options={options}
-      placeholder="Select"
-    />
-  );
-};
+const SelectField = ({ field, options }) => (
+  <FormField
+    name={field.id}
+    label={field.content}
+    required={field.required}
+    component={CustomSelect}
+    options={options}
+    placeholder="Select"
+  />
+);
 
 SelectField.propTypes = {
   field: formField.isRequired,
