@@ -2,14 +2,23 @@ import React from 'react';
 import { create } from 'react-test-renderer';
 
 import Survey from '../Survey';
+import { SurveyContext } from '../../../context/SurveyContext';
 
 describe('COMPONENT - Survey', () => {
   it('renders info message if there are no questions ', () => {
-    const data = {
-      questions: [],
-      answerTypes: []
+    const contextValue = {
+      data: {
+        questions: [],
+        answerTypes: []
+      },
+      isLoading: false,
+      error: null
     };
-    const component = create(<Survey data={data} />);
+    const component = create(
+      <SurveyContext.Provider value={contextValue}>
+        <Survey />
+      </SurveyContext.Provider>
+    );
 
     expect(component.toJSON()).toMatchSnapshot();
   });
@@ -33,7 +42,16 @@ describe('COMPONENT - Survey', () => {
         }
       ]
     };
-    const component = create(<Survey data={data} />);
+    const contextValue = {
+      data,
+      isLoading: false,
+      error: null
+    };
+    const component = create(
+      <SurveyContext.Provider value={contextValue}>
+        <Survey />
+      </SurveyContext.Provider>
+    );
 
     expect(component.toJSON()).toMatchSnapshot();
   });

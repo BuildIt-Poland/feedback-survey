@@ -1,8 +1,9 @@
 import React from 'react';
-import PropTypes, { object } from 'prop-types';
+import { string, bool } from 'prop-types';
 import { Box, Heading, Paragraph, Grommet } from 'grommet';
 
 import { colorRed } from '../../styles/variables';
+import { THANK_YOU, ERROR_OCCURED } from '../../constatnts/messages';
 
 const theme = {
   box: {
@@ -13,33 +14,32 @@ const theme = {
   }
 };
 
-const renderFinalMessage = location => {
-  if (location && location.state.success) {
+const renderFinalMessage = (success, errorMessage) => {
+  if (success) {
     return (
       <Heading level="1" textAlign="center">
-        Thank you!
+        {THANK_YOU}
       </Heading>
     );
   }
   return (
     <Paragraph color={colorRed} textAlign="center">
-      Error occured :( {location.state.error}
+      {`${ERROR_OCCURED}: ${errorMessage}`}
     </Paragraph>
   );
 };
 
-const FinalPage = ({ location }) => {
-  return (
-    <Grommet theme={theme}>
-      <Box align="center" justify="center" pad="medium" height="90vh">
-        {renderFinalMessage(location)}
-      </Box>
-    </Grommet>
-  );
-};
+const FinalPage = ({ success, errorMessage }) => (
+  <Grommet theme={theme}>
+    <Box align="center" justify="center" pad="medium" height="90vh">
+      {renderFinalMessage(success, errorMessage)}
+    </Box>
+  </Grommet>
+);
 
 FinalPage.propTypes = {
-  location: PropTypes.shape({ state: object.isRequired })
+  success: bool,
+  error: string
 };
 
 export default FinalPage;

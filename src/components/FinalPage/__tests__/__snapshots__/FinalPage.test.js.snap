@@ -1,6 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - FinalPage renders correctly 1`] = `
+exports[`COMPONENT - FinalPage renders correctly if submit fail 1`] = `
+<div
+  className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
+>
+  <div
+    className="StyledBox-sc-13pk1d4-0 fEZYsh"
+  >
+    <p
+      className="StyledParagraph-tbetod-0 igrAyj"
+    >
+      Error occured: undefined
+    </p>
+  </div>
+</div>
+`;
+
+exports[`COMPONENT - FinalPage renders correctly if submit success 1`] = `
 <div
   className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
 >
@@ -10,7 +26,7 @@ exports[`COMPONENT - FinalPage renders correctly 1`] = `
     <h1
       className="StyledHeading-sc-1rdh4aw-0 iDyXcl"
     >
-      Thank you!
+      Thank you for taking the time to complete this survey
     </h1>
   </div>
 </div>

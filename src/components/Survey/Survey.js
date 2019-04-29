@@ -1,96 +1,83 @@
-import React from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { Redirect } from 'react-router-dom';
-import { Form, Box, Heading } from 'grommet';
+import { Form, Box } from 'grommet';
 
 import { saveSurvey } from '../../services/api';
-import { surveyData } from '../../types';
+import { SurveyContext } from '../../context/SurveyContext';
+import { surveyMathParams } from '../../types';
+import { REQUIRED_FIELD, NO_QUESTIONS } from '../../constatnts/messages';
+import { FINAL_PATH } from '../../constatnts/routes';
 import SurveyField from '../SurveyField';
 import SurveyButton from '../Button';
+import Loading from '../Loading';
+import ErrorQuestionsMessage from './ErrorQuestionsMessage';
 
 const messages = {
-  required: 'This field is required'
+  required: REQUIRED_FIELD
 };
 
-class Survey extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      data: props.data,
-      submitted: false,
-      success: false,
-      error: null
+const renderFormFields = ({ questions, answerTypes }) => {
+  return questions.map((field, index) => <SurveyField key={index} field={field} answerTypes={answerTypes} />);
+};
+
+const Survey = ({ match }) => {
+  const surveyId = match ? match.params.surveyId : '';
+  const { data, isLoading, error } = useContext(SurveyContext);
+  const [surveyData, setSurveyData] = useState(data);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSuccessSave, setIsSuccessSave] = useState(false);
+  const [saveError, setSaveError] = useState(null);
+
+  useEffect(() => {
+    setSurveyData(data);
+  });
+
+  const handleSubmit = ({ value }) => {
+    const data = {
+      surveyId,
+      answers: value
     };
+    saveSurvey(data).then(res => setIsSuccessSave(true), err => setSaveError(err));
+    setIsSubmitted(true);
+  };
+
+  if (isLoading) {
+    return <Loading />;
   }
 
-  renderSurvey() {
-    const { submitted, success, error, data } = this.state;
+  if (error) {
+    return <ErrorQuestionsMessage message={error} />;
+  }
 
-    if (data && !data.questions.length) {
-      return (
-        <Box align="center" justify="center" pad="medium" height="90vh">
-          <Heading level="4" textAlign="center">
-            Oops, something went wrong, there is no questions
-          </Heading>
-        </Box>
-      );
-    }
-    if (submitted) {
-      return (
-        <Redirect
-          to={{
-            pathname: '/final',
-            state: { success, error }
-          }}
-        />
-      );
-    }
+  if (surveyData && !surveyData.questions.length) {
+    return <ErrorQuestionsMessage message={NO_QUESTIONS} />;
+  }
+
+  if (isSubmitted) {
     return (
-      <Box align="center" justify="center" pad="medium">
-        <Form onSubmit={this.handleSubmit} messages={messages}>
-          {this.renderFormFields(data)}
-          <Box align="center">
-            <SurveyButton buttonType="submit" label="submit" margin="xlarge" />
-          </Box>
-        </Form>
-      </Box>
+      <Redirect
+        to={{
+          pathname: FINAL_PATH,
+          state: { isSuccessSave, saveError }
+        }}
+      />
     );
   }
 
-  renderFormFields(data) {
-    return data.questions.map((field, index) => (
-      <SurveyField key={index} field={field} answerTypes={data.answerTypes} />
-    ));
-  }
-
-  handleSuccess = () => {
-    this.setState({
-      submitted: true,
-      success: true
-    });
-  };
-
-  handleError = ({ message }) => {
-    this.setState({
-      submitted: true,
-      error: message
-    });
-  };
-
-  handleSubmit = ({ value }) => {
-    const data = {
-      surveyId: this.props.match ? this.props.match.params.surveyId : '',
-      answers: value
-    };
-    saveSurvey(data).then(res => this.handleSuccess(), err => this.handleError(err));
-  };
-
-  render() {
-    return this.renderSurvey();
-  }
-}
+  return (
+    <Box align="center" justify="center" pad="medium">
+      <Form onSubmit={handleSubmit} messages={messages}>
+        {renderFormFields(surveyData)}
+        <Box align="center">
+          <SurveyButton buttonType="submit" label="submit" margin="xlarge" />
+        </Box>
+      </Form>
+    </Box>
+  );
+};
 
 Survey.propTypes = {
-  data: surveyData
+  match: surveyMathParams
 };
 
 export default Survey;

@@ -43,6 +43,8 @@
       "!src/serviceWorker.js",
       "!src/components/App/index.js",
       "!src/components/GlobalStyle/*",
+      "!src/context/*",
+      "!src/constants/*",
       "!src/styles/*"
     ]
   },

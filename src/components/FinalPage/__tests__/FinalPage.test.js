@@ -8,14 +8,14 @@ jest.mock('react-router-dom', () => ({
 }));
 
 describe('COMPONENT - FinalPage', () => {
-  it('renders correctly', () => {
-    const location = {
-      state: {
-        success: true
-      }
-    };
+  it('renders correctly if submit success', () => {
+    const component = create(<FinalPage success={true} />);
 
-    const component = create(<FinalPage location={location} />);
+    expect(component.toJSON()).toMatchSnapshot();
+  });
+
+  it('renders correctly if submit fail', () => {
+    const component = create(<FinalPage error="test message" />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });
