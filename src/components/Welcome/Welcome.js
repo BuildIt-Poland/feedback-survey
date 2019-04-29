@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Box, Heading, Grommet } from 'grommet';
 
-import { spacingSmall, spacingLarge, fontXLarge, fontLarge } from '../../styles/variables';
+import { spacingSmall, spacingLarge, fontXLarge, fontLarge } from '../../styles/designTokens';
 import Agreed from '../Agreed';
 import LinkButton from '../Button/LinkButton';
+import { surveyMathParams } from '../../types';
 
 const theme = {
   heading: {
@@ -60,6 +61,10 @@ const Welcome = ({ match }) => {
       </Box>
     </Grommet>
   );
+};
+
+Welcome.propTypes = {
+  match: surveyMathParams
 };
 
 export default Welcome;

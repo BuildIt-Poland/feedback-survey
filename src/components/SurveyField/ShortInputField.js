@@ -1,7 +1,7 @@
 import React from 'react';
 import { FormField } from 'grommet';
 
-import { fontWeightNormal, colorWhite } from '../../styles/variables';
+import { fontWeightNormal, colorWhite } from '../../styles/designTokens';
 import { formField } from '../../types';
 
 export const inputTheme = {

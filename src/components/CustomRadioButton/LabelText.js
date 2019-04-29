@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { colorDarkBlue } from '../../styles/variables';
+import { colorDarkBlue } from '../../styles/designTokens';
 
 const LabelText = styled.label`
   width: 15rem;

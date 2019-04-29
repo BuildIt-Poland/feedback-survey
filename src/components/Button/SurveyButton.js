@@ -2,7 +2,14 @@ import React from 'react';
 import { Grommet, Button } from 'grommet';
 import { string } from 'prop-types';
 
-import { colorBlue, colorWhite, spacingLarge, spacingXLarge, fontMedium, fontWeightBold } from '../../styles/variables';
+import {
+  colorBlue,
+  colorWhite,
+  spacingLarge,
+  spacingXLarge,
+  fontMedium,
+  fontWeightBold
+} from '../../styles/designTokens';
 
 const theme = {
   button: {

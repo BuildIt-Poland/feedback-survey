@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Paragraph } from 'grommet';
 
-import { spacingLarge } from '../../styles/variables';
+import { spacingLarge } from '../../styles/designTokens';
 
 const Wrapper = styled.section`
   margin: ${spacingLarge} auto;

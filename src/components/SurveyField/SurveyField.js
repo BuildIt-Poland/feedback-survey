@@ -3,7 +3,7 @@ import { arrayOf } from 'prop-types';
 import styled from 'styled-components';
 import { Grommet } from 'grommet';
 
-import { spacingLarge, fontMedium, spacingMedium } from '../../styles/variables';
+import { spacingLarge, fontMedium, spacingMedium } from '../../styles/designTokens';
 import { formField, answerType } from '../../types';
 import RatingField from './RatingField';
 import ShortInputField from './ShortInputField';
@@ -13,6 +13,12 @@ import YesNoField from './YesNoField';
 
 const Wrapper = styled.div`
   margin: 5rem ${spacingLarge};
+  position: relative;
+
+  span[data-type='required-field'] {
+    position: absolute;
+    top: 0.3rem;
+  }
 `;
 
 const theme = {
@@ -63,9 +69,15 @@ const renderFieldByType = (field, answerTypes) => {
   }
 };
 
+const requiredField = ({ required }) => {
+  return required ? <span data-type="required-field">*</span> : null;
+};
+
 const SurveyField = ({ field, answerTypes }) => (
   <Grommet theme={theme}>
-    <Wrapper>{renderFieldByType(field, answerTypes)}</Wrapper>
+    <Wrapper>
+      {requiredField(field)} {renderFieldByType(field, answerTypes)}
+    </Wrapper>
   </Grommet>
 );
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { string } from 'prop-types';
 import { Box, Heading } from 'grommet';
 
-import { colorRed } from '../../styles/variables';
+import { colorRed } from '../../styles/designTokens';
 
 const ErrorQuestionsMessage = ({ message }) => (
   <Box align="center" justify="center" pad="medium" height="90vh">

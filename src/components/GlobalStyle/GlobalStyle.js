@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-import { fontWeightNormal, fontWeightBold, fontMedium, colorWhite, colorDarkBlue } from '../../styles/variables';
+import { fontWeightNormal, fontWeightBold, fontMedium, colorWhite, colorDarkBlue } from '../../styles/designTokens';
 
 const GlobalStyle = createGlobalStyle`
   html {

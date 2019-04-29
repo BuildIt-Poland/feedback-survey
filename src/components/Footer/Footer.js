@@ -1,6 +1,7 @@
 import React from 'react';
 import { Grommet, Box, Text } from 'grommet';
-import { colorDarkBlue, fontSmall } from '../../styles/variables';
+
+import { colorDarkBlue, fontSmall } from '../../styles/designTokens';
 
 const theme = {
   text: {

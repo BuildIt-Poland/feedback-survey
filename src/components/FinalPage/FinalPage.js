@@ -2,7 +2,7 @@ import React from 'react';
 import { string, bool } from 'prop-types';
 import { Box, Heading, Paragraph, Grommet } from 'grommet';
 
-import { colorRed } from '../../styles/variables';
+import { colorRed } from '../../styles/designTokens';
 import { THANK_YOU, ERROR_OCCURED } from '../../constatnts/messages';
 
 const theme = {
