@@ -76,7 +76,9 @@ exports[`COMPONENT - Welcome renders correctly without params 1`] = `
     </h1>
     <h2
       className="StyledHeading-sc-1rdh4aw-0 fDHdzw"
-    />
+    >
+      
+    </h2>
     <section
       className="sc-bdVaJa gPpPXU"
     >

@@ -4,7 +4,7 @@ import { Box, Heading, Grommet } from 'grommet';
 import { spacingSmall, spacingLarge, fontXLarge, fontLarge } from '../../styles/designTokens';
 import Agreed from '../Agreed';
 import LinkButton from '../Button/LinkButton';
-import { surveyMathParams } from '../../types';
+import { surveyMatchParams } from '../../types';
 
 const theme = {
   heading: {
@@ -36,14 +36,14 @@ const theme = {
   }
 };
 
-const Welcome = ({ match }) => {
+const Welcome = ({ match = { params: {} } }) => {
   const [surveyId, setSurveyID] = useState('');
   const [clientName, setClientName] = useState('');
   const [path, setPath] = useState('');
 
   useEffect(() => {
-    setSurveyID(match.params.surveyId);
-    setClientName(match.params.clientName);
+    setSurveyID(match.params.surveyId ? match.params.surveyId : '');
+    setClientName(match.params.clientName ? match.params.clientName : '');
     setPath(surveyId && clientName ? `/survey/${surveyId}/${clientName}` : '/survey');
   });
 
@@ -64,7 +64,7 @@ const Welcome = ({ match }) => {
 };
 
 Welcome.propTypes = {
-  match: surveyMathParams
+  match: surveyMatchParams
 };
 
 export default Welcome;

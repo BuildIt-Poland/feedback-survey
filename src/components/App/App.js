@@ -13,7 +13,7 @@ import Main from './Main';
 import Welcome from '../Welcome';
 
 const App = () => {
-  const fetchData = useFetch(null);
+  const fetchData = useFetch();
 
   return (
     <SurveyContext.Provider value={fetchData}>

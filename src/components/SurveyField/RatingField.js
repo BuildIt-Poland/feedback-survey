@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { arrayOf } from 'prop-types';
 
 import { formField, radioOption } from '../../types';
 import CustomRadioButtonGroup from '../CustomRadioButtonGroup';
@@ -20,7 +20,7 @@ const RatingField = ({ field, options }) => (
 
 RatingField.propTypes = {
   field: formField.isRequired,
-  options: PropTypes.arrayOf(radioOption)
+  options: arrayOf(radioOption).isRequired
 };
 
 export default RatingField;

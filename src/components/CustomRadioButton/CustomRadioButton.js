@@ -6,10 +6,13 @@ import InputRadio from './InputRadio';
 import LabelIcon from './LabelIcon';
 import LabelText from './LabelText';
 
-const renderLabel = (label, id, withIcon) =>
-  withIcon ? <LabelIcon htmlFor={id}>{label}</LabelIcon> : <LabelText htmlFor={id}>{label}</LabelText>;
+const renderLabel = (label, id, withIcon) => {
+  const LabelComponent = withIcon ? LabelIcon : LabelText;
 
-const CustomRadioButton = ({ radio, name, withIcon }) => {
+  return <LabelComponent htmlFor={id}>{label}</LabelComponent>;
+};
+
+const CustomRadioButton = ({ radio, name, withIcon = false }) => {
   const { value, label, id } = radio;
   return (
     <>
@@ -22,7 +25,7 @@ const CustomRadioButton = ({ radio, name, withIcon }) => {
 CustomRadioButton.propTypes = {
   radio: radioOption.isRequired,
   name: string.isRequired,
-  withIcon: bool.isRequired
+  withIcon: bool
 };
 
 export default CustomRadioButton;

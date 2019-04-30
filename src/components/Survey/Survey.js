@@ -4,7 +4,7 @@ import { Form, Box } from 'grommet';
 
 import { saveSurvey } from '../../services/api';
 import { SurveyContext } from '../../context/SurveyContext';
-import { surveyMathParams } from '../../types';
+import { surveyMatchParams } from '../../types';
 import { REQUIRED_FIELD, NO_QUESTIONS } from '../../constatnts/messages';
 import { FINAL_PATH } from '../../constatnts/routes';
 import SurveyField from '../SurveyField';
@@ -16,19 +16,19 @@ const messages = {
   required: REQUIRED_FIELD
 };
 
-const renderFormFields = ({ questions, answerTypes }) => {
-  return questions.map((field, index) => <SurveyField key={index} field={field} answerTypes={answerTypes} />);
-};
+const renderFormFields = ({ questions, answerTypes }) =>
+  questions.map((field, index) => <SurveyField key={index} field={field} answerTypes={answerTypes} />);
 
-const Survey = ({ match }) => {
-  const surveyId = match ? match.params.surveyId : '';
+const Survey = ({ match = { params: {} } }) => {
+  const [surveyId, setSurveyID] = useState('');
   const { data, isLoading, error } = useContext(SurveyContext);
   const [surveyData, setSurveyData] = useState(data);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSuccessSave, setIsSuccessSave] = useState(false);
-  const [saveError, setSaveError] = useState(null);
+  const [saveError, setSaveError] = useState('');
 
   useEffect(() => {
+    setSurveyID(match.params.surveyId ? match.params.surveyId : '');
     setSurveyData(data);
   });
 
@@ -37,8 +37,19 @@ const Survey = ({ match }) => {
       surveyId,
       answers: value
     };
-    saveSurvey(data).then(res => setIsSuccessSave(true), err => setSaveError(err));
-    setIsSubmitted(true);
+
+    const saveData = async () => {
+      try {
+        await saveSurvey(data);
+        setIsSuccessSave(true);
+      } catch (error) {
+        setSaveError(error.message);
+      }
+
+      setIsSubmitted(true);
+    };
+
+    saveData();
   };
 
   if (isLoading) {
@@ -77,7 +88,7 @@ const Survey = ({ match }) => {
 };
 
 Survey.propTypes = {
-  match: surveyMathParams
+  match: surveyMatchParams
 };
 
 export default Survey;

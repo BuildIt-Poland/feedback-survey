@@ -5,8 +5,7 @@ import ErrorQuestionsMessage from '../ErrorQuestionsMessage';
 
 describe('COMPONENT - ErrorQuestionsMessage', () => {
   it('renders correctly', () => {
-    const message = 'Test error message';
-    const component = create(<ErrorQuestionsMessage message={message} />);
+    const component = create(<ErrorQuestionsMessage />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

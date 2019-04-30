@@ -1,3 +1,1 @@
-import CustomRadioButtonGroup from './CustomRadioButtonGroup';
-
-export default CustomRadioButtonGroup;
+export { default } from './CustomRadioButtonGroup';

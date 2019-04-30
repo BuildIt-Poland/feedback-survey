@@ -1,3 +1,1 @@
-import SurveyButton from './SurveyButton';
-
-export default SurveyButton;
+export { default } from './SurveyButton';

@@ -1,3 +1,1 @@
-import SurveyField from './SurveyField';
-
-export default SurveyField;
+export { default } from './SurveyField';

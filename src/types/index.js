@@ -25,7 +25,7 @@ export const surveyData = shape({
   answerTypes: arrayOf(answerType)
 });
 
-export const surveyMathParams = shape({
+export const surveyMatchParams = shape({
   params: shape({
     surveyId: string
   })

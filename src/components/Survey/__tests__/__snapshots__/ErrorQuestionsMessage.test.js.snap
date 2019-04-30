@@ -7,7 +7,7 @@ exports[`COMPONENT - ErrorQuestionsMessage renders correctly 1`] = `
   <h4
     className="StyledHeading-sc-1rdh4aw-0 btqNMh"
   >
-    Test error message
+    Oops, something went wrong.
   </h4>
 </div>
 `;

@@ -11,8 +11,7 @@ describe('COMPONENT - CustomRadioButton', () => {
         label: 'label123',
         value: 'value123'
       },
-      name: 'name123',
-      withIcon: false
+      name: 'name123'
     };
     const component = create(<CustomRadioButton {...props} />);
 

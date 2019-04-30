@@ -69,9 +69,7 @@ const renderFieldByType = (field, answerTypes) => {
   }
 };
 
-const requiredField = ({ required }) => {
-  return required ? <span data-type="required-field">*</span> : null;
-};
+const requiredField = ({ required }) => (required ? <span data-type="required-field">*</span> : null);
 
 const SurveyField = ({ field, answerTypes }) => (
   <Grommet theme={theme}>

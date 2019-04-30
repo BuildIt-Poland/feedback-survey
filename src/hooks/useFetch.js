@@ -2,24 +2,27 @@ import { useEffect, useState } from 'react';
 
 import { fetchQuestions } from '../services/api';
 
-export const useFetch = prevData => {
+export const useFetch = (prevData = []) => {
   const [data, setData] = useState({ questions: [], answerTypes: {} });
   const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState('');
 
   useEffect(() => {
-    setIsLoading(true);
-    fetchQuestions().then(
-      res => {
-        setData(res.data);
-        setIsLoading(false);
-      },
-      err => {
-        setIsLoading(false);
-        setError(err.message);
+    const fetchData = async () => {
+      setIsLoading(true);
+
+      try {
+        const result = await fetchQuestions();
+        setData(result.data);
+      } catch (error) {
+        setError(error.message);
       }
-    );
-  }, [prevData]);
+
+      setIsLoading(false);
+    };
+
+    fetchData();
+  }, prevData);
 
   return { data, isLoading, error };
 };

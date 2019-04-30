@@ -12,7 +12,7 @@ describe('COMPONENT - Survey', () => {
         answerTypes: []
       },
       isLoading: false,
-      error: null
+      error: ''
     };
     const component = create(
       <SurveyContext.Provider value={contextValue}>
@@ -45,7 +45,7 @@ describe('COMPONENT - Survey', () => {
     const contextValue = {
       data,
       isLoading: false,
-      error: null
+      error: ''
     };
     const component = create(
       <SurveyContext.Provider value={contextValue}>

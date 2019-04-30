@@ -21,10 +21,7 @@ describe('COMPONENT - Welcome', () => {
   });
 
   it('renders correctly without params', () => {
-    const match = {
-      params: {}
-    };
-    const component = create(<Welcome match={match} />);
+    const component = create(<Welcome />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });
