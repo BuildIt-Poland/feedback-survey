@@ -1,6 +1,6 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { Redirect } from 'react-router-dom';
-import { Form, Box } from 'grommet';
+import { Form, Box, Heading } from 'grommet';
 
 import { saveSurvey } from '../../services/api';
 import { SurveyContext } from '../../context/SurveyContext';
@@ -11,6 +11,8 @@ import SurveyField from '../SurveyField';
 import SurveyButton from '../Button';
 import Loading from '../Loading';
 import ErrorQuestionsMessage from './ErrorQuestionsMessage';
+import Overlay from '../Overlay';
+import { colorWhite } from '../../styles/designTokens';
 
 const messages = {
   required: REQUIRED_FIELD
@@ -19,11 +21,27 @@ const messages = {
 const renderFormFields = ({ questions, answerTypes }) =>
   questions.map((field, index) => <SurveyField key={index} field={field} answerTypes={answerTypes} />);
 
+const renderPendingSave = isSubmitting => {
+  if (!isSubmitting) {
+    return null;
+  }
+  return (
+    <Overlay>
+      <Box animation="pulse" align="center" justify="center" pad="medium" height="90vh">
+        <Heading level="2" color={colorWhite}>
+          Saving survey...
+        </Heading>
+      </Box>
+    </Overlay>
+  );
+};
+
 const Survey = ({ match = { params: {} } }) => {
   const [surveyId, setSurveyID] = useState('');
   const { data, isLoading, error } = useContext(SurveyContext);
   const [surveyData, setSurveyData] = useState(data);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccessSave, setIsSuccessSave] = useState(false);
   const [saveErrorMessage, setSaveErrorMessage] = useState('');
 
@@ -33,6 +51,7 @@ const Survey = ({ match = { params: {} } }) => {
   });
 
   const handleSubmit = ({ value }) => {
+    setIsSubmitting(true);
     const data = {
       surveyId,
       answers: value
@@ -45,7 +64,7 @@ const Survey = ({ match = { params: {} } }) => {
       } catch (error) {
         setSaveErrorMessage(error.message);
       }
-
+      setIsSubmitting(false);
       setIsSubmitted(true);
     };
 
@@ -64,7 +83,7 @@ const Survey = ({ match = { params: {} } }) => {
     return <ErrorQuestionsMessage message={NO_QUESTIONS} />;
   }
 
-  if (isSubmitted) {
+  if (isSubmitted && !isSubmitting) {
     return (
       <Redirect
         to={{
@@ -76,14 +95,17 @@ const Survey = ({ match = { params: {} } }) => {
   }
 
   return (
-    <Box align="center" justify="center" alignSelf="center" pad="medium" width="70%">
-      <Form onSubmit={handleSubmit} messages={messages}>
-        {renderFormFields(surveyData)}
-        <Box align="center">
-          <SurveyButton buttonType="submit" label="submit" margin="xlarge" />
-        </Box>
-      </Form>
-    </Box>
+    <>
+      {renderPendingSave(isSubmitting)}
+      <Box align="center" justify="center" alignSelf="center" pad="medium" width="70%">
+        <Form onSubmit={handleSubmit} messages={messages}>
+          {renderFormFields(surveyData)}
+          <Box align="center">
+            <SurveyButton buttonType="submit" label="submit" margin="xlarge" />
+          </Box>
+        </Form>
+      </Box>
+    </>
   );
 };
 
