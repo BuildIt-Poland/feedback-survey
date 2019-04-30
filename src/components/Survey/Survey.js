@@ -25,7 +25,7 @@ const Survey = ({ match = { params: {} } }) => {
   const [surveyData, setSurveyData] = useState(data);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSuccessSave, setIsSuccessSave] = useState(false);
-  const [saveError, setSaveError] = useState('');
+  const [saveErrorMessage, setSaveErrorMessage] = useState('');
 
   useEffect(() => {
     setSurveyID(match.params.surveyId ? match.params.surveyId : '');
@@ -43,7 +43,7 @@ const Survey = ({ match = { params: {} } }) => {
         await saveSurvey(data);
         setIsSuccessSave(true);
       } catch (error) {
-        setSaveError(error.message);
+        setSaveErrorMessage(error.message);
       }
 
       setIsSubmitted(true);
@@ -69,7 +69,7 @@ const Survey = ({ match = { params: {} } }) => {
       <Redirect
         to={{
           pathname: FINAL_PATH,
-          state: { isSuccessSave, saveError }
+          state: { isSuccessSave, saveErrorMessage }
         }}
       />
     );

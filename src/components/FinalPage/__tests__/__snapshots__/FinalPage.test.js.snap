@@ -10,7 +10,7 @@ exports[`COMPONENT - FinalPage renders correctly if submit fail 1`] = `
     <p
       className="StyledParagraph-tbetod-0 igrAyj"
     >
-      Error occured: undefined
+      Error occured: error occured
     </p>
   </div>
 </div>

@@ -30,3 +30,10 @@ export const surveyMatchParams = shape({
     surveyId: string
   })
 });
+
+export const finalLocationState = shape({
+  state: shape({
+    isSuccessSave: bool,
+    saveErrorMessage: string
+  }).isRequired
+});
