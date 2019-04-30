@@ -6,7 +6,7 @@ const InputRadio = styled.input`
   width: 0;
 
   &:not(:checked) + label {
-    opacity: 0.6;
+    opacity: 0.5;
   }
 
   &:not(:checked) + label:hover {

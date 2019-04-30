@@ -2,7 +2,7 @@
 
 exports[`COMPONENT - SurveyField RatingField does not render without field 1`] = `
 <div
-  className="FormField__FormFieldBox-m9hood-0 eshLKp StyledBox-sc-13pk1d4-0 CAsMy"
+  className="sc-bxivhb wEEKp FormField__FormFieldBox-m9hood-0 eshLKp StyledBox-sc-13pk1d4-0 CAsMy"
 >
   <label
     className="StyledText-sc-1sadyjn-0 bMXxti"

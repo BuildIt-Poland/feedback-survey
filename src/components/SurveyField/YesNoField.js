@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { FormField } from 'grommet';
 
 import { formField, radioOption } from '../../types';
 import CustomRadioButtonGroup from '../CustomRadioButtonGroup';
+import StyledFormField from './StyledFormField';
 
 const YesNoField = ({ field, options }) => (
-  <FormField
+  <StyledFormField
     name={field.id}
     label={field.content}
     required={field.required}

@@ -3,7 +3,7 @@
 exports[`COMPONENT - CustomRadioButton renders correctly 1`] = `
 Array [
   <input
-    className="sc-bdVaJa hoFWaF"
+    className="sc-bdVaJa gSiMpJ"
     id="123"
     name="name123"
     type="radio"
@@ -21,7 +21,7 @@ Array [
 exports[`COMPONENT - CustomRadioButton renders correctly with icon 1`] = `
 Array [
   <input
-    className="sc-bdVaJa hoFWaF"
+    className="sc-bdVaJa gSiMpJ"
     id="123"
     name="name123"
     type="radio"

@@ -41,7 +41,7 @@ exports[`COMPONENT - App renders correctly /final route 1`] = `
             className="StyledHeading-sc-1rdh4aw-0 fDHdzw"
           />
           <section
-            className="sc-ifAKCX koMkwN"
+            className="sc-EHOje cZcMEb"
           >
             <p
               className="StyledParagraph-tbetod-0 hAoEMb"
@@ -148,7 +148,7 @@ exports[`COMPONENT - App renders correctly default route 1`] = `
             className="StyledHeading-sc-1rdh4aw-0 fDHdzw"
           />
           <section
-            className="sc-ifAKCX koMkwN"
+            className="sc-EHOje cZcMEb"
           >
             <p
               className="StyledParagraph-tbetod-0 hAoEMb"
@@ -255,7 +255,7 @@ exports[`COMPONENT - App renders correctly survey route 1`] = `
             className="StyledHeading-sc-1rdh4aw-0 fDHdzw"
           />
           <section
-            className="sc-ifAKCX koMkwN"
+            className="sc-EHOje cZcMEb"
           >
             <p
               className="StyledParagraph-tbetod-0 hAoEMb"

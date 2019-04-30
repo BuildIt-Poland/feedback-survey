@@ -65,7 +65,7 @@ const Survey = ({ match }) => {
   }
 
   return (
-    <Box align="center" justify="center" pad="medium">
+    <Box align="center" justify="center" alignSelf="center" pad="medium" width="70%">
       <Form onSubmit={handleSubmit} messages={messages}>
         {renderFormFields(surveyData)}
         <Box align="center">

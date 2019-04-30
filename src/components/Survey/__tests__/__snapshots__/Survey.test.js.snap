@@ -2,7 +2,7 @@
 
 exports[`COMPONENT - Survey renders correctly 1`] = `
 <div
-  className="StyledBox-sc-13pk1d4-0 fRXgBr"
+  className="StyledBox-sc-13pk1d4-0 ioDukb"
 >
   <form
     onReset={[Function]}
@@ -12,7 +12,7 @@ exports[`COMPONENT - Survey renders correctly 1`] = `
       className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
     >
       <div
-        className="sc-bxivhb dfJOAE"
+        className="sc-ifAKCX jvIdsK"
       >
         <span
           data-type="required-field"
