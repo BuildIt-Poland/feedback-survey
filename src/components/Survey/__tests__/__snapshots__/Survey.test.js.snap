@@ -1,6 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - Survey renders correctly 1`] = `
+exports[`COMPONENT - Survey renders Loading component if data loading 1`] = `
+<div
+  className="StyledBox-sc-13pk1d4-0 hUosMD"
+>
+  <h4
+    className="StyledHeading-sc-1rdh4aw-0 hlZfma"
+  >
+    Loading...
+  </h4>
+</div>
+`;
+
+exports[`COMPONENT - Survey renders correctly with data 1`] = `
 <div
   className="StyledBox-sc-13pk1d4-0 ioDukb"
 >
@@ -14,11 +26,6 @@ exports[`COMPONENT - Survey renders correctly 1`] = `
       <div
         className="sc-ifAKCX jvIdsK"
       >
-        <span
-          data-type="required-field"
-        >
-          *
-        </span>
          
         <div
           className="FormField__FormFieldBox-m9hood-0 OcTuP StyledBox-sc-13pk1d4-0 CAsMy"
@@ -116,6 +123,18 @@ exports[`COMPONENT - Survey renders correctly 1`] = `
       </div>
     </div>
   </form>
+</div>
+`;
+
+exports[`COMPONENT - Survey renders error message 1`] = `
+<div
+  className="StyledBox-sc-13pk1d4-0 ePVEiU"
+>
+  <h4
+    className="StyledHeading-sc-1rdh4aw-0 btqNMh"
+  >
+    error message
+  </h4>
 </div>
 `;
 

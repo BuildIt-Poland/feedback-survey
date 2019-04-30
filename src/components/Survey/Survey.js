@@ -101,7 +101,7 @@ const Survey = ({ match = { params: {} } }) => {
         <Form onSubmit={handleSubmit} messages={messages}>
           {renderFormFields(surveyData)}
           <Box align="center">
-            <SurveyButton buttonType="submit" label="submit" margin="xlarge" />
+            <SurveyButton buttonType="submit" label="submit" margin="xlarge" data-test-id="survey-submit-button" />
           </Box>
         </Form>
       </Box>

@@ -20,7 +20,7 @@ export const saveSurvey = async function(data) {
     ...data,
     answers: preparedSurveyData(data.answers)
   };
-  const questions = await axios.post(`${API_URL}/saveSurvey`, parsedData);
+  const result = await axios.post(`${API_URL}/saveSurvey`, parsedData);
 
-  return questions;
+  return result;
 };
