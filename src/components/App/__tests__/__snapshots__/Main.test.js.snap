@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - App Main renders correctly 1`] = `
+<div
+  className="StyledGrid-sc-1wofa1l-0 jKsEMO"
+>
+  <div
+    className="StyledBox-sc-13pk1d4-0 egWecb"
+  >
+    <div
+      className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
+    >
+      <div
+        className="StyledBox-sc-13pk1d4-0 bNlcVt"
+      >
+        <img
+          alt="randstad logo"
+          src="/image/logo.svg"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="StyledBox-sc-13pk1d4-0 kIDBNV"
+  />
+  <div
+    className="StyledBox-sc-13pk1d4-0 fqJPBM"
+  >
+    <div
+      className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
+    >
+      <div
+        className="StyledBox-sc-13pk1d4-0 gQCTx"
+      >
+        <span
+          className="StyledText-sc-1sadyjn-0 hUyidw"
+          size="medium"
+        >
+          Randstad Sourceright (Hong Kong SAR) EA Licence No. 57155 | Randstad Sourceright (Singapore) EA
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

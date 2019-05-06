@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - ErrorQuestionsMessage renders correctly 1`] = `
+<div
+  className="StyledBox-sc-13pk1d4-0 ePVEiU"
+>
+  <h4
+    className="StyledHeading-sc-1rdh4aw-0 btqNMh"
+  >
+    Oops, something went wrong.
+  </h4>
+</div>
+`;

@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - CustomTextArea renders correctly 1`] = `
+<textarea
+  className="StyledTextArea-sc-17i3mwp-0 fUSzal"
+  onBlur={[Function]}
+  onFocus={[Function]}
+  onKeyDown={[Function]}
+/>
+`;
