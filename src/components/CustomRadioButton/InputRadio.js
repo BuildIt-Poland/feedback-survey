@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { colorDarkBlue, colorWhite, colorBlue } from '../../styles/designTokens';
+import { colorWhite, colorBlue, colorGray } from '../../styles/designTokens';
 
 const InputRadio = styled.input`
   visibility: hidden;
@@ -8,12 +8,12 @@ const InputRadio = styled.input`
   width: 0;
 
   &:not(:checked) + label {
-    color: ${colorDarkBlue};
-    border: ${props => (props.withIcon ? 'none' : `0.2rem ${colorDarkBlue} solid`)};
+    color: ${colorGray};
+    border: ${props => (props.withIcon ? 'none' : `0.2rem ${colorGray} solid`)};
   }
 
   &:not(:checked) + label svg {
-    fill: ${colorDarkBlue};
+    fill: ${colorGray};
   }
 
   &:not(:checked) + label:hover {
