@@ -16,7 +16,7 @@ const CustomRadioButton = ({ radio, name, withIcon = false }) => {
   const { value, label, id } = radio;
   return (
     <>
-      <InputRadio type="radio" name={name} value={value} id={id} />
+      <InputRadio withIcon={withIcon} type="radio" name={name} value={value} id={id} />
       {renderLabel(label, id, withIcon)}
     </>
   );

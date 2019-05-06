@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Box, Heading, Grommet } from 'grommet';
 
-import { spacingSmall, spacingLarge, fontXLarge, fontLarge } from '../../styles/designTokens';
+import { spacingSmall, spacingLarge, fontXLarge, fontLarge, colorRed } from '../../styles/designTokens';
 import Agreed from '../Agreed';
 import LinkButton from '../Button/LinkButton';
 import { surveyMatchParams } from '../../types';
 
 const theme = {
   heading: {
-    weight: 500,
+    weight: 400,
     level: {
       1: {
         medium: {
@@ -29,9 +29,10 @@ const theme = {
   },
   box: {
     extend: {
-      background: 'url("/image/human_in_hand.png") no-repeat',
+      background: 'url("/image/TextBalloons_illustration.png") no-repeat',
       'background-position-x': '1rem',
-      'background-position-y': 'calc(100% - 3rem)'
+      'background-position-y': 'calc(100% - 3rem)',
+      'background-size': '25rem'
     }
   }
 };
@@ -50,10 +51,10 @@ const Welcome = ({ match = { params: {} } }) => {
   return (
     <Grommet theme={theme}>
       <Box align="center" justify="center" pad="medium" height="100vh">
-        <Heading level="1" margin={{ bottom: 'none' }}>
+        <Heading level="1" margin={{ bottom: 'none' }} color={colorRed}>
           Performance Snapshot on RSR Consultant:
         </Heading>
-        <Heading level="2" margin={{ top: spacingSmall, bottom: spacingLarge }}>
+        <Heading level="2" margin={{ top: spacingSmall, bottom: spacingLarge }} color={colorRed}>
           {clientName}
         </Heading>
         <Agreed />

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Grommet, Box } from 'grommet';
 
 import { colorDarkBlue } from '../../styles/designTokens';
@@ -7,7 +8,8 @@ const theme = {
   box: {
     extend: {
       img: {
-        width: '24rem',
+        width: '40rem',
+        height: '5rem',
         margin: '1.5rem 3rem'
       }
     }
@@ -17,7 +19,9 @@ const theme = {
 const Header = () => (
   <Grommet theme={theme}>
     <Box background={colorDarkBlue}>
-      <img src={'/image/logo.svg'} alt="randstad logo" />
+      <Link to="/">
+        <img src={'/image/rsr_logo.svg'} alt="randstad sourceright logo" />
+      </Link>
     </Box>
   </Grommet>
 );

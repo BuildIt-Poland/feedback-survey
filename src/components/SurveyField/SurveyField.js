@@ -10,6 +10,7 @@ import ShortInputField from './ShortInputField';
 import LongInputField from './LongInputField';
 import SelectField from './SelectField';
 import YesNoField from './YesNoField';
+import RatingIcon from '../Icons/RatingIcon';
 
 const Wrapper = styled.div`
   margin: 5rem ${spacingLarge};
@@ -24,16 +25,20 @@ const Wrapper = styled.div`
 const theme = {
   formField: {
     extend: {
-      'font-weight': 400,
       label: {
         'font-size': fontMedium,
         'margin-bottom': spacingMedium
       }
     }
+  },
+  global: {
+    input: {
+      weight: '400'
+    }
   }
 };
 
-const renderImageOption = option => <img width="50" src={`./image/${option.toLowerCase()}.svg`} alt={option} />;
+const renderImageOption = option => <RatingIcon name={option.toLowerCase()} />;
 
 const getAnswerTypes = (array, answerType) => array.find(item => item.type === answerType).values;
 

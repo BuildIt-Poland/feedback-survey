@@ -6,6 +6,9 @@ import { THANK_YOU, ERROR_OCCURED } from '../../constatnts/messages';
 import { finalLocationState } from '../../types';
 
 const theme = {
+  heading: {
+    weight: '400'
+  },
   box: {
     extend: {
       background: 'url("/image/BinarycodeWithHearts.png") no-repeat',

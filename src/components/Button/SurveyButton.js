@@ -15,7 +15,7 @@ const theme = {
   button: {
     color: colorBlue,
     border: {
-      radius: '0',
+      radius: '1rem',
       color: colorBlue
     },
     extend: {
