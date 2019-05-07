@@ -5,27 +5,27 @@ exports[`COMPONENT - CustomRadioButtonGroup renders correctly 1`] = `
   className="StyledBox-sc-13pk1d4-0 cktZMM"
 >
   <input
-    className="sc-bdVaJa gSiMpJ"
+    className="sc-bdVaJa fSxYGG"
     id="test1"
     name="test"
     type="radio"
     value="test"
   />
   <label
-    className="sc-htpNat dkbVkt"
+    className="sc-htpNat ogKcV"
     htmlFor="test1"
   >
     label-test
   </label>
   <input
-    className="sc-bdVaJa gSiMpJ"
+    className="sc-bdVaJa fSxYGG"
     id="test2"
     name="test"
     type="radio"
     value="test"
   />
   <label
-    className="sc-htpNat dkbVkt"
+    className="sc-htpNat ogKcV"
     htmlFor="test2"
   >
     label-test
@@ -38,7 +38,7 @@ exports[`COMPONENT - CustomRadioButtonGroup renders correctly with icon 1`] = `
   className="StyledBox-sc-13pk1d4-0 cktZMM"
 >
   <input
-    className="sc-bdVaJa gSiMpJ"
+    className="sc-bdVaJa dhNOxq"
     id="test1"
     name="test"
     type="radio"
@@ -51,7 +51,7 @@ exports[`COMPONENT - CustomRadioButtonGroup renders correctly with icon 1`] = `
     label-test
   </label>
   <input
-    className="sc-bdVaJa gSiMpJ"
+    className="sc-bdVaJa dhNOxq"
     id="test2"
     name="test"
     type="radio"

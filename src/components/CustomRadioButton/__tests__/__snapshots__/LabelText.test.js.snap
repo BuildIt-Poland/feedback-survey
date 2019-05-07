@@ -2,6 +2,6 @@
 
 exports[`COMPONENT - CustomRadioButton LabelText renders correctly 1`] = `
 <label
-  className="sc-bdVaJa hxULHi"
+  className="sc-bdVaJa BHpxg"
 />
 `;

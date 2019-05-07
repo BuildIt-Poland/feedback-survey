@@ -24,9 +24,9 @@ exports[`COMPONENT - FinalPage renders correctly if submit success 1`] = `
     className="StyledBox-sc-13pk1d4-0 fEZYsh"
   >
     <h1
-      className="StyledHeading-sc-1rdh4aw-0 iDyXcl"
+      className="StyledHeading-sc-1rdh4aw-0 crmEnq"
     >
-      Thank you for taking the time to complete this survey
+      Thank you for taking the time to complete this survey.
     </h1>
   </div>
 </div>

@@ -5,15 +5,15 @@ exports[`COMPONENT - Welcome renders correctly with params 1`] = `
   className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
 >
   <div
-    className="StyledBox-sc-13pk1d4-0 lcYpOF"
+    className="StyledBox-sc-13pk1d4-0 gqlXXA"
   >
     <h1
-      className="StyledHeading-sc-1rdh4aw-0 jIghTj"
+      className="StyledHeading-sc-1rdh4aw-0 kXmYDA"
     >
       Performance Snapshot on RSR Consultant:
     </h1>
     <h2
-      className="StyledHeading-sc-1rdh4aw-0 fDHdzw"
+      className="StyledHeading-sc-1rdh4aw-0 krurNQ"
     >
       John
     </h2>
@@ -46,7 +46,7 @@ exports[`COMPONENT - Welcome renders correctly with params 1`] = `
         className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
       >
         <button
-          className="StyledButton-sc-323bzc-0 hlJKLl"
+          className="StyledButton-sc-323bzc-0 kOpYnn"
           onBlur={[Function]}
           onFocus={[Function]}
           onMouseOut={[Function]}
@@ -67,15 +67,15 @@ exports[`COMPONENT - Welcome renders correctly without params 1`] = `
   className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
 >
   <div
-    className="StyledBox-sc-13pk1d4-0 lcYpOF"
+    className="StyledBox-sc-13pk1d4-0 gqlXXA"
   >
     <h1
-      className="StyledHeading-sc-1rdh4aw-0 jIghTj"
+      className="StyledHeading-sc-1rdh4aw-0 kXmYDA"
     >
       Performance Snapshot on RSR Consultant:
     </h1>
     <h2
-      className="StyledHeading-sc-1rdh4aw-0 fDHdzw"
+      className="StyledHeading-sc-1rdh4aw-0 krurNQ"
     >
       
     </h2>
@@ -108,7 +108,7 @@ exports[`COMPONENT - Welcome renders correctly without params 1`] = `
         className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
       >
         <button
-          className="StyledButton-sc-323bzc-0 hlJKLl"
+          className="StyledButton-sc-323bzc-0 kOpYnn"
           onBlur={[Function]}
           onFocus={[Function]}
           onMouseOut={[Function]}
