@@ -9,4 +9,10 @@ describe('COMPONENT - CustomRadioButton LabelText', () => {
 
     expect(component.toJSON()).toMatchSnapshot();
   });
+
+  it('renders correctly with icon', () => {
+    const component = create(<LabelText withIcon={true} />);
+
+    expect(component.toJSON()).toMatchSnapshot();
+  });
 });

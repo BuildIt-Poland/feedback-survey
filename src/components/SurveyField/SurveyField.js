@@ -10,7 +10,6 @@ import ShortInputField from './ShortInputField';
 import LongInputField from './LongInputField';
 import SelectField from './SelectField';
 import YesNoField from './YesNoField';
-import RatingIcon from '../Icons/RatingIcon';
 
 const Wrapper = styled.div`
   margin: 5rem ${spacingLarge};
@@ -38,18 +37,15 @@ const theme = {
   }
 };
 
-const renderImageOption = option => <RatingIcon name={option.toLowerCase()} />;
-
 const getAnswerTypes = (array, answerType) => array.find(item => item.type === answerType).values;
 
 const buildAnswerTypes = ({ answerType, type, id }, answerTypes) => {
   const types = getAnswerTypes(answerTypes, answerType);
   return types.map(option => {
-    const label = type === 'rating' ? renderImageOption(option) : option;
     return {
       id: `${option}_${id}`,
       value: option,
-      label
+      label: option
     };
   });
 };

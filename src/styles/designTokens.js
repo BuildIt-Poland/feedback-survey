@@ -5,6 +5,7 @@ export const colorGray = '#D7D7D7';
 export const colorRed = '#E74536';
 export const colorWhite = '#FFFFFF';
 export const colorYellow = '#FFB50F';
+export const colorTurquoise = '#6BA5B4';
 
 // Spacing (mainly for paddings and margins)
 export const spacingXLarge = '6.5rem';

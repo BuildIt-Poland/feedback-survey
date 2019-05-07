@@ -5,7 +5,7 @@ import LabelIcon from '../LabelIcon';
 
 describe('COMPONENT - CustomRadioButton LabelIcon', () => {
   it('renders correctly', () => {
-    const component = create(<LabelIcon />);
+    const component = create(<LabelIcon label="test" />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });

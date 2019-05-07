@@ -7,9 +7,11 @@ import LabelIcon from './LabelIcon';
 import LabelText from './LabelText';
 
 const renderLabel = (label, id, withIcon) => {
-  const LabelComponent = withIcon ? LabelIcon : LabelText;
+  if (withIcon) {
+    return <LabelIcon htmlFor={id} label={label} />;
+  }
 
-  return <LabelComponent htmlFor={id}>{label}</LabelComponent>;
+  return <LabelText htmlFor={id}>{label}</LabelText>;
 };
 
 const CustomRadioButton = ({ radio, name, withIcon = false }) => {

@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { colorWhite, colorBlue } from '../../styles/designTokens';
+
 const LabelText = styled.label`
   width: 15rem;
   height: 4.8rem;
@@ -10,6 +12,18 @@ const LabelText = styled.label`
   cursor: pointer;
   margin: 0;
   border-radius: 1rem;
+
+  input:not(:checked) + & {
+    color: ${colorBlue};
+    border: ${props => (props.withIcon ? 'none' : `0.2rem ${colorBlue} solid`)};
+  }
+
+  input:not(:checked) + &:hover,
+  input:checked + & {
+    color: ${colorWhite};
+    background-color: ${props => (props.withIcon ? 'none' : `${colorBlue}`)};
+    border: ${props => (props.withIcon ? 'none' : `0.2rem ${colorBlue} solid`)};
+  }
 `;
 
 export default LabelText;
