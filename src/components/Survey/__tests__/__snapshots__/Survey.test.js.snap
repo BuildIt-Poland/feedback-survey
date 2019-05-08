@@ -24,11 +24,10 @@ exports[`COMPONENT - Survey renders correctly with data 1`] = `
       className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
     >
       <div
-        className="sc-ifAKCX jvIdsK"
+        className="sc-ifAKCX fAJNyp"
       >
-         
         <div
-          className="FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
+          className="sc-bxivhb iXwrOb FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
         >
           <label
             className="StyledText-sc-1sadyjn-0 bMXxti"

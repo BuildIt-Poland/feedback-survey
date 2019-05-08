@@ -1,9 +1,9 @@
 import React from 'react';
-import { arrayOf } from 'prop-types';
 import styled from 'styled-components';
+import { arrayOf } from 'prop-types';
 import { Grommet } from 'grommet';
 
-import { spacingLarge, fontMedium, spacingMedium } from '../../styles/designTokens';
+import { spacingLarge, fontMedium, spacingMedium, colorRed } from '../../styles/designTokens';
 import { formField, answerType } from '../../types';
 import RatingField from './RatingField';
 import ShortInputField from './ShortInputField';
@@ -18,6 +18,7 @@ const Wrapper = styled.div`
   span[data-type='required-field'] {
     position: absolute;
     top: 0.3rem;
+    color: ${colorRed};
   }
 `;
 
@@ -70,13 +71,9 @@ const renderFieldByType = (field, answerTypes) => {
   }
 };
 
-const requiredField = ({ required }) => (required ? <span data-type="required-field">*</span> : null);
-
 const SurveyField = ({ field, answerTypes }) => (
   <Grommet theme={theme}>
-    <Wrapper>
-      {requiredField(field)} {renderFieldByType(field, answerTypes)}
-    </Wrapper>
+    <Wrapper>{renderFieldByType(field, answerTypes)}</Wrapper>
   </Grommet>
 );
 

@@ -3,10 +3,17 @@ import { FormField } from 'grommet';
 
 const StyledFormField = styled(FormField)`
   div {
-    border-bottom: none;
+    ${props => (props.noBorderBottom ? 'border-bottom: none' : null)}
   }
   input {
     font-weight: 400;
+  }
+  label:first-child {
+    &:after {
+      color: red;
+      content: ${props => (props.required ? "'*'" : "''")};
+      margin-left: 0.5rem;
+    }
   }
 `;
 

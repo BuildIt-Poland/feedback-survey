@@ -13,6 +13,7 @@ const YesNoField = ({ field, options }) => (
     component={CustomRadioButtonGroup}
     options={options}
     width="medium"
+    noBorderBottom
   />
 );
 
