@@ -5,6 +5,7 @@ import { spacingSmall, spacingLarge, fontXLarge, fontLarge, colorRed } from '../
 import Agreed from '../Agreed';
 import LinkButton from '../Button/LinkButton';
 import { surveyMatchParams } from '../../types';
+import Page from '../Page';
 
 const theme = {
   heading: {
@@ -49,18 +50,20 @@ const Welcome = ({ match = { params: {} } }) => {
   });
 
   return (
-    <Grommet theme={theme}>
-      <Box align="center" justify="center" pad="medium" height="100vh">
-        <Heading level="1" margin={{ bottom: 'none' }} color={colorRed}>
-          Performance Snapshot on RSR Consultant:
-        </Heading>
-        <Heading level="2" margin={{ top: spacingSmall, bottom: spacingLarge }} color={colorRed}>
-          {clientName}
-        </Heading>
-        <Agreed />
-        <LinkButton linkTo={path} label="start" />
-      </Box>
-    </Grommet>
+    // <Grommet theme={theme}>
+    // <Page align="center" justify="center" pad="medium">
+    <Page>
+      <Heading level="1" margin={{ bottom: 'none' }} color={colorRed}>
+        Performance Snapshot on RSR Consultant:
+      </Heading>
+      <Heading level="2" margin={{ top: spacingSmall, bottom: spacingLarge }} color={colorRed}>
+        {clientName}
+      </Heading>
+      <Agreed />
+      <LinkButton linkTo={path} label="start" />
+    </Page>
+    // </Box>
+    // </Grommet>
   );
 };
 

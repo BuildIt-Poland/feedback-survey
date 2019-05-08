@@ -11,25 +11,32 @@ import Survey from '../Survey';
 import FinalPage from '../FinalPage';
 import Main from './Main';
 import Welcome from '../Welcome';
+import Header from '../Header';
+import Container from './Container';
+import Footer from '../Footer';
 
 const App = () => {
   const fetchData = useFetch();
 
   return (
-    <SurveyContext.Provider value={fetchData}>
-      <Router>
-        <Grommet theme={theme}>
-          <Main>
-            <GlobalStyle />
-            <Switch>
-              <Route exact path={SURVEY_PATH} component={Survey} />
-              <Route exact path={FINAL_PATH} component={FinalPage} />
-              <Route exact path={WELCOME_PATH} component={Welcome} />
-            </Switch>
-          </Main>
-        </Grommet>
-      </Router>
-    </SurveyContext.Provider>
+    <Router>
+      <Container>
+        <Header />
+        <Main>
+          <SurveyContext.Provider value={fetchData}>
+            <Grommet theme={theme}>
+              <GlobalStyle />
+              <Switch>
+                <Route exact path={SURVEY_PATH} component={Survey} />
+                <Route exact path={FINAL_PATH} component={FinalPage} />
+                <Route exact path={WELCOME_PATH} component={Welcome} />
+              </Switch>
+            </Grommet>
+          </SurveyContext.Provider>
+        </Main>
+        <Footer />
+      </Container>
+    </Router>
   );
 };
 

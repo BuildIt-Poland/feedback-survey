@@ -4,6 +4,7 @@ import { Box, Heading, Paragraph, Grommet } from 'grommet';
 import { colorRed } from '../../styles/designTokens';
 import { THANK_YOU, ERROR_OCCURED } from '../../constatnts/messages';
 import { finalLocationState } from '../../types';
+import Page from '../Page';
 
 const theme = {
   heading: {
@@ -33,11 +34,11 @@ const renderFinalMessage = (isSuccessSave, saveErrorMessage) => {
 };
 
 const FinalPage = ({ location }) => (
-  <Grommet theme={theme}>
-    <Box align="center" justify="center" pad="medium" height="90vh">
-      {renderFinalMessage(location.state.isSuccessSave, location.state.saveErrorMessage)}
-    </Box>
-  </Grommet>
+  // <Grommet theme={theme}>
+  // <Box align="center" justify="center" pad="medium" height="90vh">
+  <Page>{renderFinalMessage(location.state.isSuccessSave, location.state.saveErrorMessage)}</Page>
+  // </Box>
+  // </Grommet>
 );
 
 FinalPage.propTypes = {
