@@ -16,6 +16,7 @@ export const borderWidthThick = '2px';
 export const borderWidthThin = '1px';
 
 // Font size
+export const fontXSmall = '1.2rem';
 export const fontSmall = '1.6rem';
 export const fontMedium = '2.2rem';
 export const fontLarge = '3.8rem';

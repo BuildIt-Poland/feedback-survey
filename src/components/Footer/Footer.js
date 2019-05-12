@@ -1,16 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Grommet, Box, Text } from 'grommet';
 
-import { colorDarkBlue, colorWhite, fontSmall } from '../../styles/designTokens';
-
-const theme = {
-  text: {
-    medium: {
-      size: fontSmall
-    }
-  }
-};
+import { colorDarkBlue, colorWhite } from '../../styles/designTokens';
+import Paragraph from '../Layout/Paragraph';
 
 const Wrapper = styled.footer`
   grid-area: footer;
@@ -22,9 +14,9 @@ const Wrapper = styled.footer`
 
 const Footer = () => (
   <Wrapper>
-    <Text size="medium">
+    <Paragraph>
       Randstad Sourceright (Hong Kong SAR) EA Licence No. 57155 | Randstad Sourceright (Singapore) EA
-    </Text>
+    </Paragraph>
   </Wrapper>
 );
 

@@ -2,10 +2,10 @@
 
 exports[`COMPONENT - FinalPage renders correctly if submit fail 1`] = `
 <section
-  className="sc-bdVaJa sc-bxivhb jiwHHf"
+  className="sc-bdVaJa sc-bxivhb cxZWza"
 >
   <p
-    className="sc-htpNat jfeDHX"
+    className="sc-htpNat eQCFpM"
     color="#E74536"
   >
     Error occured: error occured
@@ -15,7 +15,7 @@ exports[`COMPONENT - FinalPage renders correctly if submit fail 1`] = `
 
 exports[`COMPONENT - FinalPage renders correctly if submit success 1`] = `
 <section
-  className="sc-bdVaJa sc-bxivhb jiwHHf"
+  className="sc-bdVaJa sc-bxivhb cxZWza"
 >
   <h1
     className="sc-bwzfXH fIpTJf StyledHeading-sc-1rdh4aw-0 iDyXcl"

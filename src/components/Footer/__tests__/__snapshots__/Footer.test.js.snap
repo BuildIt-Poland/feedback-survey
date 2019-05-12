@@ -2,13 +2,12 @@
 
 exports[`COMPONENT - Footer renders correctly 1`] = `
 <footer
-  className="sc-bdVaJa lIDXo"
+  className="sc-bwzfXH hACxDC"
 >
-  <span
-    className="StyledText-sc-1sadyjn-0 fWSbXS"
-    size="medium"
+  <p
+    className="sc-bdVaJa kjwAVT"
   >
     Randstad Sourceright (Hong Kong SAR) EA Licence No. 57155 | Randstad Sourceright (Singapore) EA
-  </span>
+  </p>
 </footer>
 `;
