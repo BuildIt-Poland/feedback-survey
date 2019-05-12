@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { arrayOf } from 'prop-types';
 import { Grommet } from 'grommet';
 
-import { spacingLarge, fontMedium, spacingMedium, colorRed } from '../../styles/designTokens';
+import { spacingLarge, fontMedium, spacingMedium, colorRed, colorBlue } from '../../styles/designTokens';
 import { formField, answerType } from '../../types';
 import RatingField from './RatingField';
 import ShortInputField from './ShortInputField';
@@ -24,6 +24,9 @@ const Wrapper = styled.div`
 
 const theme = {
   formField: {
+    // border: {
+    //   color: 'red'
+    // },
     extend: {
       label: {
         'font-size': fontMedium,
@@ -31,9 +34,23 @@ const theme = {
       }
     }
   },
+  select: {
+    icons: {
+      color: colorBlue
+    }
+  },
   global: {
+    colors: {
+      focus: colorBlue,
+      brand: colorBlue
+    },
     input: {
       weight: '400'
+    },
+    focus: {
+      border: {
+        color: colorBlue
+      }
     }
   }
 };

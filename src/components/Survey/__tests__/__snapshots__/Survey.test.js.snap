@@ -27,7 +27,7 @@ exports[`COMPONENT - Survey renders correctly with data 1`] = `
         className="sc-EHOje cpubXY"
       >
         <div
-          className="sc-ifAKCX gFJRae FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
+          className="sc-ifAKCX dDQvBh FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
         >
           <label
             className="StyledText-sc-1sadyjn-0 bMXxti"
@@ -85,7 +85,7 @@ exports[`COMPONENT - Survey renders correctly with data 1`] = `
                 >
                   <svg
                     aria-label="FormDown"
-                    className="StyledIcon-ofa7kd-0 dSllCE"
+                    className="StyledIcon-ofa7kd-0 kKIhud"
                     viewBox="0 0 24 24"
                   >
                     <polyline

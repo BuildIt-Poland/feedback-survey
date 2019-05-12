@@ -8,6 +8,10 @@ const StyledFormField = styled(FormField)`
   }
   input {
     font-weight: 400;
+
+    :focus {
+      border-color: red;
+    }
   }
   label:first-child {
     &:after {
