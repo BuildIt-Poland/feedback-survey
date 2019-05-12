@@ -2,13 +2,13 @@
 
 exports[`COMPONENT - App renders correctly /final route 1`] = `
 <div
-  className="sc-fjdhpX cVOKQV"
+  className="sc-jzJRlG jwrXfy"
 >
   <header
-    className="sc-jTzLTM BaxlL"
+    className="sc-fjdhpX fdmepd"
   >
     <a
-      className="sc-VigVT yoZeW"
+      className="sc-jTzLTM iipmad"
       href="/"
       onClick={[Function]}
     >
@@ -110,67 +110,63 @@ exports[`COMPONENT - App renders correctly /final route 1`] = `
     </a>
   </header>
   <main
-    className="sc-iwsKbI egaxrb"
+    className="sc-gZMcBi hfkiGk"
   >
     <section
-      className="sc-bZQynM sc-gqjmRU dtafqB"
+      className="sc-gzVnrw sc-VigVT eUFuCg"
     >
       <h1
-        className="sc-gzVnrw fKHbSl StyledHeading-sc-1rdh4aw-0 cnPzet"
+        className="sc-htoDjs gPgmTS StyledHeading-sc-1rdh4aw-0 cnPzet"
       >
         Performance Snapshot on RSR Consultant:
       </h1>
       <h2
-        className="sc-gzVnrw fKHbSl StyledHeading-sc-1rdh4aw-0 jgvbu"
+        className="sc-htoDjs gPgmTS StyledHeading-sc-1rdh4aw-0 jgvbu"
       >
         
       </h2>
       <section
-        className="sc-gZMcBi jroxRs"
+        className="sc-gqjmRU jxIkCh"
       >
         <p
-          className="sc-htoDjs iodhyJ"
+          className="sc-dnqmqq piqDE"
         >
           The feedback you provide will be used for individual development and career pathway and forms part of RSR Reward and Recognition scheme.
         </p>
         <p
-          className="sc-htoDjs iodhyJ"
+          className="sc-dnqmqq piqDE"
         >
           Feedback will also be used to enhance and evolve individual contribution to your organisation.
         </p>
         <p
-          className="sc-htoDjs iodhyJ"
+          className="sc-dnqmqq piqDE"
         >
           We therefore ask you to provide feedback based on factual evidence only and we may ask you for further information in some individual performance feedback.
         </p>
       </section>
       <a
-        href="/survey"
+        href="/"
         onClick={[Function]}
       >
-        <div
-          className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
+        <button
+          className="sc-EHOje lfOegF StyledButton-sc-323bzc-0 bmExQD"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          size="large"
+          type="button"
         >
-          <button
-            className="StyledButton-sc-323bzc-0 kOpYnn"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
-            size="large"
-            type="button"
-          >
-            start
-          </button>
-        </div>
+          start
+        </button>
       </a>
     </section>
   </main>
   <footer
-    className="sc-jzJRlG kfssca"
+    className="sc-cSHVUG gHsobI"
   >
     <p
-      className="sc-htoDjs iodhyJ"
+      className="sc-dnqmqq piqDE"
     >
       Randstad Sourceright (Hong Kong SAR) EA Licence No. 57155 | Randstad Sourceright (Singapore) EA
     </p>
@@ -180,13 +176,13 @@ exports[`COMPONENT - App renders correctly /final route 1`] = `
 
 exports[`COMPONENT - App renders correctly default route 1`] = `
 <div
-  className="sc-fjdhpX cVOKQV"
+  className="sc-jzJRlG jwrXfy"
 >
   <header
-    className="sc-jTzLTM BaxlL"
+    className="sc-fjdhpX fdmepd"
   >
     <a
-      className="sc-VigVT yoZeW"
+      className="sc-jTzLTM iipmad"
       href="/"
       onClick={[Function]}
     >
@@ -288,67 +284,63 @@ exports[`COMPONENT - App renders correctly default route 1`] = `
     </a>
   </header>
   <main
-    className="sc-iwsKbI egaxrb"
+    className="sc-gZMcBi hfkiGk"
   >
     <section
-      className="sc-bZQynM sc-gqjmRU dtafqB"
+      className="sc-gzVnrw sc-VigVT eUFuCg"
     >
       <h1
-        className="sc-gzVnrw fKHbSl StyledHeading-sc-1rdh4aw-0 cnPzet"
+        className="sc-htoDjs gPgmTS StyledHeading-sc-1rdh4aw-0 cnPzet"
       >
         Performance Snapshot on RSR Consultant:
       </h1>
       <h2
-        className="sc-gzVnrw fKHbSl StyledHeading-sc-1rdh4aw-0 jgvbu"
+        className="sc-htoDjs gPgmTS StyledHeading-sc-1rdh4aw-0 jgvbu"
       >
         
       </h2>
       <section
-        className="sc-gZMcBi jroxRs"
+        className="sc-gqjmRU jxIkCh"
       >
         <p
-          className="sc-htoDjs iodhyJ"
+          className="sc-dnqmqq piqDE"
         >
           The feedback you provide will be used for individual development and career pathway and forms part of RSR Reward and Recognition scheme.
         </p>
         <p
-          className="sc-htoDjs iodhyJ"
+          className="sc-dnqmqq piqDE"
         >
           Feedback will also be used to enhance and evolve individual contribution to your organisation.
         </p>
         <p
-          className="sc-htoDjs iodhyJ"
+          className="sc-dnqmqq piqDE"
         >
           We therefore ask you to provide feedback based on factual evidence only and we may ask you for further information in some individual performance feedback.
         </p>
       </section>
       <a
-        href="/survey"
+        href="/"
         onClick={[Function]}
       >
-        <div
-          className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
+        <button
+          className="sc-EHOje lfOegF StyledButton-sc-323bzc-0 bmExQD"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          size="large"
+          type="button"
         >
-          <button
-            className="StyledButton-sc-323bzc-0 kOpYnn"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
-            size="large"
-            type="button"
-          >
-            start
-          </button>
-        </div>
+          start
+        </button>
       </a>
     </section>
   </main>
   <footer
-    className="sc-jzJRlG kfssca"
+    className="sc-cSHVUG gHsobI"
   >
     <p
-      className="sc-htoDjs iodhyJ"
+      className="sc-dnqmqq piqDE"
     >
       Randstad Sourceright (Hong Kong SAR) EA Licence No. 57155 | Randstad Sourceright (Singapore) EA
     </p>
@@ -358,13 +350,13 @@ exports[`COMPONENT - App renders correctly default route 1`] = `
 
 exports[`COMPONENT - App renders correctly survey route 1`] = `
 <div
-  className="sc-fjdhpX cVOKQV"
+  className="sc-jzJRlG jwrXfy"
 >
   <header
-    className="sc-jTzLTM BaxlL"
+    className="sc-fjdhpX fdmepd"
   >
     <a
-      className="sc-VigVT yoZeW"
+      className="sc-jTzLTM iipmad"
       href="/"
       onClick={[Function]}
     >
@@ -466,36 +458,36 @@ exports[`COMPONENT - App renders correctly survey route 1`] = `
     </a>
   </header>
   <main
-    className="sc-iwsKbI egaxrb"
+    className="sc-gZMcBi hfkiGk"
   >
     <section
-      className="sc-bZQynM sc-gqjmRU dtafqB"
+      className="sc-gzVnrw sc-VigVT eUFuCg"
     >
       <h1
-        className="sc-gzVnrw fKHbSl StyledHeading-sc-1rdh4aw-0 cnPzet"
+        className="sc-htoDjs gPgmTS StyledHeading-sc-1rdh4aw-0 cnPzet"
       >
         Performance Snapshot on RSR Consultant:
       </h1>
       <h2
-        className="sc-gzVnrw fKHbSl StyledHeading-sc-1rdh4aw-0 jgvbu"
+        className="sc-htoDjs gPgmTS StyledHeading-sc-1rdh4aw-0 jgvbu"
       >
         
       </h2>
       <section
-        className="sc-gZMcBi jroxRs"
+        className="sc-gqjmRU jxIkCh"
       >
         <p
-          className="sc-htoDjs iodhyJ"
+          className="sc-dnqmqq piqDE"
         >
           The feedback you provide will be used for individual development and career pathway and forms part of RSR Reward and Recognition scheme.
         </p>
         <p
-          className="sc-htoDjs iodhyJ"
+          className="sc-dnqmqq piqDE"
         >
           Feedback will also be used to enhance and evolve individual contribution to your organisation.
         </p>
         <p
-          className="sc-htoDjs iodhyJ"
+          className="sc-dnqmqq piqDE"
         >
           We therefore ask you to provide feedback based on factual evidence only and we may ask you for further information in some individual performance feedback.
         </p>
@@ -504,29 +496,25 @@ exports[`COMPONENT - App renders correctly survey route 1`] = `
         href="/survey"
         onClick={[Function]}
       >
-        <div
-          className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
+        <button
+          className="sc-EHOje lfOegF StyledButton-sc-323bzc-0 bmExQD"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          size="large"
+          type="button"
         >
-          <button
-            className="StyledButton-sc-323bzc-0 kOpYnn"
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
-            size="large"
-            type="button"
-          >
-            start
-          </button>
-        </div>
+          start
+        </button>
       </a>
     </section>
   </main>
   <footer
-    className="sc-jzJRlG kfssca"
+    className="sc-cSHVUG gHsobI"
   >
     <p
-      className="sc-htoDjs iodhyJ"
+      className="sc-dnqmqq piqDE"
     >
       Randstad Sourceright (Hong Kong SAR) EA Licence No. 57155 | Randstad Sourceright (Singapore) EA
     </p>

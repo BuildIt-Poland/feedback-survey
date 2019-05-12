@@ -21,20 +21,20 @@ const Wrapper = styled(Page)`
 
   ${media.tablet`
     background-position-x: 3%;
-    background-position-y: 97%;
+    background-position-y: calc(100% - 3rem);
     background-size: 29%;
   `}
 
   ${media.desktop`
-    background-position-x: 5%;
-    background-position-y: 96%;
-    background-size: 22%;
+    background-position-x: 3%;
+    background-position-y: 99%;
+    background-size: 13%;
   `}
 
   ${media.large`
     background-position-x: 1%;
     background-position-y: 98%;
-    background-size: 20%;
+    background-size: 13%;
   `}
 `;
 

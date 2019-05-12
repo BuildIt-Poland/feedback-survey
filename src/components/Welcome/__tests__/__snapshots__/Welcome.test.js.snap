@@ -2,70 +2,15 @@
 
 exports[`COMPONENT - Welcome renders correctly with params 1`] = `
 <section
-  className="sc-htpNat sc-ifAKCX diyQab"
+  className="sc-bxivhb sc-EHOje beMOIS"
 >
   <h1
-    className="sc-bxivhb haRFWa StyledHeading-sc-1rdh4aw-0 cnPzet"
+    className="sc-ifAKCX kVQrOt StyledHeading-sc-1rdh4aw-0 cnPzet"
   >
     Performance Snapshot on RSR Consultant:
   </h1>
   <h2
-    className="sc-bxivhb haRFWa StyledHeading-sc-1rdh4aw-0 jgvbu"
-  >
-    John
-  </h2>
-  <section
-    className="sc-bwzfXH iPoewc"
-  >
-    <p
-      className="sc-bdVaJa iPiyRp"
-    >
-      The feedback you provide will be used for individual development and career pathway and forms part of RSR Reward and Recognition scheme.
-    </p>
-    <p
-      className="sc-bdVaJa iPiyRp"
-    >
-      Feedback will also be used to enhance and evolve individual contribution to your organisation.
-    </p>
-    <p
-      className="sc-bdVaJa iPiyRp"
-    >
-      We therefore ask you to provide feedback based on factual evidence only and we may ask you for further information in some individual performance feedback.
-    </p>
-  </section>
-  <Link
-    to="/survey"
-  >
-    <div
-      className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
-    >
-      <button
-        className="StyledButton-sc-323bzc-0 kOpYnn"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        onMouseOut={[Function]}
-        onMouseOver={[Function]}
-        size="large"
-        type="button"
-      >
-        start
-      </button>
-    </div>
-  </Link>
-</section>
-`;
-
-exports[`COMPONENT - Welcome renders correctly without params 1`] = `
-<section
-  className="sc-htpNat sc-ifAKCX diyQab"
->
-  <h1
-    className="sc-bxivhb haRFWa StyledHeading-sc-1rdh4aw-0 cnPzet"
-  >
-    Performance Snapshot on RSR Consultant:
-  </h1>
-  <h2
-    className="sc-bxivhb haRFWa StyledHeading-sc-1rdh4aw-0 jgvbu"
+    className="sc-ifAKCX kVQrOt StyledHeading-sc-1rdh4aw-0 jgvbu"
   >
     
   </h2>
@@ -73,17 +18,68 @@ exports[`COMPONENT - Welcome renders correctly without params 1`] = `
     className="sc-bwzfXH iPoewc"
   >
     <p
-      className="sc-bdVaJa iPiyRp"
+      className="sc-bdVaJa kjwAVT"
     >
       The feedback you provide will be used for individual development and career pathway and forms part of RSR Reward and Recognition scheme.
     </p>
     <p
-      className="sc-bdVaJa iPiyRp"
+      className="sc-bdVaJa kjwAVT"
     >
       Feedback will also be used to enhance and evolve individual contribution to your organisation.
     </p>
     <p
-      className="sc-bdVaJa iPiyRp"
+      className="sc-bdVaJa kjwAVT"
+    >
+      We therefore ask you to provide feedback based on factual evidence only and we may ask you for further information in some individual performance feedback.
+    </p>
+  </section>
+  <Link
+    to=""
+  >
+    <button
+      className="sc-htpNat bkojk StyledButton-sc-323bzc-0 bmExQD"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+      size="large"
+      type="button"
+    >
+      start
+    </button>
+  </Link>
+</section>
+`;
+
+exports[`COMPONENT - Welcome renders correctly without params 1`] = `
+<section
+  className="sc-bxivhb sc-EHOje beMOIS"
+>
+  <h1
+    className="sc-ifAKCX kVQrOt StyledHeading-sc-1rdh4aw-0 cnPzet"
+  >
+    Performance Snapshot on RSR Consultant:
+  </h1>
+  <h2
+    className="sc-ifAKCX kVQrOt StyledHeading-sc-1rdh4aw-0 jgvbu"
+  >
+    
+  </h2>
+  <section
+    className="sc-bwzfXH iPoewc"
+  >
+    <p
+      className="sc-bdVaJa kjwAVT"
+    >
+      The feedback you provide will be used for individual development and career pathway and forms part of RSR Reward and Recognition scheme.
+    </p>
+    <p
+      className="sc-bdVaJa kjwAVT"
+    >
+      Feedback will also be used to enhance and evolve individual contribution to your organisation.
+    </p>
+    <p
+      className="sc-bdVaJa kjwAVT"
     >
       We therefore ask you to provide feedback based on factual evidence only and we may ask you for further information in some individual performance feedback.
     </p>
@@ -91,21 +87,17 @@ exports[`COMPONENT - Welcome renders correctly without params 1`] = `
   <Link
     to="/survey"
   >
-    <div
-      className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
+    <button
+      className="sc-htpNat bkojk StyledButton-sc-323bzc-0 bmExQD"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+      size="large"
+      type="button"
     >
-      <button
-        className="StyledButton-sc-323bzc-0 kOpYnn"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        onMouseOut={[Function]}
-        onMouseOver={[Function]}
-        size="large"
-        type="button"
-      >
-        start
-      </button>
-    </div>
+      start
+    </button>
   </Link>
 </section>
 `;
