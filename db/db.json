@@ -140,48 +140,6 @@
         "11": "Good"
       },
       "id": 1
-    },
-    {
-      "surveyId": "",
-      "answers": [
-        {
-          "questionId": "1",
-          "answer": "ff"
-        },
-        {
-          "questionId": "3",
-          "answer": "ff"
-        },
-        {
-          "questionId": "4",
-          "answer": "annual"
-        },
-        {
-          "questionId": "5",
-          "answer": "Yes"
-        },
-        {
-          "questionId": "6",
-          "answer": "No"
-        },
-        {
-          "questionId": "8",
-          "answer": "Good"
-        },
-        {
-          "questionId": "9",
-          "answer": "Good"
-        },
-        {
-          "questionId": "10",
-          "answer": "Good"
-        },
-        {
-          "questionId": "11",
-          "answer": "Good"
-        }
-      ],
-      "id": 2
     }
   ]
 }
