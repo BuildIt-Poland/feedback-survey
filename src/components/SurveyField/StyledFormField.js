@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { FormField } from 'grommet';
 
 const StyledFormField = styled(FormField)`
+  max-width: 80rem;
   div {
     ${props => (props.noBorderBottom ? 'border-bottom: none' : null)}
   }

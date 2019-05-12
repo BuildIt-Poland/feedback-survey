@@ -2,7 +2,7 @@
 
 exports[`COMPONENT - Welcome renders correctly with params 1`] = `
 <section
-  className="sc-bxivhb sc-EHOje beMOIS"
+  className="sc-bxivhb sc-EHOje cXkyGZ"
 >
   <h1
     className="sc-ifAKCX kVQrOt StyledHeading-sc-1rdh4aw-0 cnPzet"
@@ -53,7 +53,7 @@ exports[`COMPONENT - Welcome renders correctly with params 1`] = `
 
 exports[`COMPONENT - Welcome renders correctly without params 1`] = `
 <section
-  className="sc-bxivhb sc-EHOje beMOIS"
+  className="sc-bxivhb sc-EHOje cXkyGZ"
 >
   <h1
     className="sc-ifAKCX kVQrOt StyledHeading-sc-1rdh4aw-0 cnPzet"

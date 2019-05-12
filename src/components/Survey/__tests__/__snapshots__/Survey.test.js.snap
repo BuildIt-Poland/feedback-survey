@@ -14,7 +14,7 @@ exports[`COMPONENT - Survey renders Loading component if data loading 1`] = `
 
 exports[`COMPONENT - Survey renders correctly with data 1`] = `
 <section
-  className="sc-gzVnrw kAStdq"
+  className="sc-htoDjs icDTdR"
 >
   <form
     onReset={[Function]}
@@ -24,10 +24,10 @@ exports[`COMPONENT - Survey renders correctly with data 1`] = `
       className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
     >
       <div
-        className="sc-ifAKCX fAJNyp"
+        className="sc-EHOje cpubXY"
       >
         <div
-          className="sc-bxivhb kwJdhb FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
+          className="sc-ifAKCX gFJRae FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
         >
           <label
             className="StyledText-sc-1sadyjn-0 bMXxti"
@@ -106,7 +106,7 @@ exports[`COMPONENT - Survey renders correctly with data 1`] = `
       className="StyledBox-sc-13pk1d4-0 dNgQiZ"
     >
       <button
-        className="sc-EHOje lfOegF StyledButton-sc-323bzc-0 bmExQD"
+        className="sc-bZQynM eSfHGR StyledButton-sc-323bzc-0 bmExQD"
         onBlur={[Function]}
         onFocus={[Function]}
         onMouseOut={[Function]}

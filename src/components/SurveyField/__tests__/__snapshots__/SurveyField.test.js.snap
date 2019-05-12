@@ -5,10 +5,10 @@ exports[`COMPONENT - SurveyField renders correctly 1`] = `
   className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
 >
   <div
-    className="sc-ifAKCX fAJNyp"
+    className="sc-EHOje cpubXY"
   >
     <div
-      className="sc-bxivhb kwJdhb FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
+      className="sc-ifAKCX gFJRae FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
     >
       <label
         className="StyledText-sc-1sadyjn-0 bMXxti"
@@ -28,10 +28,10 @@ exports[`COMPONENT - SurveyField renders correctly long input field 1`] = `
   className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
 >
   <div
-    className="sc-ifAKCX fAJNyp"
+    className="sc-EHOje cpubXY"
   >
     <div
-      className="sc-bxivhb kwJdhb FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
+      className="sc-ifAKCX gFJRae FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
     >
       <label
         className="StyledText-sc-1sadyjn-0 bMXxti"
@@ -51,10 +51,10 @@ exports[`COMPONENT - SurveyField renders correctly rating field 1`] = `
   className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
 >
   <div
-    className="sc-ifAKCX fAJNyp"
+    className="sc-EHOje cpubXY"
   >
     <div
-      className="sc-bxivhb gZHMQd FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
+      className="sc-ifAKCX kQLuHO FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
     >
       <label
         className="StyledText-sc-1sadyjn-0 bMXxti"
@@ -74,10 +74,10 @@ exports[`COMPONENT - SurveyField renders correctly select field 1`] = `
   className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
 >
   <div
-    className="sc-ifAKCX fAJNyp"
+    className="sc-EHOje cpubXY"
   >
     <div
-      className="sc-bxivhb kwJdhb FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
+      className="sc-ifAKCX gFJRae FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
     >
       <label
         className="StyledText-sc-1sadyjn-0 bMXxti"
@@ -97,10 +97,10 @@ exports[`COMPONENT - SurveyField renders correctly with required field 1`] = `
   className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
 >
   <div
-    className="sc-ifAKCX fAJNyp"
+    className="sc-EHOje cpubXY"
   >
     <div
-      className="sc-bxivhb hSnaEg FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
+      className="sc-ifAKCX enLsGe FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
     >
       <label
         className="StyledText-sc-1sadyjn-0 bMXxti"
@@ -120,10 +120,10 @@ exports[`COMPONENT - SurveyField renders correctly yes-no field 1`] = `
   className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
 >
   <div
-    className="sc-ifAKCX fAJNyp"
+    className="sc-EHOje cpubXY"
   >
     <div
-      className="sc-bxivhb gZHMQd FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
+      className="sc-ifAKCX kQLuHO FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
     >
       <label
         className="StyledText-sc-1sadyjn-0 bMXxti"
