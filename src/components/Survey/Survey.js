@@ -13,7 +13,7 @@ import Loading from '../Loading';
 import ErrorQuestionsMessage from './ErrorQuestionsMessage';
 import Overlay from '../Overlay';
 import { colorWhite } from '../../styles/designTokens';
-import Page from '../Page';
+import Page from '../Layout/Page';
 
 const messages = {
   required: REQUIRED_FIELD

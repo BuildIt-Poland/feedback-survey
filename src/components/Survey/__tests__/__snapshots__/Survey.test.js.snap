@@ -13,8 +13,8 @@ exports[`COMPONENT - Survey renders Loading component if data loading 1`] = `
 `;
 
 exports[`COMPONENT - Survey renders correctly with data 1`] = `
-<div
-  className="StyledBox-sc-13pk1d4-0 ioDukb"
+<section
+  className="sc-bZQynM kNGqLy"
 >
   <form
     onReset={[Function]}
@@ -27,7 +27,7 @@ exports[`COMPONENT - Survey renders correctly with data 1`] = `
         className="sc-ifAKCX fAJNyp"
       >
         <div
-          className="sc-bxivhb iXwrOb FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
+          className="sc-bxivhb kwJdhb FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
         >
           <label
             className="StyledText-sc-1sadyjn-0 bMXxti"
@@ -122,7 +122,7 @@ exports[`COMPONENT - Survey renders correctly with data 1`] = `
       </div>
     </div>
   </form>
-</div>
+</section>
 `;
 
 exports[`COMPONENT - Survey renders error message 1`] = `

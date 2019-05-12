@@ -1,42 +1,42 @@
 import React, { useState, useEffect } from 'react';
-import { Box, Heading, Grommet } from 'grommet';
+import styled from 'styled-components';
 
-import { spacingSmall, spacingLarge, fontXLarge, fontLarge, colorRed } from '../../styles/designTokens';
+import { spacingSmall, colorRed } from '../../styles/designTokens';
+import media from '../../styles/media';
 import Agreed from '../Agreed';
 import LinkButton from '../Button/LinkButton';
 import { surveyMatchParams } from '../../types';
-import Page from '../Page';
+import Page from '../Layout/Page';
+import StyledHeading from '../Layout/Heading';
 
-const theme = {
-  heading: {
-    weight: 400,
-    level: {
-      1: {
-        medium: {
-          size: fontXLarge
-        }
-      },
-      2: {
-        medium: {
-          size: fontLarge
-        }
-      }
-    }
-  },
-  paragraph: {
-    extend: {
-      'max-width': 'none'
-    }
-  },
-  box: {
-    extend: {
-      background: 'url("/image/TextBalloons_illustration.png") no-repeat',
-      'background-position-x': '1rem',
-      'background-position-y': 'calc(100% - 3rem)',
-      'background-size': '25rem'
-    }
-  }
-};
+const Wrapper = styled(Page)`
+  background: none;
+
+  ${media.phone`
+    background: url('/image/TextBalloons_illustration.png') no-repeat;
+    background-position-x: 2%;
+    background-position-y: 99%;
+    background-size: 24%;
+  `}
+
+  ${media.tablet`
+    background-position-x: 3%;
+    background-position-y: 97%;
+    background-size: 29%;
+  `}
+
+  ${media.desktop`
+    background-position-x: 5%;
+    background-position-y: 96%;
+    background-size: 22%;
+  `}
+
+  ${media.large`
+    background-position-x: 1%;
+    background-position-y: 98%;
+    background-size: 20%;
+  `}
+`;
 
 const Welcome = ({ match = { params: {} } }) => {
   const [surveyId, setSurveyID] = useState('');
@@ -50,20 +50,16 @@ const Welcome = ({ match = { params: {} } }) => {
   });
 
   return (
-    // <Grommet theme={theme}>
-    // <Page align="center" justify="center" pad="medium">
-    <Page>
-      <Heading level="1" margin={{ bottom: 'none' }} color={colorRed}>
+    <Wrapper>
+      <StyledHeading level="1" margin={{ bottom: 'none', top: 'none' }} color={colorRed}>
         Performance Snapshot on RSR Consultant:
-      </Heading>
-      <Heading level="2" margin={{ top: spacingSmall, bottom: spacingLarge }} color={colorRed}>
+      </StyledHeading>
+      <StyledHeading level="2" margin={{ top: spacingSmall, bottom: spacingSmall }} color={colorRed}>
         {clientName}
-      </Heading>
+      </StyledHeading>
       <Agreed />
       <LinkButton linkTo={path} label="start" />
-    </Page>
-    // </Box>
-    // </Grommet>
+    </Wrapper>
   );
 };
 

@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
-const Page = styled.article`
-  min-height: 100%;
+const Page = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5rem 4rem 2rem;
+  flex: 1;
+  padding: 3rem 4rem;
 `;
 
 export default Page;

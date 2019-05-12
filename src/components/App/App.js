@@ -1,8 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Grommet } from 'grommet';
 
-import theme from '../../styles/globalTheme';
 import { WELCOME_PATH, FINAL_PATH, SURVEY_PATH } from '../../constatnts/routes';
 import { useFetch } from '../../hooks/useFetch';
 import { SurveyContext } from '../../context/SurveyContext';
@@ -24,14 +22,12 @@ const App = () => {
         <Header />
         <Main>
           <SurveyContext.Provider value={fetchData}>
-            <Grommet theme={theme}>
-              <GlobalStyle />
-              <Switch>
-                <Route exact path={SURVEY_PATH} component={Survey} />
-                <Route exact path={FINAL_PATH} component={FinalPage} />
-                <Route exact path={WELCOME_PATH} component={Welcome} />
-              </Switch>
-            </Grommet>
+            <GlobalStyle />
+            <Switch>
+              <Route exact path={SURVEY_PATH} component={Survey} />
+              <Route exact path={FINAL_PATH} component={FinalPage} />
+              <Route exact path={WELCOME_PATH} component={Welcome} />
+            </Switch>
           </SurveyContext.Provider>
         </Main>
         <Footer />
