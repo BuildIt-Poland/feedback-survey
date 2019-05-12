@@ -7,10 +7,27 @@ import { finalLocationState } from '../../types';
 import Page from '../Layout/Page';
 import StyledHeading from '../Layout/Heading';
 import Paragraph from '../Layout/Paragraph';
+import media from '../../styles/media';
 
 const Wrapper = styled(Page)`
-  background: url('/image/BinarycodeWithHearts.png') no-repeat;
-  background-size: 80%;
+  &:after {
+    content: '';
+    background: url('/image/BinarycodeWithHearts.png') no-repeat;
+    background-size: cover;
+    opacity: 0.85;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  ${media.tablet`
+    &:after {
+      opacity: 1;
+    };
+  `}
 `;
 
 const renderFinalMessage = (isSuccessSave, saveErrorMessage) => {
