@@ -40,13 +40,13 @@ const Wrapper = styled(Page)`
 
 const Welcome = ({ match = { params: {} } }) => {
   const [surveyId, setSurveyID] = useState('');
-  const [clientName, setClientName] = useState('');
+  const [employeeName, setEmployeeName] = useState('');
   const [path, setPath] = useState('');
 
   useEffect(() => {
     setSurveyID(match.params.surveyId ? match.params.surveyId : '');
-    setClientName(match.params.clientName ? match.params.clientName : '');
-    setPath(surveyId && clientName ? `/survey/${surveyId}/${clientName}` : '/survey');
+    setEmployeeName(match.params.employeeName ? match.params.employeeName : '');
+    setPath(surveyId && employeeName ? `/survey/${surveyId}/${employeeName}` : '/survey');
   });
 
   return (
@@ -55,7 +55,7 @@ const Welcome = ({ match = { params: {} } }) => {
         Performance Snapshot on RSR Consultant:
       </StyledHeading>
       <StyledHeading level="2" margin={{ top: spacingSmall, bottom: spacingSmall }} color={colorRed}>
-        {clientName}
+        {employeeName}
       </StyledHeading>
       <Agreed />
       <LinkButton linkTo={path} label="start" />

@@ -127,18 +127,46 @@
   },
   "saveSurvey": [
     {
-      "clientName": "John",
-      "answers": {
-        "1": "dlsk",
-        "3": "kdkd",
-        "4": "monthly",
-        "5": "Yes",
-        "6": "Yes",
-        "8": "Average",
-        "9": "Bad",
-        "10": "Excellent",
-        "11": "Good"
-      },
+      "surveyId": "12345",
+      "employeeName": "Daria",
+      "answers": [
+        {
+          "questionId": "1",
+          "answer": "role"
+        },
+        {
+          "questionId": "3",
+          "answer": "name"
+        },
+        {
+          "questionId": "4",
+          "answer": "monthly"
+        },
+        {
+          "questionId": "5",
+          "answer": "Yes"
+        },
+        {
+          "questionId": "6",
+          "answer": "No"
+        },
+        {
+          "questionId": "8",
+          "answer": "Average"
+        },
+        {
+          "questionId": "9",
+          "answer": "Good"
+        },
+        {
+          "questionId": "10",
+          "answer": "Good"
+        },
+        {
+          "questionId": "11",
+          "answer": "Good"
+        }
+      ],
       "id": 1
     }
   ]

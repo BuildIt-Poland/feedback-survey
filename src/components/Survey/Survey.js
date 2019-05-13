@@ -39,6 +39,7 @@ const renderPendingSave = isSubmitting => {
 
 const Survey = ({ match = { params: {} } }) => {
   const [surveyId, setSurveyID] = useState('');
+  const [employeeName, setEmployeeName] = useState('');
   const { data, isLoading, error } = useContext(SurveyContext);
   const [surveyData, setSurveyData] = useState(data);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -48,6 +49,7 @@ const Survey = ({ match = { params: {} } }) => {
 
   useEffect(() => {
     setSurveyID(match.params.surveyId ? match.params.surveyId : '');
+    setEmployeeName(match.params.employeeName ? match.params.employeeName : '');
     setSurveyData(data);
   });
 
@@ -55,6 +57,7 @@ const Survey = ({ match = { params: {} } }) => {
     setIsSubmitting(true);
     const data = {
       surveyId,
+      employeeName,
       answers: value
     };
 
