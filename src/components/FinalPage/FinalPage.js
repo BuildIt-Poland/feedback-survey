@@ -1,28 +1,41 @@
 import React from 'react';
-import { Box, Heading, Paragraph, Grommet } from 'grommet';
+import styled from 'styled-components';
 
 import { colorRed } from '../../styles/designTokens';
 import { THANK_YOU, ERROR_OCCURED } from '../../constatnts/messages';
 import { finalLocationState } from '../../types';
+import Page from '../Layout/Page';
+import StyledHeading from '../Layout/Heading';
+import Paragraph from '../Layout/Paragraph';
+import media from '../../styles/media';
 
-const theme = {
-  heading: {
-    weight: '400'
-  },
-  box: {
-    extend: {
-      background: 'url("/image/BinarycodeWithHearts.png") no-repeat',
-      'background-size': '80%'
-    }
+const Wrapper = styled(Page)`
+  &:after {
+    content: '';
+    background: url('/image/BinarycodeWithHearts.png') no-repeat;
+    background-size: cover;
+    opacity: 0.85;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
   }
-};
+
+  ${media.tablet`
+    &:after {
+      opacity: 1;
+    };
+  `}
+`;
 
 const renderFinalMessage = (isSuccessSave, saveErrorMessage) => {
   if (isSuccessSave) {
     return (
-      <Heading level="1" textAlign="center">
+      <StyledHeading level="1" textAlign="center">
         {THANK_YOU}
-      </Heading>
+      </StyledHeading>
     );
   }
   return (
@@ -33,11 +46,7 @@ const renderFinalMessage = (isSuccessSave, saveErrorMessage) => {
 };
 
 const FinalPage = ({ location }) => (
-  <Grommet theme={theme}>
-    <Box align="center" justify="center" pad="medium" height="90vh">
-      {renderFinalMessage(location.state.isSuccessSave, location.state.saveErrorMessage)}
-    </Box>
-  </Grommet>
+  <Wrapper>{renderFinalMessage(location.state.isSuccessSave, location.state.saveErrorMessage)}</Wrapper>
 );
 
 FinalPage.propTypes = {

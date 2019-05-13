@@ -21,6 +21,11 @@ const GlobalStyle = createGlobalStyle`
     color: ${colorDarkBlue};
   }
 
+  html, body {
+    width: 100%;
+    height: 100%;
+}
+
   strong {
     font-weight: ${fontWeightBold};
   }

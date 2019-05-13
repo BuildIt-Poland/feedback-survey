@@ -13,6 +13,7 @@ import Loading from '../Loading';
 import ErrorQuestionsMessage from './ErrorQuestionsMessage';
 import Overlay from '../Overlay';
 import { colorWhite } from '../../styles/designTokens';
+import Page from '../Layout/Page';
 
 const messages = {
   required: REQUIRED_FIELD
@@ -95,17 +96,15 @@ const Survey = ({ match = { params: {} } }) => {
   }
 
   return (
-    <>
+    <Page>
       {renderPendingSave(isSubmitting)}
-      <Box align="center" justify="center" alignSelf="center" pad="medium" width="70%">
-        <Form onSubmit={handleSubmit} messages={messages}>
-          {renderFormFields(surveyData)}
-          <Box align="center">
-            <SurveyButton buttonType="submit" label="submit" margin="xlarge" data-test-id="survey-submit-button" />
-          </Box>
-        </Form>
-      </Box>
-    </>
+      <Form onSubmit={handleSubmit} messages={messages}>
+        {renderFormFields(surveyData)}
+        <Box align="center">
+          <SurveyButton buttonType="submit" label="submit" margin="xlarge" data-test-id="survey-submit-button" />
+        </Box>
+      </Form>
+    </Page>
   );
 };
 

@@ -1,8 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Grommet } from 'grommet';
 
-import theme from '../../styles/globalTheme';
 import { WELCOME_PATH, FINAL_PATH, SURVEY_PATH } from '../../constatnts/routes';
 import { useFetch } from '../../hooks/useFetch';
 import { SurveyContext } from '../../context/SurveyContext';
@@ -11,25 +9,30 @@ import Survey from '../Survey';
 import FinalPage from '../FinalPage';
 import Main from './Main';
 import Welcome from '../Welcome';
+import Header from '../Header';
+import Container from './Container';
+import Footer from '../Footer';
 
 const App = () => {
   const fetchData = useFetch();
 
   return (
-    <SurveyContext.Provider value={fetchData}>
-      <Router>
-        <Grommet theme={theme}>
-          <Main>
+    <Router>
+      <Container>
+        <Header />
+        <Main>
+          <SurveyContext.Provider value={fetchData}>
             <GlobalStyle />
             <Switch>
               <Route exact path={SURVEY_PATH} component={Survey} />
               <Route exact path={FINAL_PATH} component={FinalPage} />
               <Route exact path={WELCOME_PATH} component={Welcome} />
             </Switch>
-          </Main>
-        </Grommet>
-      </Router>
-    </SurveyContext.Provider>
+          </SurveyContext.Provider>
+        </Main>
+        <Footer />
+      </Container>
+    </Router>
   );
 };
 

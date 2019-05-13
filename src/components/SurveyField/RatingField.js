@@ -14,7 +14,8 @@ const RatingField = ({ field, options }) => (
     options={options}
     direction="row-responsive"
     width="48rem"
-    withIcon={true}
+    withIcon
+    noBorderBottom
   />
 );
 

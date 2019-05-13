@@ -1,24 +1,23 @@
 import React from 'react';
-import { Grommet, Box, Text } from 'grommet';
+import styled from 'styled-components';
 
-import { colorDarkBlue, fontSmall } from '../../styles/designTokens';
+import { colorDarkBlue, colorWhite } from '../../styles/designTokens';
+import Paragraph from '../Layout/Paragraph';
 
-const theme = {
-  text: {
-    medium: {
-      size: fontSmall
-    }
-  }
-};
+const Wrapper = styled.footer`
+  grid-area: footer;
+  background: ${colorDarkBlue};
+  color: ${colorWhite};
+  text-align: center;
+  padding: 1rem 2rem;
+`;
 
 const Footer = () => (
-  <Grommet theme={theme}>
-    <Box background={colorDarkBlue} align="center" pad="medium">
-      <Text size="medium">
-        Randstad Sourceright (Hong Kong SAR) EA Licence No. 57155 | Randstad Sourceright (Singapore) EA
-      </Text>
-    </Box>
-  </Grommet>
+  <Wrapper>
+    <Paragraph>
+      Randstad Sourceright (Hong Kong SAR) EA Licence No. 57155 | Randstad Sourceright (Singapore) EA
+    </Paragraph>
+  </Wrapper>
 );
 
 export default Footer;

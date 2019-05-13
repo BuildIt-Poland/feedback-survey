@@ -1,44 +1,32 @@
 import React from 'react';
-import { Grommet, Button } from 'grommet';
+import styled from 'styled-components';
+import { Button } from 'grommet';
 import { string } from 'prop-types';
 
-import {
-  colorBlue,
-  colorWhite,
-  spacingLarge,
-  spacingXLarge,
-  fontMedium,
-  fontWeightBold
-} from '../../styles/designTokens';
+import { colorBlue, colorWhite, spacingLarge, spacingXLarge, fontMedium } from '../../styles/designTokens';
+import media from '../../styles/media';
 
-const theme = {
-  button: {
-    color: colorBlue,
-    border: {
-      radius: '1rem',
-      color: colorBlue
-    },
-    extend: {
-      ':hover': {
-        'background-color': colorBlue,
-        'box-shadow': 'none',
-        color: colorWhite
-      },
-      'font-size': fontMedium,
-      'font-weight': fontWeightBold,
-      margin: '1rem auto'
-    },
-    padding: {
-      horizontal: spacingXLarge,
-      vertical: spacingLarge
-    }
+const StyledButton = styled(Button)`
+  color: ${colorBlue};
+  border-radius: 1rem;
+  border-color: ${colorBlue};
+  margin: 1rem auto;
+  padding: 2rem 4rem;
+  font-size: 1.8rem;
+
+  :hover {
+    background-color: ${colorBlue};
+    color: ${colorWhite};
   }
-};
+
+  ${media.tablet`
+    padding: ${spacingLarge} ${spacingXLarge};
+    font-size: ${fontMedium};
+  `}
+`;
 
 const SurveyButton = ({ label, buttonType = 'button' }) => (
-  <Grommet theme={theme}>
-    <Button label={label} color={colorBlue} type={buttonType} hoverIndicator="background" size="large" />
-  </Grommet>
+  <StyledButton label={label} color={colorBlue} type={buttonType} hoverIndicator="background" size="large" />
 );
 
 SurveyButton.protoTypes = {

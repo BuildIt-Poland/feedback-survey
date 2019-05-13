@@ -1,33 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - FinalPage renders correctly if submit fail 1`] = `
-<div
-  className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
+<section
+  className="sc-bdVaJa sc-bxivhb ajeHR"
 >
-  <div
-    className="StyledBox-sc-13pk1d4-0 fEZYsh"
+  <p
+    className="sc-htpNat eQCFpM"
+    color="#E74536"
   >
-    <p
-      className="StyledParagraph-tbetod-0 igrAyj"
-    >
-      Error occured: error occured
-    </p>
-  </div>
-</div>
+    Error occured: error occured
+  </p>
+</section>
 `;
 
 exports[`COMPONENT - FinalPage renders correctly if submit success 1`] = `
-<div
-  className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
+<section
+  className="sc-bdVaJa sc-bxivhb ajeHR"
 >
-  <div
-    className="StyledBox-sc-13pk1d4-0 fEZYsh"
+  <h1
+    className="sc-bwzfXH fIpTJf StyledHeading-sc-1rdh4aw-0 iDyXcl"
   >
-    <h1
-      className="StyledHeading-sc-1rdh4aw-0 crmEnq"
-    >
-      Thank you for taking the time to complete this survey.
-    </h1>
-  </div>
-</div>
+    Thank you for taking the time to complete this survey.
+  </h1>
+</section>
 `;

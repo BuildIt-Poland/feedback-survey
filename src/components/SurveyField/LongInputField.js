@@ -1,11 +1,11 @@
 import React from 'react';
-import { FormField } from 'grommet';
 
 import { formField } from '../../types';
 import CustomTextArea from '../CustomTextArea';
+import StyledFormField from './StyledFormField';
 
 const LonfInputField = ({ field }) => (
-  <FormField
+  <StyledFormField
     name={field.id}
     label={field.content}
     required={field.required}

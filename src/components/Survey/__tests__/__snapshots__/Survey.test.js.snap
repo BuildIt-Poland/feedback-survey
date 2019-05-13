@@ -13,8 +13,8 @@ exports[`COMPONENT - Survey renders Loading component if data loading 1`] = `
 `;
 
 exports[`COMPONENT - Survey renders correctly with data 1`] = `
-<div
-  className="StyledBox-sc-13pk1d4-0 ioDukb"
+<section
+  className="sc-htoDjs icDTdR"
 >
   <form
     onReset={[Function]}
@@ -24,11 +24,10 @@ exports[`COMPONENT - Survey renders correctly with data 1`] = `
       className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
     >
       <div
-        className="sc-ifAKCX jvIdsK"
+        className="sc-EHOje cpubXY"
       >
-         
         <div
-          className="FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
+          className="sc-ifAKCX dDQvBh FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
         >
           <label
             className="StyledText-sc-1sadyjn-0 bMXxti"
@@ -86,7 +85,7 @@ exports[`COMPONENT - Survey renders correctly with data 1`] = `
                 >
                   <svg
                     aria-label="FormDown"
-                    className="StyledIcon-ofa7kd-0 dSllCE"
+                    className="StyledIcon-ofa7kd-0 kKIhud"
                     viewBox="0 0 24 24"
                   >
                     <polyline
@@ -106,24 +105,20 @@ exports[`COMPONENT - Survey renders correctly with data 1`] = `
     <div
       className="StyledBox-sc-13pk1d4-0 dNgQiZ"
     >
-      <div
-        className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
+      <button
+        className="sc-bZQynM eSfHGR StyledButton-sc-323bzc-0 bmExQD"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onMouseOut={[Function]}
+        onMouseOver={[Function]}
+        size="large"
+        type="submit"
       >
-        <button
-          className="StyledButton-sc-323bzc-0 kOpYnn"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          onMouseOut={[Function]}
-          onMouseOver={[Function]}
-          size="large"
-          type="submit"
-        >
-          submit
-        </button>
-      </div>
+        submit
+      </button>
     </div>
   </form>
-</div>
+</section>
 `;
 
 exports[`COMPONENT - Survey renders error message 1`] = `

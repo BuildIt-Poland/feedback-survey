@@ -1,14 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - SurveyField LongInputField renders correctly 1`] = `
+exports[`COMPONENT - SurveyField StyledFormField renders correctly 1`] = `
 <div
   className="sc-bdVaJa fIyeZW FormField__FormFieldBox-m9hood-0 eshLKp StyledBox-sc-13pk1d4-0 CAsMy"
 >
-  <label
-    className="StyledText-sc-1sadyjn-0 bMXxti"
-  >
-    Why?
-  </label>
   <div
     className="StyledBox-sc-13pk1d4-0 gZSidW"
   />

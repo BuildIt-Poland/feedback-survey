@@ -2,23 +2,20 @@
 
 exports[`COMPONENT - Agreed renders correctly 1`] = `
 <section
-  className="sc-bdVaJa gPpPXU"
+  className="sc-bwzfXH iPoewc"
 >
   <p
-    className="StyledParagraph-tbetod-0 fDxcig"
-    size="large"
+    className="sc-bdVaJa kjwAVT"
   >
     The feedback you provide will be used for individual development and career pathway and forms part of RSR Reward and Recognition scheme.
   </p>
   <p
-    className="StyledParagraph-tbetod-0 fDxcig"
-    size="large"
+    className="sc-bdVaJa kjwAVT"
   >
     Feedback will also be used to enhance and evolve individual contribution to your organisation.
   </p>
   <p
-    className="StyledParagraph-tbetod-0 fDxcig"
-    size="large"
+    className="sc-bdVaJa kjwAVT"
   >
     We therefore ask you to provide feedback based on factual evidence only and we may ask you for further information in some individual performance feedback.
   </p>
