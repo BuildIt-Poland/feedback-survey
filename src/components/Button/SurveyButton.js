@@ -19,6 +19,10 @@ const StyledButton = styled(Button)`
     color: ${colorWhite};
   }
 
+  :focus {
+    box-shadow: 0 0 0.2rem 0.2rem ${colorBlue};
+  }
+
   ${media.tablet`
     padding: ${spacingLarge} ${spacingXLarge};
     font-size: ${fontMedium};
