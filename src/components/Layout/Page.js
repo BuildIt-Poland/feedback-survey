@@ -6,7 +6,8 @@ const Page = styled.section`
   justify-content: center;
   align-items: center;
   flex: 1;
-  margin: 3rem 4rem;
+  padding: 3rem 4rem 7rem;
+  max-width: 107rem;
 `;
 
 export default Page;

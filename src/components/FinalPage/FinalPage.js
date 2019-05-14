@@ -8,6 +8,7 @@ import Page from '../Layout/Page';
 import StyledHeading from '../Layout/Heading';
 import Paragraph from '../Layout/Paragraph';
 import media from '../../styles/media';
+import Main from '../App/Main';
 
 const Wrapper = styled(Page)`
   &:after {
@@ -46,7 +47,9 @@ const renderFinalMessage = (isSuccessSave, saveErrorMessage) => {
 };
 
 const FinalPage = ({ location }) => (
-  <Wrapper>{renderFinalMessage(location.state.isSuccessSave, location.state.saveErrorMessage)}</Wrapper>
+  <Main>
+    <Wrapper>{renderFinalMessage(location.state.isSuccessSave, location.state.saveErrorMessage)}</Wrapper>
+  </Main>
 );
 
 FinalPage.propTypes = {

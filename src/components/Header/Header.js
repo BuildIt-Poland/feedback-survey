@@ -17,18 +17,26 @@ const Link = styled(LinkBase)`
   }
 `;
 
-const Wrapper = styled.header`
+const Wrapper = styled.div`
+  display: flex;
+  justify-content: center;
   background-color: ${colorDarkBlue};
   height: 8.5rem;
   padding: 0 4rem;
-  grid-area: header;
+
+  header {
+    max-width: 107rem;
+    width: 100%;
+  }
 `;
 
 const Header = () => (
   <Wrapper>
-    <Link to="/">
-      <LogoIcon />
-    </Link>
+    <header>
+      <Link to="/">
+        <LogoIcon />
+      </Link>
+    </header>
   </Wrapper>
 );
 

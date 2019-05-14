@@ -13,112 +13,116 @@ exports[`COMPONENT - Survey renders Loading component if data loading 1`] = `
 `;
 
 exports[`COMPONENT - Survey renders correctly with data 1`] = `
-<section
-  className="sc-htoDjs icDTdR"
+<main
+  className="sc-dnqmqq iACYhp"
 >
-  <form
-    onReset={[Function]}
-    onSubmit={[Function]}
+  <section
+    className="sc-htoDjs ggzxba"
   >
-    <div
-      className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
+    <form
+      onReset={[Function]}
+      onSubmit={[Function]}
     >
       <div
-        className="sc-EHOje cpubXY"
+        className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
       >
         <div
-          className="sc-ifAKCX dDQvBh FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
+          className="sc-EHOje cpubXY"
         >
-          <label
-            className="StyledText-sc-1sadyjn-0 bMXxti"
-          >
-            What kind of feedback are you providing?
-          </label>
           <div
-            className="StyledBox-sc-13pk1d4-0 gZSidW"
+            className="sc-ifAKCX dDQvBh FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
           >
-            <button
-              aria-label="Open Drop"
-              className="Select__StyledSelectDropButton-sc-17idtfo-1 gQjIFS StyledButton-sc-323bzc-0 jfbKsv"
-              onBlur={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onKeyDown={[Function]}
-              onMouseOut={[Function]}
-              onMouseOver={[Function]}
-              type="button"
+            <label
+              className="StyledText-sc-1sadyjn-0 bMXxti"
             >
-              <div
-                className="StyledBox-sc-13pk1d4-0 erazuK"
+              What kind of feedback are you providing?
+            </label>
+            <div
+              className="StyledBox-sc-13pk1d4-0 gZSidW"
+            >
+              <button
+                aria-label="Open Drop"
+                className="Select__StyledSelectDropButton-sc-17idtfo-1 gQjIFS StyledButton-sc-323bzc-0 jfbKsv"
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+                type="button"
               >
                 <div
-                  className="StyledBox-sc-13pk1d4-0 XINUX"
+                  className="StyledBox-sc-13pk1d4-0 erazuK"
                 >
                   <div
-                    className="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 yIdXy"
+                    className="StyledBox-sc-13pk1d4-0 XINUX"
                   >
-                    <input
-                      autoComplete="off"
-                      className="Select__SelectTextInput-sc-17idtfo-0 lmyIUy StyledTextInput-sc-1x30a0s-0 cyWwXE"
-                      label="What kind of feedback are you providing?"
-                      name="4"
-                      onBlur={[Function]}
-                      onChange={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      onKeyDown={[Function]}
-                      placeholder="Select"
-                      readOnly={true}
-                      tabIndex="-1"
-                      type="text"
-                      value=""
-                    />
+                    <div
+                      className="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 yIdXy"
+                    >
+                      <input
+                        autoComplete="off"
+                        className="Select__SelectTextInput-sc-17idtfo-0 lmyIUy StyledTextInput-sc-1x30a0s-0 cyWwXE"
+                        label="What kind of feedback are you providing?"
+                        name="4"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onKeyDown={[Function]}
+                        placeholder="Select"
+                        readOnly={true}
+                        tabIndex="-1"
+                        type="text"
+                        value=""
+                      />
+                    </div>
+                  </div>
+                  <div
+                    className="StyledBox-sc-13pk1d4-0 eLQtUu"
+                    style={
+                      Object {
+                        "minWidth": "auto",
+                      }
+                    }
+                  >
+                    <svg
+                      aria-label="FormDown"
+                      className="StyledIcon-ofa7kd-0 kKIhud"
+                      viewBox="0 0 24 24"
+                    >
+                      <polyline
+                        fill="none"
+                        points="18 9 12 15 6 9"
+                        stroke="#000"
+                        strokeWidth="2"
+                      />
+                    </svg>
                   </div>
                 </div>
-                <div
-                  className="StyledBox-sc-13pk1d4-0 eLQtUu"
-                  style={
-                    Object {
-                      "minWidth": "auto",
-                    }
-                  }
-                >
-                  <svg
-                    aria-label="FormDown"
-                    className="StyledIcon-ofa7kd-0 kKIhud"
-                    viewBox="0 0 24 24"
-                  >
-                    <polyline
-                      fill="none"
-                      points="18 9 12 15 6 9"
-                      stroke="#000"
-                      strokeWidth="2"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </button>
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      className="StyledBox-sc-13pk1d4-0 dNgQiZ"
-    >
-      <button
-        className="sc-bZQynM eSfHGR StyledButton-sc-323bzc-0 bmExQD"
-        onBlur={[Function]}
-        onFocus={[Function]}
-        onMouseOut={[Function]}
-        onMouseOver={[Function]}
-        size="large"
-        type="submit"
+      <div
+        className="StyledBox-sc-13pk1d4-0 dNgQiZ"
       >
-        submit
-      </button>
-    </div>
-  </form>
-</section>
+        <button
+          className="sc-bZQynM eSfHGR StyledButton-sc-323bzc-0 bmExQD"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          size="large"
+          type="submit"
+        >
+          submit
+        </button>
+      </div>
+    </form>
+  </section>
+</main>
 `;
 
 exports[`COMPONENT - Survey renders error message 1`] = `

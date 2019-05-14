@@ -1,103 +1,111 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`COMPONENT - Welcome renders correctly with params 1`] = `
-<section
-  className="sc-bxivhb sc-EHOje cXkyGZ"
+<main
+  className="sc-EHOje gKsHfs"
 >
-  <h1
-    className="sc-ifAKCX kVQrOt StyledHeading-sc-1rdh4aw-0 cnPzet"
-  >
-    Performance Snapshot on RSR Consultant:
-  </h1>
-  <h2
-    className="sc-ifAKCX kVQrOt StyledHeading-sc-1rdh4aw-0 jgvbu"
-  >
-    
-  </h2>
   <section
-    className="sc-bwzfXH iPoewc"
+    className="sc-bxivhb iSjaHl"
   >
-    <p
-      className="sc-bdVaJa kjwAVT"
+    <h1
+      className="sc-ifAKCX kVQrOt StyledHeading-sc-1rdh4aw-0 cnPzet"
     >
-      The feedback you provide will be used for individual development and career pathway and forms part of RSR Reward and Recognition scheme.
-    </p>
-    <p
-      className="sc-bdVaJa kjwAVT"
+      Performance Snapshot on RSR Consultant:
+    </h1>
+    <h2
+      className="sc-ifAKCX kVQrOt StyledHeading-sc-1rdh4aw-0 jgvbu"
     >
-      Feedback will also be used to enhance and evolve individual contribution to your organisation.
-    </p>
-    <p
-      className="sc-bdVaJa kjwAVT"
+      
+    </h2>
+    <section
+      className="sc-bwzfXH iPoewc"
     >
-      We therefore ask you to provide feedback based on factual evidence only and we may ask you for further information in some individual performance feedback.
-    </p>
+      <p
+        className="sc-bdVaJa gxYkJN"
+      >
+        The feedback you provide will be used for individual development and career pathway and forms part of RSR Reward and Recognition scheme.
+      </p>
+      <p
+        className="sc-bdVaJa gxYkJN"
+      >
+        Feedback will also be used to enhance and evolve individual contribution to your organisation.
+      </p>
+      <p
+        className="sc-bdVaJa gxYkJN"
+      >
+        We therefore ask you to provide feedback based on factual evidence only and we may ask you for further information in some individual performance feedback.
+      </p>
+    </section>
+    <Link
+      to=""
+    >
+      <button
+        className="sc-htpNat bkojk StyledButton-sc-323bzc-0 bmExQD"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onMouseOut={[Function]}
+        onMouseOver={[Function]}
+        size="large"
+        type="button"
+      >
+        start
+      </button>
+    </Link>
   </section>
-  <Link
-    to=""
-  >
-    <button
-      className="sc-htpNat bkojk StyledButton-sc-323bzc-0 bmExQD"
-      onBlur={[Function]}
-      onFocus={[Function]}
-      onMouseOut={[Function]}
-      onMouseOver={[Function]}
-      size="large"
-      type="button"
-    >
-      start
-    </button>
-  </Link>
-</section>
+</main>
 `;
 
 exports[`COMPONENT - Welcome renders correctly without params 1`] = `
-<section
-  className="sc-bxivhb sc-EHOje cXkyGZ"
+<main
+  className="sc-EHOje gKsHfs"
 >
-  <h1
-    className="sc-ifAKCX kVQrOt StyledHeading-sc-1rdh4aw-0 cnPzet"
-  >
-    Performance Snapshot on RSR Consultant:
-  </h1>
-  <h2
-    className="sc-ifAKCX kVQrOt StyledHeading-sc-1rdh4aw-0 jgvbu"
-  >
-    
-  </h2>
   <section
-    className="sc-bwzfXH iPoewc"
+    className="sc-bxivhb iSjaHl"
   >
-    <p
-      className="sc-bdVaJa kjwAVT"
+    <h1
+      className="sc-ifAKCX kVQrOt StyledHeading-sc-1rdh4aw-0 cnPzet"
     >
-      The feedback you provide will be used for individual development and career pathway and forms part of RSR Reward and Recognition scheme.
-    </p>
-    <p
-      className="sc-bdVaJa kjwAVT"
+      Performance Snapshot on RSR Consultant:
+    </h1>
+    <h2
+      className="sc-ifAKCX kVQrOt StyledHeading-sc-1rdh4aw-0 jgvbu"
     >
-      Feedback will also be used to enhance and evolve individual contribution to your organisation.
-    </p>
-    <p
-      className="sc-bdVaJa kjwAVT"
+      
+    </h2>
+    <section
+      className="sc-bwzfXH iPoewc"
     >
-      We therefore ask you to provide feedback based on factual evidence only and we may ask you for further information in some individual performance feedback.
-    </p>
+      <p
+        className="sc-bdVaJa gxYkJN"
+      >
+        The feedback you provide will be used for individual development and career pathway and forms part of RSR Reward and Recognition scheme.
+      </p>
+      <p
+        className="sc-bdVaJa gxYkJN"
+      >
+        Feedback will also be used to enhance and evolve individual contribution to your organisation.
+      </p>
+      <p
+        className="sc-bdVaJa gxYkJN"
+      >
+        We therefore ask you to provide feedback based on factual evidence only and we may ask you for further information in some individual performance feedback.
+      </p>
+    </section>
+    <Link
+      to="/survey"
+    >
+      <button
+        className="sc-htpNat bkojk StyledButton-sc-323bzc-0 bmExQD"
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onMouseOut={[Function]}
+        onMouseOver={[Function]}
+        size="large"
+        type="button"
+      >
+        start
+      </button>
+    </Link>
   </section>
-  <Link
-    to="/survey"
-  >
-    <button
-      className="sc-htpNat bkojk StyledButton-sc-323bzc-0 bmExQD"
-      onBlur={[Function]}
-      onFocus={[Function]}
-      onMouseOut={[Function]}
-      onMouseOver={[Function]}
-      size="large"
-      type="button"
-    >
-      start
-    </button>
-  </Link>
-</section>
+</main>
 `;

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { fontXSmall, fontSmall, fontMedium, fontLarge, spacingSmall, spacingMedium } from '../../styles/designTokens';
+import { fontXSmall, fontSmall, fontMedium, spacingSmall, spacingMedium } from '../../styles/designTokens';
 import media from '../../styles/media';
 
 const Paragraph = styled.p`
@@ -24,10 +24,6 @@ const Paragraph = styled.p`
     footer & {
       font-size: ${fontMedium};
     };
-  `};
-
-  ${media.large`
-    font-size: ${fontLarge}
   `};
 `;
 

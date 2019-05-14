@@ -7,7 +7,6 @@ import { SurveyContext } from '../../context/SurveyContext';
 import GlobalStyle from '../GlobalStyle/GlobalStyle';
 import Survey from '../Survey';
 import FinalPage from '../FinalPage';
-import Main from './Main';
 import Welcome from '../Welcome';
 import Header from '../Header';
 import Container from './Container';
@@ -20,16 +19,14 @@ const App = () => {
     <Router>
       <Container>
         <Header />
-        <Main>
-          <SurveyContext.Provider value={fetchData}>
-            <GlobalStyle />
-            <Switch>
-              <Route exact path={SURVEY_PATH} component={Survey} />
-              <Route exact path={FINAL_PATH} component={FinalPage} />
-              <Route exact path={WELCOME_PATH} component={Welcome} />
-            </Switch>
-          </SurveyContext.Provider>
-        </Main>
+        <SurveyContext.Provider value={fetchData}>
+          <GlobalStyle />
+          <Switch>
+            <Route exact path={SURVEY_PATH} component={Survey} />
+            <Route exact path={FINAL_PATH} component={FinalPage} />
+            <Route exact path={WELCOME_PATH} component={Welcome} />
+          </Switch>
+        </SurveyContext.Provider>
         <Footer />
       </Container>
     </Router>
