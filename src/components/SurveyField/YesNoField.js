@@ -1,5 +1,5 @@
 import React from 'react';
-import { arrayOf } from 'prop-types';
+import { arrayOf, string, func } from 'prop-types';
 
 import { formField, radioOption } from '../../types';
 import CustomRadioButtonGroup from '../CustomRadioButtonGroup';
@@ -20,7 +20,10 @@ const YesNoField = ({ field, options, value, error, onChange }) => (
 
 YesNoField.propTypes = {
   field: formField.isRequired,
-  options: arrayOf(radioOption).isRequired
+  options: arrayOf(radioOption).isRequired,
+  value: string,
+  error: string,
+  onChange: func
 };
 
 export default YesNoField;

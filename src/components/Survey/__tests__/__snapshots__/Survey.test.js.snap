@@ -20,7 +20,6 @@ exports[`COMPONENT - Survey renders correctly with data 1`] = `
     className="sc-htoDjs ggzxba"
   >
     <form
-      onReset={[Function]}
       onSubmit={[Function]}
     >
       <div
@@ -63,14 +62,12 @@ exports[`COMPONENT - Survey renders correctly with data 1`] = `
                       <input
                         autoComplete="off"
                         className="Select__SelectTextInput-sc-17idtfo-0 lmyIUy StyledTextInput-sc-1x30a0s-0 cyWwXE"
-                        label="What kind of feedback are you providing?"
-                        name="4"
+                        name="kind-of-feedback"
                         onBlur={[Function]}
                         onChange={[Function]}
                         onClick={[Function]}
                         onFocus={[Function]}
                         onKeyDown={[Function]}
-                        placeholder="Select"
                         readOnly={true}
                         tabIndex="-1"
                         type="text"
@@ -109,7 +106,7 @@ exports[`COMPONENT - Survey renders correctly with data 1`] = `
         className="StyledBox-sc-13pk1d4-0 dNgQiZ"
       >
         <button
-          className="sc-bZQynM eSfHGR StyledButton-sc-323bzc-0 bmExQD"
+          className="sc-bZQynM iuADUF StyledButton-sc-323bzc-0 bmExQD"
           onBlur={[Function]}
           onFocus={[Function]}
           onMouseOut={[Function]}

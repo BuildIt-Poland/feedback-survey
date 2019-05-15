@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes, { string } from 'prop-types';
+import { arrayOf, func, string } from 'prop-types';
 
 import { formField } from '../../types';
 import CustomSelect from '../CustomSelect';
@@ -18,7 +18,10 @@ const SelectField = ({ field, options, value, error, setFieldValue }) => (
 
 SelectField.propTypes = {
   field: formField.isRequired,
-  options: PropTypes.arrayOf(string)
+  options: arrayOf(string).isRequired,
+  value: string,
+  error: string,
+  setFieldValue: func
 };
 
 export default SelectField;

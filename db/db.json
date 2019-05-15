@@ -127,44 +127,48 @@
   },
   "saveSurvey": [
     {
-      "surveyId": "12345",
-      "employeeName": "Daria",
+      "surveyId": "434343",
+      "employeeName": "Bucky",
       "answers": [
         {
-          "questionId": "1",
-          "answer": "role"
+          "questionName": "current-role",
+          "answer": "Avenger"
         },
         {
-          "questionId": "3",
-          "answer": "name"
+          "questionName": "name",
+          "answer": "Steve Rogers"
         },
         {
-          "questionId": "4",
+          "questionName": "kind-of-feedback",
           "answer": "monthly"
         },
         {
-          "questionId": "5",
+          "questionName": "shared",
           "answer": "Yes"
         },
         {
-          "questionId": "6",
-          "answer": "No"
+          "questionName": "receive-copy",
+          "answer": "Yes"
         },
         {
-          "questionId": "8",
-          "answer": "Average"
+          "questionName": "overall-performance",
+          "answer": "Excellent"
         },
         {
-          "questionId": "9",
+          "questionName": "satisfied",
+          "answer": "Excellent"
+        },
+        {
+          "questionName": "contribution",
           "answer": "Good"
         },
         {
-          "questionId": "10",
+          "questionName": "performance",
           "answer": "Good"
         },
         {
-          "questionId": "11",
-          "answer": "Good"
+          "questionName": " areas-of-improvement",
+          "answer": "Captain America"
         }
       ],
       "id": 1

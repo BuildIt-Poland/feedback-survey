@@ -86,15 +86,15 @@ describe('COMPONENT - Survey', () => {
     expect(component.toJSON()).toMatchSnapshot();
   });
 
-  it('submits form if button clicked', () => {
-    const { getByText } = render(
-      <SurveyContext.Provider value={contextValue}>
-        <Survey />
-      </SurveyContext.Provider>
-    );
+  // it('submits form if button clicked', () => {
+  //   const { getByText } = render(
+  //     <SurveyContext.Provider value={contextValue}>
+  //       <Survey />
+  //     </SurveyContext.Provider>
+  //   );
 
-    fireEvent.click(getByText('submit'));
+  //   fireEvent.click(getByText('submit'));
 
-    expect(getByText('Saving survey...')).toBeDefined();
-  });
+  //   expect(getByText('Saving survey...')).toBeDefined();
+  // });
 });

@@ -17,7 +17,22 @@ exports[`COMPONENT - SurveyField renders correctly 1`] = `
       </label>
       <div
         className="StyledBox-sc-13pk1d4-0 gZSidW"
-      />
+      >
+        <div
+          className="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 yIdXy"
+        >
+          <input
+            autoComplete="off"
+            className="StyledTextInput-sc-1x30a0s-0 cyWwXE"
+            name="fieldName"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            value=""
+          />
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -40,7 +55,16 @@ exports[`COMPONENT - SurveyField renders correctly long input field 1`] = `
       </label>
       <div
         className="StyledBox-sc-13pk1d4-0 gZSidW"
-      />
+      >
+        <textarea
+          className="StyledTextArea-sc-17i3mwp-0 girTIT"
+          name="fieldName"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          value=""
+        />
+      </div>
     </div>
   </div>
 </div>
@@ -63,7 +87,181 @@ exports[`COMPONENT - SurveyField renders correctly rating field 1`] = `
       </label>
       <div
         className="StyledBox-sc-13pk1d4-0 gZSidW"
-      />
+      >
+        <div
+          className="sc-bxivhb ecyDat"
+        >
+          <input
+            className="sc-bdVaJa kRURFE"
+            id="Bad_123"
+            name="fieldName"
+            type="radio"
+            value="Bad"
+          />
+          <label
+            className="sc-bwzfXH fbapoN"
+            htmlFor="Bad_123"
+          >
+            <svg
+              height="75"
+              viewBox="0 0 490 490"
+              width="75"
+              x="0px"
+              xmlns="http://www.w3.org/2000/svg"
+              y="0px"
+            >
+              <g>
+                <path
+                  d="M245,248.479c-60.977,0-110.409,49.432-110.409,110.409h220.818C355.409,297.911,305.977,248.479,245,248.479z"
+                />
+                <circle
+                  cx="157.651"
+                  cy="175.288"
+                  r="42.642"
+                />
+                <circle
+                  cx="332.349"
+                  cy="175.289"
+                  r="42.642"
+                />
+                <path
+                  d="M69.086,490h351.829C459.001,490,490,459.001,490,420.914V69.086C490,30.999,459.001,0,420.914,0H69.086 C30.991,0,0,30.999,0,69.086v351.829C0,459.001,30.991,490,69.086,490z M30.625,69.086c0-21.204,17.257-38.461,38.461-38.461 h351.829c21.204,0,38.461,17.257,38.461,38.461v351.829c0,21.204-17.257,38.461-38.461,38.461H69.086 c-21.204,0-38.461-17.257-38.461-38.461V69.086z"
+                />
+              </g>
+            </svg>
+            <span>
+              Bad
+            </span>
+          </label>
+          <input
+            className="sc-bdVaJa kRURFE"
+            id="Average_123"
+            name="fieldName"
+            type="radio"
+            value="Average"
+          />
+          <label
+            className="sc-bwzfXH bPQWsx"
+            htmlFor="Average_123"
+          >
+            <svg
+              height="75"
+              viewBox="0 0 490 490"
+              width="75"
+              x="0px"
+              xmlns="http://www.w3.org/2000/svg"
+              y="0px"
+            >
+              <g>
+                <path
+                  d="M137.723,364.15c4.396-3.26,108.787-78.91,214.584,0l18.303-24.554c-124.414-92.81-249.965-0.912-251.221,0.015 L137.723,364.15z"
+                />
+                <circle
+                  cx="157.651"
+                  cy="175.288"
+                  r="42.642"
+                />
+                <circle
+                  cx="332.349"
+                  cy="175.289"
+                  r="42.642"
+                />
+                <path
+                  d="M69.086,490h351.829C459.001,490,490,459.001,490,420.914V69.086C490,30.999,459.001,0,420.914,0H69.086 C30.991,0,0,30.999,0,69.086v351.829C0,459.001,30.991,490,69.086,490z M30.625,69.086c0-21.204,17.257-38.461,38.461-38.461 h351.829c21.204,0,38.461,17.257,38.461,38.461v351.829c0,21.204-17.257,38.461-38.461,38.461H69.086 c-21.204,0-38.461-17.257-38.461-38.461V69.086z"
+                />
+              </g>
+            </svg>
+            <span>
+              Average
+            </span>
+          </label>
+          <input
+            className="sc-bdVaJa kRURFE"
+            id="Good_123"
+            name="fieldName"
+            type="radio"
+            value="Good"
+          />
+          <label
+            className="sc-bwzfXH jBMoUI"
+            htmlFor="Good_123"
+          >
+            <svg
+              height="75"
+              viewBox="0 0 490 490"
+              width="75"
+              x="0px"
+              xmlns="http://www.w3.org/2000/svg"
+              y="0px"
+            >
+              <g>
+                <path
+                  d="M119.375,325.465c0.837,0.613,56.644,41.466,130.53,41.466c37.205,0,79.015-10.363,120.691-41.452l-18.303-24.554
+c-105.857,78.955-210.188,3.26-214.584,0L119.375,325.465z"
+                />
+                <circle
+                  cx="157.651"
+                  cy="175.288"
+                  r="42.642"
+                />
+                <circle
+                  cx="332.349"
+                  cy="175.289"
+                  r="42.642"
+                />
+                <path
+                  d="M69.086,490h351.829C459.001,490,490,459.001,490,420.914V69.086C490,30.999,459.001,0,420.914,0H69.086 C30.991,0,0,30.999,0,69.086v351.829C0,459.001,30.991,490,69.086,490z M30.625,69.086c0-21.204,17.257-38.461,38.461-38.461 h351.829c21.204,0,38.461,17.257,38.461,38.461v351.829c0,21.204-17.257,38.461-38.461,38.461H69.086 c-21.204,0-38.461-17.257-38.461-38.461V69.086z"
+                />
+              </g>
+            </svg>
+            <span>
+              Good
+            </span>
+          </label>
+          <input
+            className="sc-bdVaJa kRURFE"
+            id="Excellent_123"
+            name="fieldName"
+            type="radio"
+            value="Excellent"
+          />
+          <label
+            className="sc-bwzfXH kTRrbT"
+            htmlFor="Excellent_123"
+          >
+            <svg
+              height="75"
+              viewBox="0 0 490 490"
+              width="75"
+              x="0px"
+              xmlns="http://www.w3.org/2000/svg"
+              y="0px"
+            >
+              <g>
+                <path
+                  d="M245,389.513c60.977,0,110.409-49.432,110.409-110.409H134.591C134.591,340.081,184.023,389.513,245,389.513z"
+                />
+                <circle
+                  cx="157.651"
+                  cy="175.288"
+                  r="42.642"
+                />
+                <circle
+                  cx="332.349"
+                  cy="175.289"
+                  r="42.642"
+                />
+                <path
+                  d="M69.086,490h351.829C459.001,490,490,459.001,490,420.914V69.086C490,30.999,459.001,0,420.914,0H69.086 C30.991,0,0,30.999,0,69.086v351.829C0,459.001,30.991,490,69.086,490z M30.625,69.086c0-21.204,17.257-38.461,38.461-38.461 h351.829c21.204,0,38.461,17.257,38.461,38.461v351.829c0,21.204-17.257,38.461-38.461,38.461H69.086 c-21.204,0-38.461-17.257-38.461-38.461V69.086z"
+                />
+              </g>
+            </svg>
+            <span>
+              Excellent
+            </span>
+          </label>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -86,7 +284,67 @@ exports[`COMPONENT - SurveyField renders correctly select field 1`] = `
       </label>
       <div
         className="StyledBox-sc-13pk1d4-0 gZSidW"
-      />
+      >
+        <button
+          aria-label="Open Drop"
+          className="Select__StyledSelectDropButton-sc-17idtfo-1 gQjIFS StyledButton-sc-323bzc-0 jfbKsv"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          type="button"
+        >
+          <div
+            className="StyledBox-sc-13pk1d4-0 erazuK"
+          >
+            <div
+              className="StyledBox-sc-13pk1d4-0 XINUX"
+            >
+              <div
+                className="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 yIdXy"
+              >
+                <input
+                  autoComplete="off"
+                  className="Select__SelectTextInput-sc-17idtfo-0 lmyIUy StyledTextInput-sc-1x30a0s-0 cyWwXE"
+                  name="fieldName"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  readOnly={true}
+                  tabIndex="-1"
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              className="StyledBox-sc-13pk1d4-0 eLQtUu"
+              style={
+                Object {
+                  "minWidth": "auto",
+                }
+              }
+            >
+              <svg
+                aria-label="FormDown"
+                className="StyledIcon-ofa7kd-0 kKIhud"
+                viewBox="0 0 24 24"
+              >
+                <polyline
+                  fill="none"
+                  points="18 9 12 15 6 9"
+                  stroke="#000"
+                  strokeWidth="2"
+                />
+              </svg>
+            </div>
+          </div>
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -109,7 +367,22 @@ exports[`COMPONENT - SurveyField renders correctly with required field 1`] = `
       </label>
       <div
         className="StyledBox-sc-13pk1d4-0 gZSidW"
-      />
+      >
+        <div
+          className="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 yIdXy"
+        >
+          <input
+            autoComplete="off"
+            className="StyledTextInput-sc-1x30a0s-0 cyWwXE"
+            name="fieldName"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            value=""
+          />
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -132,7 +405,38 @@ exports[`COMPONENT - SurveyField renders correctly yes-no field 1`] = `
       </label>
       <div
         className="StyledBox-sc-13pk1d4-0 gZSidW"
-      />
+      >
+        <div
+          className="sc-bxivhb ecyDat"
+        >
+          <input
+            className="sc-bdVaJa kRURFE"
+            id="Yes_123"
+            name="fieldName"
+            type="radio"
+            value="Yes"
+          />
+          <label
+            className="sc-htpNat OeGne"
+            htmlFor="Yes_123"
+          >
+            Yes
+          </label>
+          <input
+            className="sc-bdVaJa kRURFE"
+            id="No_123"
+            name="fieldName"
+            type="radio"
+            value="No"
+          />
+          <label
+            className="sc-htpNat OeGne"
+            htmlFor="No_123"
+          >
+            No
+          </label>
+        </div>
+      </div>
     </div>
   </div>
 </div>

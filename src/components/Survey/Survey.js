@@ -24,7 +24,7 @@ const renderFormFields = ({ questions, answerTypes }, values, errors, onChange, 
       field={field}
       answerTypes={answerTypes}
       error={errors[field.name]}
-      value={values[field.name] || ''}
+      value={values[field.name]}
       onChange={onChange}
       setFieldValue={setFieldValue}
     />

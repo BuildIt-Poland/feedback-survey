@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { arrayOf } from 'prop-types';
+import { arrayOf, string, func } from 'prop-types';
 import { Grommet } from 'grommet';
 
 import { spacingLarge, fontMedium, spacingMedium, colorRed, colorBlue } from '../../styles/designTokens';
@@ -109,7 +109,7 @@ const renderFieldByType = (field, answerTypes, value, error, onChange, setFieldV
   }
 };
 
-const SurveyField = ({ field, answerTypes, value, error, onChange, setFieldValue }) => (
+const SurveyField = ({ field, answerTypes, value = '', error, onChange, setFieldValue }) => (
   <Grommet theme={theme}>
     <Wrapper>{renderFieldByType(field, answerTypes, value, error, onChange, setFieldValue)}</Wrapper>
   </Grommet>
@@ -117,7 +117,11 @@ const SurveyField = ({ field, answerTypes, value, error, onChange, setFieldValue
 
 SurveyField.propTypes = {
   field: formField.isRequired,
-  answerTypes: arrayOf(answerType)
+  answerTypes: arrayOf(answerType),
+  value: string,
+  error: string,
+  onChange: func,
+  setFieldValue: func
 };
 
 export default SurveyField;

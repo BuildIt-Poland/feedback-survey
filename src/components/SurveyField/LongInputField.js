@@ -1,4 +1,5 @@
 import React from 'react';
+import { string, func } from 'prop-types';
 
 import { formField } from '../../types';
 import CustomTextArea from '../CustomTextArea';
@@ -17,7 +18,10 @@ const LonfInputField = ({ field, value, error, onChange }) => (
 );
 
 LonfInputField.propTypes = {
-  field: formField.isRequired
+  field: formField.isRequired,
+  value: string,
+  error: string,
+  onChange: func
 };
 
 export default LonfInputField;

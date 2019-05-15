@@ -1,4 +1,5 @@
 import React from 'react';
+import { string, func } from 'prop-types';
 import { TextInput } from 'grommet';
 
 import { formField } from '../../types';
@@ -11,7 +12,10 @@ const ShortInputField = ({ field, value, error, onChange }) => (
 );
 
 ShortInputField.propTypes = {
-  field: formField.isRequired
+  field: formField.isRequired,
+  value: string,
+  error: string,
+  onChange: func
 };
 
 export default ShortInputField;

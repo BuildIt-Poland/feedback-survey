@@ -11,6 +11,13 @@ exports[`COMPONENT - SurveyField LongInputField renders correctly 1`] = `
   </label>
   <div
     className="StyledBox-sc-13pk1d4-0 gZSidW"
-  />
+  >
+    <textarea
+      className="StyledTextArea-sc-17i3mwp-0 fpkVeD"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+    />
+  </div>
 </div>
 `;
