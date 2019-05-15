@@ -5,16 +5,17 @@ import { formField, radioOption } from '../../types';
 import CustomRadioButtonGroup from '../CustomRadioButtonGroup';
 import StyledFormField from './StyledFormField';
 
-const YesNoField = ({ field, options }) => (
+const YesNoField = ({ field, options, value, error, onChange }) => (
   <StyledFormField
-    name={field.id}
     label={field.content}
     required={field.required}
-    component={CustomRadioButtonGroup}
     options={options}
     width="medium"
+    error={error}
     noBorderBottom
-  />
+  >
+    <CustomRadioButtonGroup options={options} name={field.name} value={value} onChange={onChange} />
+  </StyledFormField>
 );
 
 YesNoField.propTypes = {

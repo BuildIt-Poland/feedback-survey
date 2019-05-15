@@ -3,8 +3,8 @@ import axios from 'axios';
 import { API_URL } from '../config/config';
 
 const preparedSurveyData = data => {
-  return Object.entries(data).map(([questionId, answer]) => ({
-    questionId,
+  return Object.entries(data).map(([questionName, answer]) => ({
+    questionName,
     answer
   }));
 };

@@ -24,9 +24,6 @@ const Wrapper = styled.div`
 
 const theme = {
   formField: {
-    // border: {
-    //   color: 'red'
-    // },
     extend: {
       label: {
         'font-size': fontMedium,
@@ -68,29 +65,53 @@ const buildAnswerTypes = ({ answerType, type, id }, answerTypes) => {
   });
 };
 
-const renderFieldByType = (field, answerTypes) => {
+const renderFieldByType = (field, answerTypes, value, error, onChange, setFieldValue) => {
   switch (field.type) {
     case 'open-ended': {
-      return <LongInputField field={field} />;
+      return <LongInputField field={field} error={error} value={value} onChange={onChange} />;
     }
     case 'select': {
-      return <SelectField field={field} options={getAnswerTypes(answerTypes, field.answerType)} />;
+      return (
+        <SelectField
+          field={field}
+          options={getAnswerTypes(answerTypes, field.answerType)}
+          error={error}
+          value={value}
+          setFieldValue={setFieldValue}
+        />
+      );
     }
     case 'radio': {
-      return <YesNoField field={field} options={buildAnswerTypes(field, answerTypes)} />;
+      return (
+        <YesNoField
+          field={field}
+          options={buildAnswerTypes(field, answerTypes)}
+          error={error}
+          value={value}
+          onChange={onChange}
+        />
+      );
     }
     case 'rating': {
-      return <RatingField field={field} options={buildAnswerTypes(field, answerTypes)} />;
+      return (
+        <RatingField
+          field={field}
+          options={buildAnswerTypes(field, answerTypes)}
+          error={error}
+          value={value}
+          onChange={onChange}
+        />
+      );
     }
     default: {
-      return <ShortInputField field={field} />;
+      return <ShortInputField field={field} error={error} value={value} onChange={onChange} />;
     }
   }
 };
 
-const SurveyField = ({ field, answerTypes }) => (
+const SurveyField = ({ field, answerTypes, value, error, onChange, setFieldValue }) => (
   <Grommet theme={theme}>
-    <Wrapper>{renderFieldByType(field, answerTypes)}</Wrapper>
+    <Wrapper>{renderFieldByType(field, answerTypes, value, error, onChange, setFieldValue)}</Wrapper>
   </Grommet>
 );
 
