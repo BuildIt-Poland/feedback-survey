@@ -66,4 +66,4 @@ API URL is set to `http://localhost:3456` by default. You can change that addres
 
 You can simply use aws-cli to deploy App. Just run above command in the project directory (after succesfull build):
 
-`aws s3 sync build/ s3://NAME-OF-YOUR-BUCKET`
+`aws s3 sync build/ s3://NAME-OF-YOUR-BUCKET --acl public-read --delete`
