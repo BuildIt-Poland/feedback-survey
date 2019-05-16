@@ -151,7 +151,7 @@ exports[`COMPONENT - App renders correctly /final route 1`] = `
         onClick={[Function]}
       >
         <button
-          className="sc-bZQynM eSfHGR StyledButton-sc-323bzc-0 bmExQD"
+          className="sc-bZQynM iuADUF StyledButton-sc-323bzc-0 bmExQD"
           onBlur={[Function]}
           onFocus={[Function]}
           onMouseOut={[Function]}
@@ -327,7 +327,7 @@ exports[`COMPONENT - App renders correctly default route 1`] = `
         onClick={[Function]}
       >
         <button
-          className="sc-bZQynM eSfHGR StyledButton-sc-323bzc-0 bmExQD"
+          className="sc-bZQynM iuADUF StyledButton-sc-323bzc-0 bmExQD"
           onBlur={[Function]}
           onFocus={[Function]}
           onMouseOut={[Function]}
@@ -503,7 +503,7 @@ exports[`COMPONENT - App renders correctly survey route 1`] = `
         onClick={[Function]}
       >
         <button
-          className="sc-bZQynM eSfHGR StyledButton-sc-323bzc-0 bmExQD"
+          className="sc-bZQynM iuADUF StyledButton-sc-323bzc-0 bmExQD"
           onBlur={[Function]}
           onFocus={[Function]}
           onMouseOut={[Function]}

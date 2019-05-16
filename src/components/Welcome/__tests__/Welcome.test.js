@@ -12,7 +12,7 @@ describe('COMPONENT - Welcome', () => {
     const match = {
       params: {
         surveyId: '12345',
-        clientName: 'John'
+        employeeName: 'John'
       }
     };
     const component = create(<Welcome match={match} />);
