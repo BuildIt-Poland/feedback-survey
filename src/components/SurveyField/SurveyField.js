@@ -54,11 +54,11 @@ const theme = {
 
 const getAnswerTypes = (array, answerType) => array.find(item => item.type === answerType).values;
 
-const buildAnswerTypes = ({ answerType, type, id }, answerTypes) => {
+const buildAnswerTypes = ({ answerType, name }, answerTypes) => {
   const types = getAnswerTypes(answerTypes, answerType);
   return types.map(option => {
     return {
-      id: `${option}_${id}`,
+      id: `${option}_${name}`,
       value: option,
       label: option
     };

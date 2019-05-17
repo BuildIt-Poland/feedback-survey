@@ -12,7 +12,6 @@ export const answerType = shape({
 });
 
 export const formField = shape({
-  id: string.isRequired,
   content: string.isRequired,
   required: bool.isRequired,
   type: string.isRequired,

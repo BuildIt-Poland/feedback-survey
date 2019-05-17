@@ -2,7 +2,6 @@
   "getQuestions": {
     "questions": [
       {
-        "id": "1",
         "type": "",
         "content": "Current Role",
         "required": true,
@@ -10,7 +9,6 @@
         "answerType": null
       },
       {
-        "id": "3",
         "type": "",
         "content": "Your Name",
         "required": true,
@@ -18,7 +16,6 @@
         "answerType": null
       },
       {
-        "id": "4",
         "type": "select",
         "content": "What kind of feedback are you providing?",
         "required": true,
@@ -26,7 +23,6 @@
         "answerType": "kindOfFeedback"
       },
       {
-        "id": "5",
         "type": "radio",
         "content": "Please state if you would like this feedback directly to be shared with the individual",
         "required": true,
@@ -34,7 +30,6 @@
         "answerType": "yesNo"
       },
       {
-        "id": "6",
         "type": "radio",
         "content": "Please state if you would like to receive copy of this feedback",
         "required": true,
@@ -42,7 +37,6 @@
         "answerType": "yesNo"
       },
       {
-        "id": "8",
         "type": "rating",
         "content": "How would you rate overall performance of this individual?",
         "required": true,
@@ -50,7 +44,6 @@
         "answerType": "rating"
       },
       {
-        "id": "9",
         "type": "rating",
         "content": "Based on the role this individual performing in your organisation how satisfied are you that their performing their role to their best abilities?",
         "required": true,
@@ -58,7 +51,6 @@
         "answerType": "rating"
       },
       {
-        "id": "10",
         "type": "rating",
         "content": "How would you rate individual contribution to your team, the company or to your customer?",
         "required": true,
@@ -66,7 +58,6 @@
         "answerType": "rating"
       },
       {
-        "id": "11",
         "type": "rating",
         "content": "Given what you know of this person’s performance, would you want this individual always on you team?",
         "required": true,
@@ -74,7 +65,6 @@
         "answerType": "rating"
       },
       {
-        "id": "12",
         "type": "open-ended",
         "content": "Are there areas of improvement that you would recommend for this individual that would help them to accomplish work more effectively?",
         "required": false,
@@ -82,7 +72,6 @@
         "answerType": null
       },
       {
-        "id": "13",
         "type": "open-ended",
         "content": "Please provide any information where an individual has gone above and beyond and you would like them to be recognised?",
         "required": false,
@@ -90,7 +79,6 @@
         "answerType": null
       },
       {
-        "id": "14",
         "type": "open-ended",
         "content": "Any additional information you would like to provide",
         "required": false,
