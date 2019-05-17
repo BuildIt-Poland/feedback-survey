@@ -17,6 +17,7 @@ import ErrorQuestionsMessage from './ErrorQuestionsMessage';
 import Overlay from '../Overlay';
 import Page from '../Layout/Page';
 import Main from '../App/Main';
+import ScrollToFormikError from '../ScrollToError/ScrollToFormikError';
 
 const ScrollAnchor = styled.div`
   position: absolute;
@@ -56,14 +57,6 @@ const renderPendingSave = isSubmitting => {
   );
 };
 
-const scrollToRef = (ref, offset = 0) => {
-  window.scrollTo({
-    top: ref.current.offsetTop - offset,
-    left: 0,
-    behavior: 'smooth'
-  });
-};
-
 const Survey = ({ match = { params: {} } }) => {
   const { data, isLoading, error } = useContext(SurveyContext);
   const [surveyId, setSurveyID] = useState('');
@@ -74,7 +67,6 @@ const Survey = ({ match = { params: {} } }) => {
   const [isSuccessSave, setIsSuccessSave] = useState(false);
   const [saveErrorMessage, setSaveErrorMessage] = useState('');
   const [submitted, setSubmitted] = useState(false);
-  const scrollTopRef = useRef(null);
   const scrollFieldRef = useRef(null);
 
   useEffect(() => {
@@ -154,25 +146,30 @@ const Survey = ({ match = { params: {} } }) => {
             submitSurvey(values);
           }}
         >
-          {({ values, errors, handleChange, handleSubmit, setFieldValue, isValid }) => (
-            <form
-              onSubmit={event => {
-                event.preventDefault();
-                setSubmitted(true);
-                if (Object.entries(errors).length) {
-                  scrollToRef(scrollFieldRef, 40);
-                } else {
-                  scrollToRef(scrollTopRef, 40);
-                }
-                handleSubmit();
-              }}
-            >
-              {!Object.entries(errors).length ? <ScrollAnchor yellow ref={scrollTopRef} /> : null}
-              {renderFormFields(surveyData, values, errors, handleChange, setFieldValue, scrollFieldRef)}
-              <Box align="center">
-                <SurveyButton buttonType="submit" label="submit" margin="xlarge" data-test-id="survey-submit-button" />
-              </Box>
-            </form>
+          {({ values, errors, handleChange, handleSubmit, setFieldValue, isValid, submitCount, isSubmitting }) => (
+            <>
+              <ScrollToFormikError
+                formik={{ isValid, submitCount, isSubmitting, errors }}
+                scrollFieldRef={scrollFieldRef}
+              />
+              <form
+                onSubmit={event => {
+                  event.preventDefault();
+                  setSubmitted(true);
+                  handleSubmit();
+                }}
+              >
+                {renderFormFields(surveyData, values, errors, handleChange, setFieldValue, scrollFieldRef)}
+                <Box align="center">
+                  <SurveyButton
+                    buttonType="submit"
+                    label="submit"
+                    margin="xlarge"
+                    data-test-id="survey-submit-button"
+                  />
+                </Box>
+              </form>
+            </>
           )}
         </Formik>
       </Page>
