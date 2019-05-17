@@ -19,7 +19,6 @@ const Wrapper = styled.div`
     position: absolute;
     top: 0.3rem;
     color: ${colorRed};
-    white-space: nowrap;
   }
 `;
 

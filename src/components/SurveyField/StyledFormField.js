@@ -18,6 +18,7 @@ const StyledFormField = styled(FormField)`
       color: red;
       content: ${props => (props.required ? "'*'" : "''")};
       margin-left: 0.5rem;
+      white-space: nowrap;
     }
   }
 `;
