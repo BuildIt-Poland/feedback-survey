@@ -2,6 +2,7 @@ import React, { useState, useContext, useEffect } from 'react';
 import { Redirect } from 'react-router-dom';
 import { Box, Heading } from 'grommet';
 import { Formik } from 'formik';
+import ScrollIntoViewIfNeeded from 'react-scroll-into-view-if-needed';
 
 import { saveSurvey } from '../../services/api';
 import { SurveyContext } from '../../context/SurveyContext';
@@ -16,18 +17,21 @@ import Overlay from '../Overlay';
 import { colorWhite } from '../../styles/designTokens';
 import Page from '../Layout/Page';
 import Main from '../App/Main';
+import ScrollToFieldError from '../ScrollToFieldError/ScrollToFieldError';
 
-const renderFormFields = ({ questions, answerTypes }, values, errors, onChange, setFieldValue) =>
+const renderFormFields = ({ questions, answerTypes }, values, errors, onChange, setFieldValue, input) =>
   questions.map((field, index) => (
-    <SurveyField
-      key={index}
-      field={field}
-      answerTypes={answerTypes}
-      error={errors[field.name]}
-      value={values[field.name]}
-      onChange={onChange}
-      setFieldValue={setFieldValue}
-    />
+    <ScrollIntoViewIfNeeded key={`scroll-${index}`} active={input === field.name} tabIndex="-1">
+      <SurveyField
+        key={`field-${index}`}
+        field={field}
+        answerTypes={answerTypes}
+        error={errors[field.name]}
+        value={values[field.name]}
+        onChange={onChange}
+        setFieldValue={setFieldValue}
+      />
+    </ScrollIntoViewIfNeeded>
   ));
 
 const renderPendingSave = isSubmitting => {
@@ -132,19 +136,29 @@ const Survey = ({ match = { params: {} } }) => {
             submitSurvey(values);
           }}
         >
-          {({ values, errors, handleChange, handleSubmit, setFieldValue }) => (
-            <form
-              onSubmit={event => {
-                event.preventDefault();
-                setSubmitted(true);
-                handleSubmit();
-              }}
-            >
-              {renderFormFields(surveyData, values, errors, handleChange, setFieldValue)}
-              <Box align="center">
-                <SurveyButton buttonType="submit" label="submit" margin="xlarge" data-test-id="survey-submit-button" />
-              </Box>
-            </form>
+          {({ values, errors, handleChange, handleSubmit, setFieldValue, submitCount }) => (
+            <ScrollToFieldError formik={{ values, errors, handleChange, handleSubmit, setFieldValue, submitCount }}>
+              {({ input }) => (
+                <form
+                  name="surveyForm"
+                  onSubmit={event => {
+                    event.preventDefault();
+                    setSubmitted(true);
+                    handleSubmit();
+                  }}
+                >
+                  {renderFormFields(surveyData, values, errors, handleChange, setFieldValue, input)}
+                  <Box align="center">
+                    <SurveyButton
+                      buttonType="submit"
+                      label="submit"
+                      margin="xlarge"
+                      data-test-id="survey-submit-button"
+                    />
+                  </Box>
+                </form>
+              )}
+            </ScrollToFieldError>
           )}
         </Formik>
       </Page>
