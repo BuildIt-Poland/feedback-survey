@@ -27,7 +27,6 @@ const ScrollToFieldError = ({ formik, children }) => {
       const firstInput = getFormInputs('surveyForm').find(input => input.name && getIn(formik.errors, input.name));
 
       if (firstInput) {
-        console.log('test');
         setInput({ input: firstInput.name });
       }
     }
