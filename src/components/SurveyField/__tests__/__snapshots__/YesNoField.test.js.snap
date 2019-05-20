@@ -11,6 +11,24 @@ exports[`COMPONENT - SurveyField YesNoField renders correctly 1`] = `
   </label>
   <div
     className="StyledBox-sc-13pk1d4-0 gZSidW"
-  />
+  >
+    <div
+      className="sc-bxivhb ecyDat"
+    >
+      <input
+        className="sc-bdVaJa kRURFE"
+        id="test123"
+        name="fieldName"
+        type="radio"
+        value="test"
+      />
+      <label
+        className="sc-htpNat OeGne"
+        htmlFor="test123"
+      >
+        label-test
+      </label>
+    </div>
+  </div>
 </div>
 `;

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { arrayOf } from 'prop-types';
+import { arrayOf, string, func } from 'prop-types';
 import { Grommet } from 'grommet';
 
 import { spacingLarge, fontMedium, spacingMedium, colorRed, colorBlue } from '../../styles/designTokens';
@@ -24,9 +24,6 @@ const Wrapper = styled.div`
 
 const theme = {
   formField: {
-    // border: {
-    //   color: 'red'
-    // },
     extend: {
       label: {
         'font-size': fontMedium,
@@ -57,46 +54,74 @@ const theme = {
 
 const getAnswerTypes = (array, answerType) => array.find(item => item.type === answerType).values;
 
-const buildAnswerTypes = ({ answerType, type, id }, answerTypes) => {
+const buildAnswerTypes = ({ answerType, name }, answerTypes) => {
   const types = getAnswerTypes(answerTypes, answerType);
   return types.map(option => {
     return {
-      id: `${option}_${id}`,
+      id: `${option}_${name}`,
       value: option,
       label: option
     };
   });
 };
 
-const renderFieldByType = (field, answerTypes) => {
+const renderFieldByType = (field, answerTypes, value, error, onChange, setFieldValue) => {
   switch (field.type) {
     case 'open-ended': {
-      return <LongInputField field={field} />;
+      return <LongInputField field={field} error={error} value={value} onChange={onChange} />;
     }
     case 'select': {
-      return <SelectField field={field} options={getAnswerTypes(answerTypes, field.answerType)} />;
+      return (
+        <SelectField
+          field={field}
+          options={getAnswerTypes(answerTypes, field.answerType)}
+          error={error}
+          value={value}
+          setFieldValue={setFieldValue}
+        />
+      );
     }
     case 'radio': {
-      return <YesNoField field={field} options={buildAnswerTypes(field, answerTypes)} />;
+      return (
+        <YesNoField
+          field={field}
+          options={buildAnswerTypes(field, answerTypes)}
+          error={error}
+          value={value}
+          onChange={onChange}
+        />
+      );
     }
     case 'rating': {
-      return <RatingField field={field} options={buildAnswerTypes(field, answerTypes)} />;
+      return (
+        <RatingField
+          field={field}
+          options={buildAnswerTypes(field, answerTypes)}
+          error={error}
+          value={value}
+          onChange={onChange}
+        />
+      );
     }
     default: {
-      return <ShortInputField field={field} />;
+      return <ShortInputField field={field} error={error} value={value} onChange={onChange} />;
     }
   }
 };
 
-const SurveyField = ({ field, answerTypes }) => (
+const SurveyField = ({ field, answerTypes, value = '', error, onChange, setFieldValue }) => (
   <Grommet theme={theme}>
-    <Wrapper>{renderFieldByType(field, answerTypes)}</Wrapper>
+    <Wrapper>{renderFieldByType(field, answerTypes, value, error, onChange, setFieldValue)}</Wrapper>
   </Grommet>
 );
 
 SurveyField.propTypes = {
   field: formField.isRequired,
-  answerTypes: arrayOf(answerType)
+  answerTypes: arrayOf(answerType),
+  value: string,
+  error: string,
+  onChange: func,
+  setFieldValue: func
 };
 
 export default SurveyField;

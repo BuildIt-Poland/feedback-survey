@@ -10,7 +10,8 @@ describe('COMPONENT - SurveyField RatingField', () => {
         id: '123',
         content: 'Question content',
         type: 'yesNo',
-        required: false
+        required: false,
+        name: 'fieldName'
       },
       options: [
         {

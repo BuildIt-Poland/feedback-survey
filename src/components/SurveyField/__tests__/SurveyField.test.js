@@ -10,6 +10,7 @@ const props = {
     required: false,
     options: ['monthly', 'quaterly', 'annual'],
     answerType: 'kindOfFeedback',
+    name: 'fieldName',
     type: ''
   },
   answerTypes: [

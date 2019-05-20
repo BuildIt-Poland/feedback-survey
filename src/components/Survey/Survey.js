@@ -1,27 +1,46 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useState, useContext, useEffect, useRef } from 'react';
+import styled from 'styled-components';
 import { Redirect } from 'react-router-dom';
-import { Form, Box, Heading } from 'grommet';
+import { Box, Heading } from 'grommet';
+import { Formik } from 'formik';
 
 import { saveSurvey } from '../../services/api';
 import { SurveyContext } from '../../context/SurveyContext';
 import { surveyMatchParams } from '../../types';
-import { REQUIRED_FIELD, NO_QUESTIONS } from '../../constatnts/messages';
+import { NO_QUESTIONS, REQUIRED_QUESTION } from '../../constatnts/messages';
 import { FINAL_PATH } from '../../constatnts/routes';
+import { colorWhite } from '../../styles/designTokens';
 import SurveyField from '../SurveyField';
 import SurveyButton from '../Button';
 import Loading from '../Loading';
 import ErrorQuestionsMessage from './ErrorQuestionsMessage';
 import Overlay from '../Overlay';
-import { colorWhite } from '../../styles/designTokens';
 import Page from '../Layout/Page';
 import Main from '../App/Main';
+import ScrollToFormikError from '../ScrollToError/ScrollToFormikError';
 
-const messages = {
-  required: REQUIRED_FIELD
-};
+const ScrollAnchor = styled.div`
+  position: absolute;
+`;
 
-const renderFormFields = ({ questions, answerTypes }) =>
-  questions.map((field, index) => <SurveyField key={index} field={field} answerTypes={answerTypes} />);
+const renderFormFields = ({ questions, answerTypes }, values, errors, onChange, setFieldValue, scrollFieldRef) =>
+  questions.map((field, index) => {
+    const isFirstError = Object.keys(errors)[0] === field.name;
+    return (
+      <React.Fragment key={index}>
+        {isFirstError ? <ScrollAnchor ref={scrollFieldRef} /> : null}
+        <SurveyField
+          key={`field-${index}`}
+          field={field}
+          answerTypes={answerTypes}
+          error={errors[field.name]}
+          value={values[field.name]}
+          onChange={onChange}
+          setFieldValue={setFieldValue}
+        />
+      </React.Fragment>
+    );
+  });
 
 const renderPendingSave = isSubmitting => {
   if (!isSubmitting) {
@@ -39,14 +58,16 @@ const renderPendingSave = isSubmitting => {
 };
 
 const Survey = ({ match = { params: {} } }) => {
+  const { data, isLoading, error } = useContext(SurveyContext);
   const [surveyId, setSurveyID] = useState('');
   const [employeeName, setEmployeeName] = useState('');
-  const { data, isLoading, error } = useContext(SurveyContext);
   const [surveyData, setSurveyData] = useState(data);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccessSave, setIsSuccessSave] = useState(false);
   const [saveErrorMessage, setSaveErrorMessage] = useState('');
+  const [submitted, setSubmitted] = useState(false);
+  const scrollFieldRef = useRef(null);
 
   useEffect(() => {
     setSurveyID(match.params.surveyId ? match.params.surveyId : '');
@@ -54,12 +75,25 @@ const Survey = ({ match = { params: {} } }) => {
     setSurveyData(data);
   });
 
-  const handleSubmit = ({ value }) => {
+  const questionValidate = values => {
+    const { questions } = data;
+    let errors = {};
+    questions
+      .filter(item => item.required)
+      .filter(item => !values[item.name])
+      .forEach(item => {
+        errors[item.name] = REQUIRED_QUESTION;
+      });
+
+    return errors;
+  };
+
+  const submitSurvey = answers => {
     setIsSubmitting(true);
     const data = {
       surveyId,
       employeeName,
-      answers: value
+      answers
     };
 
     const saveData = async () => {
@@ -103,12 +137,41 @@ const Survey = ({ match = { params: {} } }) => {
     <Main>
       <Page>
         {renderPendingSave(isSubmitting)}
-        <Form onSubmit={handleSubmit} messages={messages}>
-          {renderFormFields(surveyData)}
-          <Box align="center">
-            <SurveyButton buttonType="submit" label="submit" margin="xlarge" data-test-id="survey-submit-button" />
-          </Box>
-        </Form>
+        <Formik
+          validate={questionValidate}
+          validateOnBlur={submitted}
+          validateOnChange={submitted}
+          onSubmit={(values, { setSubmitting }) => {
+            setSubmitting();
+            submitSurvey(values);
+          }}
+        >
+          {({ values, errors, handleChange, handleSubmit, setFieldValue, isValid, submitCount, isSubmitting }) => (
+            <>
+              <ScrollToFormikError
+                formik={{ isValid, submitCount, isSubmitting, errors }}
+                scrollFieldRef={scrollFieldRef}
+              />
+              <form
+                onSubmit={event => {
+                  event.preventDefault();
+                  setSubmitted(true);
+                  handleSubmit();
+                }}
+              >
+                {renderFormFields(surveyData, values, errors, handleChange, setFieldValue, scrollFieldRef)}
+                <Box align="center">
+                  <SurveyButton
+                    buttonType="submit"
+                    label="submit"
+                    margin="xlarge"
+                    data-test-id="survey-submit-button"
+                  />
+                </Box>
+              </form>
+            </>
+          )}
+        </Formik>
       </Page>
     </Main>
   );
