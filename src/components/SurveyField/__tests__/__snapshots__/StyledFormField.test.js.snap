@@ -2,7 +2,7 @@
 
 exports[`COMPONENT - SurveyField StyledFormField renders correctly 1`] = `
 <div
-  className="sc-bdVaJa fIyeZW FormField__FormFieldBox-m9hood-0 eshLKp StyledBox-sc-13pk1d4-0 CAsMy"
+  className="sc-bdVaJa bzDGWA FormField__FormFieldBox-m9hood-0 eshLKp StyledBox-sc-13pk1d4-0 CAsMy"
 >
   <div
     className="StyledBox-sc-13pk1d4-0 gZSidW"

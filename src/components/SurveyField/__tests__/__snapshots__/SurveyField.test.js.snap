@@ -8,7 +8,7 @@ exports[`COMPONENT - SurveyField renders correctly 1`] = `
     className="sc-EHOje cpubXY"
   >
     <div
-      className="sc-ifAKCX dDQvBh FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
+      className="sc-ifAKCX eZrbvU FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
     >
       <label
         className="StyledText-sc-1sadyjn-0 bMXxti"
@@ -46,7 +46,7 @@ exports[`COMPONENT - SurveyField renders correctly long input field 1`] = `
     className="sc-EHOje cpubXY"
   >
     <div
-      className="sc-ifAKCX dDQvBh FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
+      className="sc-ifAKCX eZrbvU FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
     >
       <label
         className="StyledText-sc-1sadyjn-0 bMXxti"
@@ -78,7 +78,7 @@ exports[`COMPONENT - SurveyField renders correctly rating field 1`] = `
     className="sc-EHOje cpubXY"
   >
     <div
-      className="sc-ifAKCX dDvHGA FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
+      className="sc-ifAKCX gweRqY FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
     >
       <label
         className="StyledText-sc-1sadyjn-0 bMXxti"
@@ -93,14 +93,14 @@ exports[`COMPONENT - SurveyField renders correctly rating field 1`] = `
         >
           <input
             className="sc-bdVaJa kRURFE"
-            id="Bad_123"
+            id="Bad_fieldName"
             name="fieldName"
             type="radio"
             value="Bad"
           />
           <label
             className="sc-bwzfXH fbapoN"
-            htmlFor="Bad_123"
+            htmlFor="Bad_fieldName"
           >
             <svg
               height="75"
@@ -135,14 +135,14 @@ exports[`COMPONENT - SurveyField renders correctly rating field 1`] = `
           </label>
           <input
             className="sc-bdVaJa kRURFE"
-            id="Average_123"
+            id="Average_fieldName"
             name="fieldName"
             type="radio"
             value="Average"
           />
           <label
             className="sc-bwzfXH bPQWsx"
-            htmlFor="Average_123"
+            htmlFor="Average_fieldName"
           >
             <svg
               height="75"
@@ -177,14 +177,14 @@ exports[`COMPONENT - SurveyField renders correctly rating field 1`] = `
           </label>
           <input
             className="sc-bdVaJa kRURFE"
-            id="Good_123"
+            id="Good_fieldName"
             name="fieldName"
             type="radio"
             value="Good"
           />
           <label
             className="sc-bwzfXH jBMoUI"
-            htmlFor="Good_123"
+            htmlFor="Good_fieldName"
           >
             <svg
               height="75"
@@ -220,14 +220,14 @@ c-105.857,78.955-210.188,3.26-214.584,0L119.375,325.465z"
           </label>
           <input
             className="sc-bdVaJa kRURFE"
-            id="Excellent_123"
+            id="Excellent_fieldName"
             name="fieldName"
             type="radio"
             value="Excellent"
           />
           <label
             className="sc-bwzfXH kTRrbT"
-            htmlFor="Excellent_123"
+            htmlFor="Excellent_fieldName"
           >
             <svg
               height="75"
@@ -275,7 +275,7 @@ exports[`COMPONENT - SurveyField renders correctly select field 1`] = `
     className="sc-EHOje cpubXY"
   >
     <div
-      className="sc-ifAKCX dDQvBh FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
+      className="sc-ifAKCX eZrbvU FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
     >
       <label
         className="StyledText-sc-1sadyjn-0 bMXxti"
@@ -358,7 +358,7 @@ exports[`COMPONENT - SurveyField renders correctly with required field 1`] = `
     className="sc-EHOje cpubXY"
   >
     <div
-      className="sc-ifAKCX jxwtLi FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
+      className="sc-ifAKCX hCAThq FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
     >
       <label
         className="StyledText-sc-1sadyjn-0 bMXxti"
@@ -396,7 +396,7 @@ exports[`COMPONENT - SurveyField renders correctly yes-no field 1`] = `
     className="sc-EHOje cpubXY"
   >
     <div
-      className="sc-ifAKCX dDvHGA FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
+      className="sc-ifAKCX gweRqY FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
     >
       <label
         className="StyledText-sc-1sadyjn-0 bMXxti"
@@ -411,27 +411,27 @@ exports[`COMPONENT - SurveyField renders correctly yes-no field 1`] = `
         >
           <input
             className="sc-bdVaJa kRURFE"
-            id="Yes_123"
+            id="Yes_fieldName"
             name="fieldName"
             type="radio"
             value="Yes"
           />
           <label
             className="sc-htpNat OeGne"
-            htmlFor="Yes_123"
+            htmlFor="Yes_fieldName"
           >
             Yes
           </label>
           <input
             className="sc-bdVaJa kRURFE"
-            id="No_123"
+            id="No_fieldName"
             name="fieldName"
             type="radio"
             value="No"
           />
           <label
             className="sc-htpNat OeGne"
-            htmlFor="No_123"
+            htmlFor="No_fieldName"
           >
             No
           </label>
