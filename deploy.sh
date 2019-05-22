@@ -2,7 +2,7 @@
 
 npm install
 
-REACT_APP_API_URL=DEV_API_URL npm run build
+REACT_APP_API_URL=${DEV_API_URL} npm run build
 
 # Install the AWS CLI so we can publish to S3
 # --upgrade option tells to upgrade any requirements that are already installed.
