@@ -9,10 +9,10 @@ script:
   - npm run format:check
 deploy:
   - provider: script
-    script: deploy-prod.sh
+    script: bash deploy-prod.sh
     on:
       branch: master
   - provider: script
-    script: deploy-dev.sh
+    script: bash deploy-dev.sh
     on:
       branch: feature/ci
