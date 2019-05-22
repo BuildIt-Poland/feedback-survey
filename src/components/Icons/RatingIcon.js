@@ -3,7 +3,7 @@ import { string } from 'prop-types';
 
 const renderRatingIconByName = name => {
   switch (name) {
-    case 'bad':
+    case 'below expectations':
       return (
         <path d="M245,248.479c-60.977,0-110.409,49.432-110.409,110.409h220.818C355.409,297.911,305.977,248.479,245,248.479z" />
       );

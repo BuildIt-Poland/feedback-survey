@@ -14,7 +14,7 @@ import {
 } from '../../styles/designTokens';
 
 const colorsMap = {
-  bad: colorRed,
+  'below expectations': colorRed,
   average: colorYellow,
   good: colorTurquoise,
   excellent: colorBlue
@@ -34,6 +34,8 @@ const Label = styled.label`
     font-size: ${fontSmall};
     text-transform: lowercase;
     margin-top: ${spacingSmall};
+    width: 10rem;
+    text-align: center;
   }
 
   input:not(:checked) + & svg {

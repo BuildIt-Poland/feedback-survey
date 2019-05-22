@@ -89,7 +89,7 @@ exports[`COMPONENT - SurveyField renders correctly rating field 1`] = `
         className="StyledBox-sc-13pk1d4-0 gZSidW"
       >
         <div
-          className="sc-bxivhb ecyDat"
+          className="sc-bxivhb cSJGRK"
         >
           <input
             className="sc-bdVaJa kRURFE"
@@ -99,7 +99,7 @@ exports[`COMPONENT - SurveyField renders correctly rating field 1`] = `
             value="Bad"
           />
           <label
-            className="sc-bwzfXH fbapoN"
+            className="sc-bwzfXH hTdoZH"
             htmlFor="Bad_fieldName"
           >
             <svg
@@ -111,9 +111,6 @@ exports[`COMPONENT - SurveyField renders correctly rating field 1`] = `
               y="0px"
             >
               <g>
-                <path
-                  d="M245,248.479c-60.977,0-110.409,49.432-110.409,110.409h220.818C355.409,297.911,305.977,248.479,245,248.479z"
-                />
                 <circle
                   cx="157.651"
                   cy="175.288"
@@ -141,7 +138,7 @@ exports[`COMPONENT - SurveyField renders correctly rating field 1`] = `
             value="Average"
           />
           <label
-            className="sc-bwzfXH bPQWsx"
+            className="sc-bwzfXH kFEebr"
             htmlFor="Average_fieldName"
           >
             <svg
@@ -183,7 +180,7 @@ exports[`COMPONENT - SurveyField renders correctly rating field 1`] = `
             value="Good"
           />
           <label
-            className="sc-bwzfXH jBMoUI"
+            className="sc-bwzfXH eltacH"
             htmlFor="Good_fieldName"
           >
             <svg
@@ -226,7 +223,7 @@ c-105.857,78.955-210.188,3.26-214.584,0L119.375,325.465z"
             value="Excellent"
           />
           <label
-            className="sc-bwzfXH kTRrbT"
+            className="sc-bwzfXH nfmuJ"
             htmlFor="Excellent_fieldName"
           >
             <svg
@@ -407,7 +404,7 @@ exports[`COMPONENT - SurveyField renders correctly yes-no field 1`] = `
         className="StyledBox-sc-13pk1d4-0 gZSidW"
       >
         <div
-          className="sc-bxivhb ecyDat"
+          className="sc-bxivhb cSJGRK"
         >
           <input
             className="sc-bdVaJa kRURFE"
