@@ -15,4 +15,4 @@ deploy:
   - provider: script
     script: bash deploy-dev.sh
     on:
-      branch: feature/ci
+      all_branches: true
