@@ -112,18 +112,18 @@ exports[`COMPONENT - App renders correctly /final route 1`] = `
     </header>
   </div>
   <main
-    className="sc-dnqmqq gjaOdM"
+    className="sc-iwsKbI bGYIAx"
   >
     <section
-      className="sc-htoDjs ggzxba"
+      className="sc-dnqmqq acBSd"
     >
       <h1
-        className="sc-gZMcBi klShwS StyledHeading-sc-1rdh4aw-0 cnPzet"
+        className="sc-gzVnrw fKHbSl StyledHeading-sc-1rdh4aw-0 cnPzet"
       >
         Performance Snapshot on RSR Consultant:
       </h1>
       <h2
-        className="sc-gZMcBi klShwS StyledHeading-sc-1rdh4aw-0 jgvbu"
+        className="sc-gzVnrw fKHbSl StyledHeading-sc-1rdh4aw-0 jgvbu"
       >
         
       </h2>
@@ -170,7 +170,7 @@ exports[`COMPONENT - App renders correctly /final route 1`] = `
     <p
       className="sc-gqjmRU hZMuTE"
     >
-      Randstad Sourceright (Hong Kong SAR) EA Licence No. 57155 | Randstad Sourceright (Singapore) EA
+      Randstad Sourceright (Hong Kong SAR) EA Licence No. 57155 | Randstad Sourceright (Singapore) EA Licence No. 94C3609
     </p>
   </footer>
 </div>
@@ -288,18 +288,18 @@ exports[`COMPONENT - App renders correctly default route 1`] = `
     </header>
   </div>
   <main
-    className="sc-dnqmqq gjaOdM"
+    className="sc-iwsKbI bGYIAx"
   >
     <section
-      className="sc-htoDjs ggzxba"
+      className="sc-dnqmqq acBSd"
     >
       <h1
-        className="sc-gZMcBi klShwS StyledHeading-sc-1rdh4aw-0 cnPzet"
+        className="sc-gzVnrw fKHbSl StyledHeading-sc-1rdh4aw-0 cnPzet"
       >
         Performance Snapshot on RSR Consultant:
       </h1>
       <h2
-        className="sc-gZMcBi klShwS StyledHeading-sc-1rdh4aw-0 jgvbu"
+        className="sc-gzVnrw fKHbSl StyledHeading-sc-1rdh4aw-0 jgvbu"
       >
         
       </h2>
@@ -346,7 +346,7 @@ exports[`COMPONENT - App renders correctly default route 1`] = `
     <p
       className="sc-gqjmRU hZMuTE"
     >
-      Randstad Sourceright (Hong Kong SAR) EA Licence No. 57155 | Randstad Sourceright (Singapore) EA
+      Randstad Sourceright (Hong Kong SAR) EA Licence No. 57155 | Randstad Sourceright (Singapore) EA Licence No. 94C3609
     </p>
   </footer>
 </div>
@@ -464,18 +464,18 @@ exports[`COMPONENT - App renders correctly survey route 1`] = `
     </header>
   </div>
   <main
-    className="sc-dnqmqq gjaOdM"
+    className="sc-iwsKbI bGYIAx"
   >
     <section
-      className="sc-htoDjs ggzxba"
+      className="sc-dnqmqq acBSd"
     >
       <h1
-        className="sc-gZMcBi klShwS StyledHeading-sc-1rdh4aw-0 cnPzet"
+        className="sc-gzVnrw fKHbSl StyledHeading-sc-1rdh4aw-0 cnPzet"
       >
         Performance Snapshot on RSR Consultant:
       </h1>
       <h2
-        className="sc-gZMcBi klShwS StyledHeading-sc-1rdh4aw-0 jgvbu"
+        className="sc-gzVnrw fKHbSl StyledHeading-sc-1rdh4aw-0 jgvbu"
       >
         
       </h2>
@@ -522,7 +522,7 @@ exports[`COMPONENT - App renders correctly survey route 1`] = `
     <p
       className="sc-gqjmRU hZMuTE"
     >
-      Randstad Sourceright (Hong Kong SAR) EA Licence No. 57155 | Randstad Sourceright (Singapore) EA
+      Randstad Sourceright (Hong Kong SAR) EA Licence No. 57155 | Randstad Sourceright (Singapore) EA Licence No. 94C3609
     </p>
   </footer>
 </div>

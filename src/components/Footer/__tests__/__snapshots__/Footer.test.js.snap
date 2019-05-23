@@ -7,7 +7,7 @@ exports[`COMPONENT - Footer renders correctly 1`] = `
   <p
     className="sc-bdVaJa gxYkJN"
   >
-    Randstad Sourceright (Hong Kong SAR) EA Licence No. 57155 | Randstad Sourceright (Singapore) EA
+    Randstad Sourceright (Hong Kong SAR) EA Licence No. 57155 | Randstad Sourceright (Singapore) EA Licence No. 94C3609
   </p>
 </footer>
 `;

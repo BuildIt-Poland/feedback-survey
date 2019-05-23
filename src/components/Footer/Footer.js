@@ -15,7 +15,8 @@ const Wrapper = styled.footer`
 const Footer = () => (
   <Wrapper>
     <Paragraph>
-      Randstad Sourceright (Hong Kong SAR) EA Licence No. 57155 | Randstad Sourceright (Singapore) EA
+      Randstad Sourceright (Hong Kong SAR) EA Licence No. 57155 | Randstad Sourceright (Singapore) EA Licence No.
+      94C3609
     </Paragraph>
   </Wrapper>
 );

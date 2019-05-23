@@ -4,20 +4,20 @@ exports[`COMPONENT - Survey renders Loading component if data loading 1`] = `
 <div
   className="StyledBox-sc-13pk1d4-0 hUosMD"
 >
-  <h4
-    className="StyledHeading-sc-1rdh4aw-0 hlZfma"
+  <h3
+    className="sc-gzVnrw fKHbSl StyledHeading-sc-1rdh4aw-0 gRvHvF"
   >
     Loading...
-  </h4>
+  </h3>
 </div>
 `;
 
 exports[`COMPONENT - Survey renders correctly with data 1`] = `
 <main
-  className="sc-dnqmqq iACYhp"
+  className="sc-iwsKbI gkoaJP"
 >
   <section
-    className="sc-htoDjs ggzxba"
+    className="sc-dnqmqq acBSd"
   >
     <form
       onSubmit={[Function]}

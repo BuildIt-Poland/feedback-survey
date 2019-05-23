@@ -13,7 +13,7 @@ exports[`COMPONENT - SurveyField RatingField does not render without field 1`] =
     className="StyledBox-sc-13pk1d4-0 gZSidW"
   >
     <div
-      className="sc-bxivhb ecyDat"
+      className="sc-bxivhb cSJGRK"
     >
       <input
         className="sc-bdVaJa kRURFE"
@@ -23,7 +23,7 @@ exports[`COMPONENT - SurveyField RatingField does not render without field 1`] =
         value="test"
       />
       <label
-        className="sc-bwzfXH fJNuHG"
+        className="sc-bwzfXH hTdoZH"
         htmlFor="test123"
       >
         <svg

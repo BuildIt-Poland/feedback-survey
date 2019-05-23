@@ -9,7 +9,6 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: center;
 `;
 
 const renderRadioButtons = (options, name, withIcon) =>

@@ -1,9 +1,10 @@
 import React from 'react';
-import { Box, Heading } from 'grommet';
+import { Box } from 'grommet';
+import StyledHeading from '../Layout/Heading';
 
 const Loading = () => (
   <Box animation="pulse" align="center" justify="center" pad="medium" height="90vh">
-    <Heading level="4">Loading...</Heading>
+    <StyledHeading level="3">Loading...</StyledHeading>
   </Box>
 );
 
