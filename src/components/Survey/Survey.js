@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { Redirect } from 'react-router-dom';
-import { Box, Heading } from 'grommet';
+import { Box } from 'grommet';
 import { Formik } from 'formik';
 
 import { saveSurvey } from '../../services/api';
@@ -18,6 +18,7 @@ import Overlay from '../Overlay';
 import Page from '../Layout/Page';
 import Main from '../App/Main';
 import ScrollToFormikError from '../ScrollToError/ScrollToFormikError';
+import StyledHeading from '../Layout/Heading';
 
 const ScrollAnchor = styled.div`
   position: absolute;
@@ -49,9 +50,9 @@ const renderPendingSave = isSubmitting => {
   return (
     <Overlay>
       <Box animation="pulse" align="center" justify="center" pad="medium" height="90vh">
-        <Heading level="2" color={colorWhite}>
+        <StyledHeading level="2" color={colorWhite}>
           Saving survey...
-        </Heading>
+        </StyledHeading>
       </Box>
     </Overlay>
   );
@@ -136,7 +137,7 @@ const Survey = ({ match = { params: {} } }) => {
   return (
     <Main>
       <Page>
-        {renderPendingSave(isSubmitting)}
+        {renderPendingSave(true)}
         <Formik
           validate={questionValidate}
           validateOnBlur={submitted}

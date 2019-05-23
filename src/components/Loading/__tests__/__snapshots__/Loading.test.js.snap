@@ -4,10 +4,10 @@ exports[`COMPONENT - Loading renders correctly 1`] = `
 <div
   className="StyledBox-sc-13pk1d4-0 hUosMD"
 >
-  <h4
-    className="StyledHeading-sc-1rdh4aw-0 hlZfma"
+  <h3
+    className="sc-bdVaJa hFrVFs StyledHeading-sc-1rdh4aw-0 gRvHvF"
   >
     Loading...
-  </h4>
+  </h3>
 </div>
 `;
