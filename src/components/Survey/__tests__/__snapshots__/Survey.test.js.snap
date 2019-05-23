@@ -19,19 +19,6 @@ exports[`COMPONENT - Survey renders correctly with data 1`] = `
   <section
     className="sc-dnqmqq acBSd"
   >
-    <div
-      className="sc-htoDjs ebNKnn"
-    >
-      <div
-        className="StyledBox-sc-13pk1d4-0 hUosMD"
-      >
-        <h2
-          className="sc-gzVnrw fKHbSl StyledHeading-sc-1rdh4aw-0 kWaruE"
-        >
-          Saving survey...
-        </h2>
-      </div>
-    </div>
     <form
       onSubmit={[Function]}
     >

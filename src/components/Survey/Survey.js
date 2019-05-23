@@ -137,7 +137,7 @@ const Survey = ({ match = { params: {} } }) => {
   return (
     <Main>
       <Page>
-        {renderPendingSave(true)}
+        {renderPendingSave(isSubmitting)}
         <Formik
           validate={questionValidate}
           validateOnBlur={submitted}
