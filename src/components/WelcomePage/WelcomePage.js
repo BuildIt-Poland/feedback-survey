@@ -8,7 +8,7 @@ import Page from '../Layout/Page';
 import StyledHeading from '../Layout/Heading';
 import Main from '../App/Main';
 
-const Welcome = ({ match = { params: {} } }) => {
+const WelcomePage = ({ match = { params: {} } }) => {
   const [surveyId, setSurveyID] = useState('');
   const [employeeName, setEmployeeName] = useState('');
   const [path, setPath] = useState('');
@@ -35,8 +35,8 @@ const Welcome = ({ match = { params: {} } }) => {
   );
 };
 
-Welcome.propTypes = {
+WelcomePage.propTypes = {
   match: surveyMatchParams
 };
 
-export default Welcome;
+export default WelcomePage;

@@ -1,13 +1,13 @@
 import React from 'react';
 import { create } from 'react-test-renderer';
 
-import Welcome from '../Welcome';
+import WelcomePage from '../WelcomePage';
 
 jest.mock('react-router-dom', () => ({
   Link: 'Link'
 }));
 
-describe('COMPONENT - Welcome', () => {
+describe('COMPONENT - WelcomePage', () => {
   it('renders correctly with params', () => {
     const match = {
       params: {
@@ -15,13 +15,13 @@ describe('COMPONENT - Welcome', () => {
         employeeName: 'John'
       }
     };
-    const component = create(<Welcome match={match} />);
+    const component = create(<WelcomePage match={match} />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });
 
   it('renders correctly without params', () => {
-    const component = create(<Welcome />);
+    const component = create(<WelcomePage />);
 
     expect(component.toJSON()).toMatchSnapshot();
   });
