@@ -16,7 +16,15 @@ const ScrollAnchor = styled.div`
   position: absolute;
 `;
 
-const renderFormFields = ({ questions, answerTypes }, values, errors, onChange, setFieldValue, scrollFieldRef) =>
+const renderFormFields = (
+  { questions, answerTypes },
+  values,
+  errors,
+  touched,
+  onChange,
+  setFieldValue,
+  scrollFieldRef
+) =>
   questions.map((field, index) => {
     const isFirstError = Object.keys(errors)[0] === field.name;
     return (
@@ -26,7 +34,7 @@ const renderFormFields = ({ questions, answerTypes }, values, errors, onChange, 
           key={`field-${index}`}
           field={field}
           answerTypes={answerTypes}
-          error={errors[field.name]}
+          error={touched[field.name] ? errors[field.name] : null}
           value={values[field.name]}
           onChange={onChange}
           setFieldValue={setFieldValue}
@@ -38,6 +46,7 @@ const renderFormFields = ({ questions, answerTypes }, values, errors, onChange, 
 const SurveyForm = ({
   values,
   errors,
+  touched,
   handleChange,
   handleSubmit,
   setFieldValue,
@@ -81,7 +90,7 @@ const SurveyForm = ({
           handleSubmit();
         }}
       >
-        {renderFormFields(surveyData, values, errors, handleChange, setFieldValue, scrollFieldRef)}
+        {renderFormFields(surveyData, values, errors, touched, handleChange, setFieldValue, scrollFieldRef)}
         <Box align="center">
           <SurveyButton buttonType="submit" label="submit" margin="xlarge" data-test-id="survey-submit-button" />
         </Box>

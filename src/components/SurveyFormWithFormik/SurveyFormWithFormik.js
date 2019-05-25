@@ -60,10 +60,6 @@ const handleSubmit = (values, { props, setSubmitting, setStatus }) => {
 };
 
 const SurveyFormWithFormik = withFormik({
-  // TODO: need props to make it true only after submit
-  validateOnBlur: false,
-  validateOnChange: false,
-
   mapPropsToValues: setInitialValues,
   validate: questionValidate,
   handleSubmit: handleSubmit

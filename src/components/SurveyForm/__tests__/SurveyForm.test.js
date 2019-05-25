@@ -23,6 +23,9 @@ describe('COMPONENT - SurveyForm', () => {
       ...surveyDataMock,
       errors: {
         testName: 'error'
+      },
+      touched: {
+        testName: true
       }
     };
     const component = create(<SurveyForm {...updatedProps} />);

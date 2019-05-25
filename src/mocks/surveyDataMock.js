@@ -18,5 +18,6 @@ export const surveyDataMock = {
     ]
   },
   errors: {},
-  values: {}
+  values: {},
+  touched: {}
 };
