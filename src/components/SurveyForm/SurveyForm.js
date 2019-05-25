@@ -7,6 +7,10 @@ import SurveyButton from '../Button';
 import SurveyField from '../SurveyField';
 import ScrollToFormikError from '../ScrollToError/ScrollToFormikError';
 import { FINAL_PATH } from '../../constatnts/routes';
+import StyledHeading from '../Layout/Heading';
+import { colorWhite } from '../../styles/designTokens';
+import Overlay from '../Overlay';
+import { DURING_SUBMIT } from '../../constatnts/messages';
 
 const ScrollAnchor = styled.div`
   position: absolute;
@@ -53,6 +57,18 @@ const SurveyForm = ({
           state: { isSuccessSave: status.isSuccessSave, saveErrorMessage: status.saveErrorMessage }
         }}
       />
+    );
+  }
+
+  if (isSubmitting) {
+    return (
+      <Overlay>
+        <Box animation="pulse" align="center" justify="center" pad="medium" height="90vh">
+          <StyledHeading level="2" color={colorWhite}>
+            {DURING_SUBMIT}
+          </StyledHeading>
+        </Box>
+      </Overlay>
     );
   }
 

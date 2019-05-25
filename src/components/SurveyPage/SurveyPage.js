@@ -5,9 +5,9 @@ import Page from '../Layout/Page';
 import Main from '../App/Main';
 import { SurveyContext } from '../../context/SurveyContext';
 import Loading from '../Loading';
-import ErrorQuestionsMessage from '../Survey/ErrorQuestionsMessage';
 import { NO_QUESTIONS } from '../../constatnts/messages';
 import SurveyFormWithFormik from '../SurveyFormWithFormik';
+import ErrorQuestionsMessage from '../ErrorQuestionsMessage/ErrorQuestionsMessage';
 
 const SurveyPage = ({ match = { params: {} } }) => {
   const { data, isLoading, error } = useContext(SurveyContext);
