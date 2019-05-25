@@ -31,8 +31,8 @@ const removeEmptyValues = obj => {
   Object.keys(obj).forEach(key => obj[key] === '' && delete obj[key]);
 };
 
-const handleSubmit = (values, { props, setSubmitting, setStatus }) => {
-  const { surveyId, employeeName } = props.surveyData;
+const handleSubmit = (values, { props, setStatus }) => {
+  const { surveyId, employeeName } = props;
   const surveyStatus = {
     isSuccessSave: false,
     saveErrorMessage: '',
