@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`COMPONENT - Welcome renders correctly with params 1`] = `
+exports[`COMPONENT - WelcomePage renders correctly with params 1`] = `
 <main
   className="sc-EHOje gKsHfs"
 >
@@ -55,7 +55,7 @@ exports[`COMPONENT - Welcome renders correctly with params 1`] = `
 </main>
 `;
 
-exports[`COMPONENT - Welcome renders correctly without params 1`] = `
+exports[`COMPONENT - WelcomePage renders correctly without params 1`] = `
 <main
   className="sc-EHOje gKsHfs"
 >

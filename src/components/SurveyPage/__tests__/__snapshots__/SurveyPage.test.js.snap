@@ -1,0 +1,167 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`COMPONENT - SurveyPage renders Loading component if data loading 1`] = `
+<div
+  className="StyledBox-sc-13pk1d4-0 hUosMD"
+>
+  <h3
+    className="sc-htpNat gwZFiw StyledHeading-sc-1rdh4aw-0 gRvHvF"
+  >
+    Loading...
+  </h3>
+</div>
+`;
+
+exports[`COMPONENT - SurveyPage renders correctly with data 1`] = `
+<main
+  className="sc-bwzfXH kUHKbp"
+>
+  <section
+    className="sc-bdVaJa jihNFi"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <div
+        className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
+      >
+        <div
+          className="sc-dnqmqq eGMfmX"
+        >
+          <div
+            className="sc-htoDjs fULGFU FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
+          >
+            <label
+              className="StyledText-sc-1sadyjn-0 bMXxti"
+            >
+              Test question?
+            </label>
+            <div
+              className="StyledBox-sc-13pk1d4-0 gZSidW"
+            >
+              <div
+                className="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 yIdXy"
+              >
+                <input
+                  autoComplete="off"
+                  className="StyledTextInput-sc-1x30a0s-0 cyWwXE"
+                  name="testName"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="StyledBox-sc-13pk1d4-0 dNgQiZ"
+      >
+        <button
+          className="sc-bxivhb ecUKhc StyledButton-sc-323bzc-0 bmExQD"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          size="large"
+          type="submit"
+        >
+          submit
+        </button>
+      </div>
+    </form>
+  </section>
+</main>
+`;
+
+exports[`COMPONENT - SurveyPage renders correctly with params 1`] = `
+<main
+  className="sc-bwzfXH kUHKbp"
+>
+  <section
+    className="sc-bdVaJa jihNFi"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <div
+        className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
+      >
+        <div
+          className="sc-dnqmqq eGMfmX"
+        >
+          <div
+            className="sc-htoDjs fULGFU FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
+          >
+            <label
+              className="StyledText-sc-1sadyjn-0 bMXxti"
+            >
+              Test question?
+            </label>
+            <div
+              className="StyledBox-sc-13pk1d4-0 gZSidW"
+            >
+              <div
+                className="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 yIdXy"
+              >
+                <input
+                  autoComplete="off"
+                  className="StyledTextInput-sc-1x30a0s-0 cyWwXE"
+                  name="testName"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  value=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="StyledBox-sc-13pk1d4-0 dNgQiZ"
+      >
+        <button
+          className="sc-bxivhb ecUKhc StyledButton-sc-323bzc-0 bmExQD"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          size="large"
+          type="submit"
+        >
+          submit
+        </button>
+      </div>
+    </form>
+  </section>
+</main>
+`;
+
+exports[`COMPONENT - SurveyPage renders error message 1`] = `
+<div
+  className="StyledBox-sc-13pk1d4-0 ePVEiU"
+>
+  <h4
+    className="StyledHeading-sc-1rdh4aw-0 btqNMh"
+  >
+    error message
+  </h4>
+</div>
+`;
+
+exports[`COMPONENT - SurveyPage renders info message if there are no questions  1`] = `
+<div
+  className="StyledBox-sc-13pk1d4-0 ePVEiU"
+>
+  <h4
+    className="StyledHeading-sc-1rdh4aw-0 btqNMh"
+  >
+    Oops, something went wrong, there is no questions.
+  </h4>
+</div>
+`;

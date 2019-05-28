@@ -2,14 +2,14 @@
 
 exports[`COMPONENT - App renders correctly /final route 1`] = `
 <div
-  className="sc-cSHVUG gYRfZP"
+  className="sc-dnqmqq icmAsQ"
 >
   <div
-    className="sc-jzJRlG cMksGv"
+    className="sc-htoDjs eRfIlK"
   >
     <header>
       <a
-        className="sc-fjdhpX jQgmiL"
+        className="sc-gzVnrw hiHaTe"
         href="/"
         onClick={[Function]}
       >
@@ -112,36 +112,36 @@ exports[`COMPONENT - App renders correctly /final route 1`] = `
     </header>
   </div>
   <main
-    className="sc-iwsKbI bGYIAx"
+    className="sc-bxivhb kpqOmA"
   >
     <section
-      className="sc-dnqmqq acBSd"
+      className="sc-bdVaJa jihNFi"
     >
       <h1
-        className="sc-gzVnrw fKHbSl StyledHeading-sc-1rdh4aw-0 cnPzet"
+        className="sc-bwzfXH fIpTJf StyledHeading-sc-1rdh4aw-0 cnPzet"
       >
         Performance Snapshot on RSR Consultant:
       </h1>
       <h2
-        className="sc-gzVnrw fKHbSl StyledHeading-sc-1rdh4aw-0 jgvbu"
+        className="sc-bwzfXH fIpTJf StyledHeading-sc-1rdh4aw-0 jgvbu"
       >
         
       </h2>
       <section
-        className="sc-jTzLTM gfVbA"
+        className="sc-EHOje epWACv"
       >
         <p
-          className="sc-gqjmRU hZMuTE"
+          className="sc-htpNat kvSJNm"
         >
           The feedback you provide will be used for individual development and career pathway and forms part of RSR Reward and Recognition scheme.
         </p>
         <p
-          className="sc-gqjmRU hZMuTE"
+          className="sc-htpNat kvSJNm"
         >
           Feedback will also be used to enhance and evolve individual contribution to your organisation.
         </p>
         <p
-          className="sc-gqjmRU hZMuTE"
+          className="sc-htpNat kvSJNm"
         >
           We therefore ask you to provide feedback based on factual evidence only and we may ask you for further information in some individual performance feedback.
         </p>
@@ -165,10 +165,10 @@ exports[`COMPONENT - App renders correctly /final route 1`] = `
     </section>
   </main>
   <footer
-    className="sc-kAzzGY fNJgUE"
+    className="sc-iwsKbI wVffR"
   >
     <p
-      className="sc-gqjmRU hZMuTE"
+      className="sc-htpNat kvSJNm"
     >
       Randstad Sourceright (Hong Kong SAR) EA Licence No. 57155 | Randstad Sourceright (Singapore) EA Licence No. 94C3609
     </p>
@@ -178,14 +178,14 @@ exports[`COMPONENT - App renders correctly /final route 1`] = `
 
 exports[`COMPONENT - App renders correctly default route 1`] = `
 <div
-  className="sc-cSHVUG gYRfZP"
+  className="sc-dnqmqq icmAsQ"
 >
   <div
-    className="sc-jzJRlG cMksGv"
+    className="sc-htoDjs eRfIlK"
   >
     <header>
       <a
-        className="sc-fjdhpX jQgmiL"
+        className="sc-gzVnrw hiHaTe"
         href="/"
         onClick={[Function]}
       >
@@ -288,36 +288,36 @@ exports[`COMPONENT - App renders correctly default route 1`] = `
     </header>
   </div>
   <main
-    className="sc-iwsKbI bGYIAx"
+    className="sc-bxivhb kpqOmA"
   >
     <section
-      className="sc-dnqmqq acBSd"
+      className="sc-bdVaJa jihNFi"
     >
       <h1
-        className="sc-gzVnrw fKHbSl StyledHeading-sc-1rdh4aw-0 cnPzet"
+        className="sc-bwzfXH fIpTJf StyledHeading-sc-1rdh4aw-0 cnPzet"
       >
         Performance Snapshot on RSR Consultant:
       </h1>
       <h2
-        className="sc-gzVnrw fKHbSl StyledHeading-sc-1rdh4aw-0 jgvbu"
+        className="sc-bwzfXH fIpTJf StyledHeading-sc-1rdh4aw-0 jgvbu"
       >
         
       </h2>
       <section
-        className="sc-jTzLTM gfVbA"
+        className="sc-EHOje epWACv"
       >
         <p
-          className="sc-gqjmRU hZMuTE"
+          className="sc-htpNat kvSJNm"
         >
           The feedback you provide will be used for individual development and career pathway and forms part of RSR Reward and Recognition scheme.
         </p>
         <p
-          className="sc-gqjmRU hZMuTE"
+          className="sc-htpNat kvSJNm"
         >
           Feedback will also be used to enhance and evolve individual contribution to your organisation.
         </p>
         <p
-          className="sc-gqjmRU hZMuTE"
+          className="sc-htpNat kvSJNm"
         >
           We therefore ask you to provide feedback based on factual evidence only and we may ask you for further information in some individual performance feedback.
         </p>
@@ -341,10 +341,10 @@ exports[`COMPONENT - App renders correctly default route 1`] = `
     </section>
   </main>
   <footer
-    className="sc-kAzzGY fNJgUE"
+    className="sc-iwsKbI wVffR"
   >
     <p
-      className="sc-gqjmRU hZMuTE"
+      className="sc-htpNat kvSJNm"
     >
       Randstad Sourceright (Hong Kong SAR) EA Licence No. 57155 | Randstad Sourceright (Singapore) EA Licence No. 94C3609
     </p>
@@ -354,14 +354,14 @@ exports[`COMPONENT - App renders correctly default route 1`] = `
 
 exports[`COMPONENT - App renders correctly survey route 1`] = `
 <div
-  className="sc-cSHVUG gYRfZP"
+  className="sc-dnqmqq icmAsQ"
 >
   <div
-    className="sc-jzJRlG cMksGv"
+    className="sc-htoDjs eRfIlK"
   >
     <header>
       <a
-        className="sc-fjdhpX jQgmiL"
+        className="sc-gzVnrw hiHaTe"
         href="/"
         onClick={[Function]}
       >
@@ -464,36 +464,36 @@ exports[`COMPONENT - App renders correctly survey route 1`] = `
     </header>
   </div>
   <main
-    className="sc-iwsKbI bGYIAx"
+    className="sc-bxivhb kpqOmA"
   >
     <section
-      className="sc-dnqmqq acBSd"
+      className="sc-bdVaJa jihNFi"
     >
       <h1
-        className="sc-gzVnrw fKHbSl StyledHeading-sc-1rdh4aw-0 cnPzet"
+        className="sc-bwzfXH fIpTJf StyledHeading-sc-1rdh4aw-0 cnPzet"
       >
         Performance Snapshot on RSR Consultant:
       </h1>
       <h2
-        className="sc-gzVnrw fKHbSl StyledHeading-sc-1rdh4aw-0 jgvbu"
+        className="sc-bwzfXH fIpTJf StyledHeading-sc-1rdh4aw-0 jgvbu"
       >
         
       </h2>
       <section
-        className="sc-jTzLTM gfVbA"
+        className="sc-EHOje epWACv"
       >
         <p
-          className="sc-gqjmRU hZMuTE"
+          className="sc-htpNat kvSJNm"
         >
           The feedback you provide will be used for individual development and career pathway and forms part of RSR Reward and Recognition scheme.
         </p>
         <p
-          className="sc-gqjmRU hZMuTE"
+          className="sc-htpNat kvSJNm"
         >
           Feedback will also be used to enhance and evolve individual contribution to your organisation.
         </p>
         <p
-          className="sc-gqjmRU hZMuTE"
+          className="sc-htpNat kvSJNm"
         >
           We therefore ask you to provide feedback based on factual evidence only and we may ask you for further information in some individual performance feedback.
         </p>
@@ -517,10 +517,10 @@ exports[`COMPONENT - App renders correctly survey route 1`] = `
     </section>
   </main>
   <footer
-    className="sc-kAzzGY fNJgUE"
+    className="sc-iwsKbI wVffR"
   >
     <p
-      className="sc-gqjmRU hZMuTE"
+      className="sc-htpNat kvSJNm"
     >
       Randstad Sourceright (Hong Kong SAR) EA Licence No. 57155 | Randstad Sourceright (Singapore) EA Licence No. 94C3609
     </p>

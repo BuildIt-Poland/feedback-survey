@@ -1,36 +1,31 @@
 import React from 'react';
 import { create } from 'react-test-renderer';
-import { render, fireEvent, cleanup } from 'react-testing-library';
 
-import Survey from '../Survey';
+import SurveyPage from '../SurveyPage';
 import { SurveyContext } from '../../../context/SurveyContext';
+import { surveyDataMock } from '../../../mocks/surveyDataMock';
 
 const contextValue = {
   isLoading: false,
   error: '',
-  data: {
-    questions: [
-      {
-        id: '4',
-        type: 'select',
-        content: 'What kind of feedback are you providing?',
-        required: false,
-        name: 'kind-of-feedback',
-        answerType: 'kindOfFeedback'
-      }
-    ],
-    answerTypes: [
-      {
-        type: 'kindOfFeedback',
-        values: ['monthly', 'quaterly', 'annual']
-      }
-    ]
-  }
+  data: surveyDataMock.surveyData
 };
 
-afterEach(cleanup);
-
-describe('COMPONENT - Survey', () => {
+describe('COMPONENT - SurveyPage', () => {
+  it('renders correctly with params', () => {
+    const match = {
+      params: {
+        surveyId: '12345',
+        employeeName: 'John'
+      }
+    };
+    const component = create(
+      <SurveyContext.Provider value={contextValue}>
+        <SurveyPage match={match} />
+      </SurveyContext.Provider>
+    );
+    expect(component.toJSON()).toMatchSnapshot();
+  });
   it('renders Loading component if data loading', () => {
     const props = {
       ...contextValue,
@@ -38,7 +33,7 @@ describe('COMPONENT - Survey', () => {
     };
     const component = create(
       <SurveyContext.Provider value={props}>
-        <Survey />
+        <SurveyPage />
       </SurveyContext.Provider>
     );
 
@@ -52,7 +47,7 @@ describe('COMPONENT - Survey', () => {
     };
     const component = create(
       <SurveyContext.Provider value={props}>
-        <Survey />
+        <SurveyPage />
       </SurveyContext.Provider>
     );
 
@@ -69,7 +64,7 @@ describe('COMPONENT - Survey', () => {
     };
     const component = create(
       <SurveyContext.Provider value={props}>
-        <Survey />
+        <SurveyPage />
       </SurveyContext.Provider>
     );
 
@@ -79,22 +74,10 @@ describe('COMPONENT - Survey', () => {
   it('renders correctly with data', () => {
     const component = create(
       <SurveyContext.Provider value={contextValue}>
-        <Survey />
+        <SurveyPage />
       </SurveyContext.Provider>
     );
 
     expect(component.toJSON()).toMatchSnapshot();
   });
-
-  // it('submits form if button clicked', () => {
-  //   const { getByText } = render(
-  //     <SurveyContext.Provider value={contextValue}>
-  //       <Survey />
-  //     </SurveyContext.Provider>
-  //   );
-
-  //   fireEvent.click(getByText('submit'));
-
-  //   expect(getByText('Saving survey...')).toBeDefined();
-  // });
 });
