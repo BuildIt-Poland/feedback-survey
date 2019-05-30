@@ -16,7 +16,7 @@
         "answerType": null
       },
       {
-        "type": "select",
+        "type": "radio",
         "content": "What kind of feedback are you providing?",
         "required": true,
         "name": "kind-of-feedback",
