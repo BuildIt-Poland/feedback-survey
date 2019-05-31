@@ -23,7 +23,7 @@ exports[`COMPONENT - SurveyField YesNoField renders correctly 1`] = `
         value="test"
       />
       <label
-        className="sc-htpNat fxMXyg"
+        className="sc-htpNat isTpFs"
         htmlFor="test123"
       >
         label-test

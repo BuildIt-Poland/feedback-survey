@@ -2,12 +2,12 @@
 
 exports[`COMPONENT - CustomRadioButton LabelText renders correctly 1`] = `
 <label
-  className="sc-bdVaJa eJJIWN"
+  className="sc-bdVaJa bvDeSu"
 />
 `;
 
 exports[`COMPONENT - CustomRadioButton LabelText renders correctly with icon 1`] = `
 <label
-  className="sc-bdVaJa crARkb"
+  className="sc-bdVaJa haSOZb"
 />
 `;

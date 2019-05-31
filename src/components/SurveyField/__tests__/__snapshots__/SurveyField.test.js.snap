@@ -414,7 +414,7 @@ exports[`COMPONENT - SurveyField renders correctly yes-no field 1`] = `
             value="Yes"
           />
           <label
-            className="sc-htpNat fxMXyg"
+            className="sc-htpNat isTpFs"
             htmlFor="Yes_fieldName"
           >
             Yes
@@ -427,7 +427,7 @@ exports[`COMPONENT - SurveyField renders correctly yes-no field 1`] = `
             value="No"
           />
           <label
-            className="sc-htpNat fxMXyg"
+            className="sc-htpNat isTpFs"
             htmlFor="No_fieldName"
           >
             No
