@@ -23,7 +23,7 @@ const WelcomePage = ({ match = { params: {} } }) => {
     <Main bgImage="/image/TextBalloons_illustration.png">
       <Page>
         <StyledHeading level="1" margin={{ bottom: 'none', top: 'none' }} color={colorRed}>
-          Performance Snapshot on RSR Consulting Talent - Consultant:
+          Performance Snapshot on Consulting Talent - Consultant:
         </StyledHeading>
         <StyledHeading level="2" margin={{ top: spacingSmall, bottom: spacingSmall }} color={colorRed}>
           {employeeName}
