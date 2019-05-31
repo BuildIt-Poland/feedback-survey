@@ -3,12 +3,20 @@ import styled from 'styled-components';
 import { bool, string, arrayOf } from 'prop-types';
 
 import CustomRadioButton from '../CustomRadioButton';
+import media from '../../styles/media';
 import { radioOption } from '../../types';
 
 const Wrapper = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  ${media.phone`
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: baseline;
+  `};
 `;
 
 const renderRadioButtons = (options, name, withIcon) =>

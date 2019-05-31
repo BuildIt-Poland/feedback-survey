@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+import media from '../../styles/media';
 import { colorWhite, colorBlue } from '../../styles/designTokens';
 
 const LabelText = styled.label`
@@ -12,6 +13,11 @@ const LabelText = styled.label`
   cursor: pointer;
   margin: 0;
   border-radius: 1rem;
+
+  ${media.phone`
+    width: 25%;
+    max-width: 15rem;
+  `};
 
   input:not(:checked) + & {
     color: ${colorBlue};
