@@ -120,7 +120,7 @@ exports[`COMPONENT - App renders correctly /final route 1`] = `
       <h1
         className="sc-bwzfXH fIpTJf StyledHeading-sc-1rdh4aw-0 cnPzet"
       >
-        Performance Snapshot on RSR Consulting Talent - Consultant:
+        Performance Snapshot on Consulting Talent - Consultant:
       </h1>
       <h2
         className="sc-bwzfXH fIpTJf StyledHeading-sc-1rdh4aw-0 jgvbu"
@@ -296,7 +296,7 @@ exports[`COMPONENT - App renders correctly default route 1`] = `
       <h1
         className="sc-bwzfXH fIpTJf StyledHeading-sc-1rdh4aw-0 cnPzet"
       >
-        Performance Snapshot on RSR Consulting Talent - Consultant:
+        Performance Snapshot on Consulting Talent - Consultant:
       </h1>
       <h2
         className="sc-bwzfXH fIpTJf StyledHeading-sc-1rdh4aw-0 jgvbu"
@@ -472,7 +472,7 @@ exports[`COMPONENT - App renders correctly survey route 1`] = `
       <h1
         className="sc-bwzfXH fIpTJf StyledHeading-sc-1rdh4aw-0 cnPzet"
       >
-        Performance Snapshot on RSR Consulting Talent - Consultant:
+        Performance Snapshot on Consulting Talent - Consultant:
       </h1>
       <h2
         className="sc-bwzfXH fIpTJf StyledHeading-sc-1rdh4aw-0 jgvbu"

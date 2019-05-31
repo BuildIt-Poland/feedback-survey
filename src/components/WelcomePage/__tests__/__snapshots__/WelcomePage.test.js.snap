@@ -10,7 +10,7 @@ exports[`COMPONENT - WelcomePage renders correctly with params 1`] = `
     <h1
       className="sc-ifAKCX kVQrOt StyledHeading-sc-1rdh4aw-0 cnPzet"
     >
-      Performance Snapshot on RSR Consulting Talent - Consultant:
+      Performance Snapshot on Consulting Talent - Consultant:
     </h1>
     <h2
       className="sc-ifAKCX kVQrOt StyledHeading-sc-1rdh4aw-0 jgvbu"
@@ -65,7 +65,7 @@ exports[`COMPONENT - WelcomePage renders correctly without params 1`] = `
     <h1
       className="sc-ifAKCX kVQrOt StyledHeading-sc-1rdh4aw-0 cnPzet"
     >
-      Performance Snapshot on RSR Consulting Talent - Consultant:
+      Performance Snapshot on Consulting Talent - Consultant:
     </h1>
     <h2
       className="sc-ifAKCX kVQrOt StyledHeading-sc-1rdh4aw-0 jgvbu"
