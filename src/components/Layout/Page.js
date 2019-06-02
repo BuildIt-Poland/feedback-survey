@@ -11,7 +11,7 @@ const Page = styled.section`
   padding: 1rem;
   max-width: 107rem;
 
-  ${media.phone`
+  ${media.mobileL`
     padding: 2rem;
   `}
 

@@ -2,10 +2,10 @@
 
 exports[`COMPONENT - WelcomePage renders correctly with params 1`] = `
 <main
-  className="sc-EHOje gKsHfs"
+  className="sc-EHOje dyMHHR"
 >
   <section
-    className="sc-bxivhb bQnzWI"
+    className="sc-bxivhb dFHFAh"
   >
     <h1
       className="sc-ifAKCX kVQrOt StyledHeading-sc-1rdh4aw-0 cnPzet"
@@ -57,10 +57,10 @@ exports[`COMPONENT - WelcomePage renders correctly with params 1`] = `
 
 exports[`COMPONENT - WelcomePage renders correctly without params 1`] = `
 <main
-  className="sc-EHOje gKsHfs"
+  className="sc-EHOje dyMHHR"
 >
   <section
-    className="sc-bxivhb bQnzWI"
+    className="sc-bxivhb dFHFAh"
   >
     <h1
       className="sc-ifAKCX kVQrOt StyledHeading-sc-1rdh4aw-0 cnPzet"

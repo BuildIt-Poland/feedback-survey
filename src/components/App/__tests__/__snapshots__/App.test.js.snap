@@ -112,10 +112,10 @@ exports[`COMPONENT - App renders correctly /final route 1`] = `
     </header>
   </div>
   <main
-    className="sc-bxivhb kpqOmA"
+    className="sc-bxivhb dVASKp"
   >
     <section
-      className="sc-bdVaJa bBGsNk"
+      className="sc-bdVaJa bTBWwK"
     >
       <h1
         className="sc-bwzfXH fIpTJf StyledHeading-sc-1rdh4aw-0 cnPzet"
@@ -288,10 +288,10 @@ exports[`COMPONENT - App renders correctly default route 1`] = `
     </header>
   </div>
   <main
-    className="sc-bxivhb kpqOmA"
+    className="sc-bxivhb dVASKp"
   >
     <section
-      className="sc-bdVaJa bBGsNk"
+      className="sc-bdVaJa bTBWwK"
     >
       <h1
         className="sc-bwzfXH fIpTJf StyledHeading-sc-1rdh4aw-0 cnPzet"
@@ -464,10 +464,10 @@ exports[`COMPONENT - App renders correctly survey route 1`] = `
     </header>
   </div>
   <main
-    className="sc-bxivhb kpqOmA"
+    className="sc-bxivhb dVASKp"
   >
     <section
-      className="sc-bdVaJa bBGsNk"
+      className="sc-bdVaJa bTBWwK"
     >
       <h1
         className="sc-bwzfXH fIpTJf StyledHeading-sc-1rdh4aw-0 cnPzet"

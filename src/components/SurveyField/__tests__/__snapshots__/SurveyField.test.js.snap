@@ -5,10 +5,10 @@ exports[`COMPONENT - SurveyField renders correctly 1`] = `
   className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
 >
   <div
-    className="sc-EHOje heuXPM"
+    className="sc-EHOje SUlG"
   >
     <div
-      className="sc-ifAKCX kDOKGG FormField__FormFieldBox-m9hood-0 eshLKp StyledBox-sc-13pk1d4-0 CAsMy"
+      className="sc-ifAKCX eCFBGY FormField__FormFieldBox-m9hood-0 eshLKp StyledBox-sc-13pk1d4-0 CAsMy"
     >
       <label
         className="StyledText-sc-1sadyjn-0 bMXxti"
@@ -43,10 +43,10 @@ exports[`COMPONENT - SurveyField renders correctly long input field 1`] = `
   className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
 >
   <div
-    className="sc-EHOje heuXPM"
+    className="sc-EHOje SUlG"
   >
     <div
-      className="sc-ifAKCX kDOKGG FormField__FormFieldBox-m9hood-0 eshLKp StyledBox-sc-13pk1d4-0 CAsMy"
+      className="sc-ifAKCX eCFBGY FormField__FormFieldBox-m9hood-0 eshLKp StyledBox-sc-13pk1d4-0 CAsMy"
     >
       <label
         className="StyledText-sc-1sadyjn-0 bMXxti"
@@ -75,10 +75,10 @@ exports[`COMPONENT - SurveyField renders correctly rating field 1`] = `
   className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
 >
   <div
-    className="sc-EHOje heuXPM"
+    className="sc-EHOje SUlG"
   >
     <div
-      className="sc-ifAKCX imSpGk FormField__FormFieldBox-m9hood-0 eshLKp StyledBox-sc-13pk1d4-0 CAsMy"
+      className="sc-ifAKCX ittBkw FormField__FormFieldBox-m9hood-0 eshLKp StyledBox-sc-13pk1d4-0 CAsMy"
     >
       <label
         className="StyledText-sc-1sadyjn-0 bMXxti"
@@ -89,7 +89,7 @@ exports[`COMPONENT - SurveyField renders correctly rating field 1`] = `
         className="StyledBox-sc-13pk1d4-0 gZSidW"
       >
         <div
-          className="sc-bxivhb ftIiZY"
+          className="sc-bxivhb iPHzoF"
         >
           <input
             className="sc-bdVaJa kRURFE"
@@ -99,13 +99,11 @@ exports[`COMPONENT - SurveyField renders correctly rating field 1`] = `
             value="Bad"
           />
           <label
-            className="sc-bwzfXH hTdoZH"
+            className="sc-bwzfXH cxGQZ"
             htmlFor="Bad_fieldName"
           >
             <svg
-              height="75"
               viewBox="0 0 490 490"
-              width="75"
               x="0px"
               xmlns="http://www.w3.org/2000/svg"
               y="0px"
@@ -138,13 +136,11 @@ exports[`COMPONENT - SurveyField renders correctly rating field 1`] = `
             value="Average"
           />
           <label
-            className="sc-bwzfXH kFEebr"
+            className="sc-bwzfXH cxJOSv"
             htmlFor="Average_fieldName"
           >
             <svg
-              height="75"
               viewBox="0 0 490 490"
-              width="75"
               x="0px"
               xmlns="http://www.w3.org/2000/svg"
               y="0px"
@@ -180,13 +176,11 @@ exports[`COMPONENT - SurveyField renders correctly rating field 1`] = `
             value="Good"
           />
           <label
-            className="sc-bwzfXH eltacH"
+            className="sc-bwzfXH dyinNT"
             htmlFor="Good_fieldName"
           >
             <svg
-              height="75"
               viewBox="0 0 490 490"
-              width="75"
               x="0px"
               xmlns="http://www.w3.org/2000/svg"
               y="0px"
@@ -223,13 +217,11 @@ c-105.857,78.955-210.188,3.26-214.584,0L119.375,325.465z"
             value="Excellent"
           />
           <label
-            className="sc-bwzfXH nfmuJ"
+            className="sc-bwzfXH ewPnau"
             htmlFor="Excellent_fieldName"
           >
             <svg
-              height="75"
               viewBox="0 0 490 490"
-              width="75"
               x="0px"
               xmlns="http://www.w3.org/2000/svg"
               y="0px"
@@ -269,10 +261,10 @@ exports[`COMPONENT - SurveyField renders correctly select field 1`] = `
   className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
 >
   <div
-    className="sc-EHOje heuXPM"
+    className="sc-EHOje SUlG"
   >
     <div
-      className="sc-ifAKCX kDOKGG FormField__FormFieldBox-m9hood-0 eshLKp StyledBox-sc-13pk1d4-0 CAsMy"
+      className="sc-ifAKCX eCFBGY FormField__FormFieldBox-m9hood-0 eshLKp StyledBox-sc-13pk1d4-0 CAsMy"
     >
       <label
         className="StyledText-sc-1sadyjn-0 bMXxti"
@@ -352,10 +344,10 @@ exports[`COMPONENT - SurveyField renders correctly with required field 1`] = `
   className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
 >
   <div
-    className="sc-EHOje heuXPM"
+    className="sc-EHOje SUlG"
   >
     <div
-      className="sc-ifAKCX cjhNGJ FormField__FormFieldBox-m9hood-0 eshLKp StyledBox-sc-13pk1d4-0 CAsMy"
+      className="sc-ifAKCX glfsUT FormField__FormFieldBox-m9hood-0 eshLKp StyledBox-sc-13pk1d4-0 CAsMy"
     >
       <label
         className="StyledText-sc-1sadyjn-0 bMXxti"
@@ -390,10 +382,10 @@ exports[`COMPONENT - SurveyField renders correctly yes-no field 1`] = `
   className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
 >
   <div
-    className="sc-EHOje heuXPM"
+    className="sc-EHOje SUlG"
   >
     <div
-      className="sc-ifAKCX imSpGk FormField__FormFieldBox-m9hood-0 eshLKp StyledBox-sc-13pk1d4-0 CAsMy"
+      className="sc-ifAKCX ittBkw FormField__FormFieldBox-m9hood-0 eshLKp StyledBox-sc-13pk1d4-0 CAsMy"
     >
       <label
         className="StyledText-sc-1sadyjn-0 bMXxti"
@@ -404,7 +396,7 @@ exports[`COMPONENT - SurveyField renders correctly yes-no field 1`] = `
         className="StyledBox-sc-13pk1d4-0 gZSidW"
       >
         <div
-          className="sc-bxivhb ftIiZY"
+          className="sc-bxivhb iPHzoF"
         >
           <input
             className="sc-bdVaJa kRURFE"
@@ -414,7 +406,7 @@ exports[`COMPONENT - SurveyField renders correctly yes-no field 1`] = `
             value="Yes"
           />
           <label
-            className="sc-htpNat isTpFs"
+            className="sc-htpNat kHxLtm"
             htmlFor="Yes_fieldName"
           >
             Yes
@@ -427,7 +419,7 @@ exports[`COMPONENT - SurveyField renders correctly yes-no field 1`] = `
             value="No"
           />
           <label
-            className="sc-htpNat isTpFs"
+            className="sc-htpNat kHxLtm"
             htmlFor="No_fieldName"
           >
             No

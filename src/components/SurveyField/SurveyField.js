@@ -13,7 +13,7 @@ import YesNoField from './YesNoField';
 import media from '../../styles/media';
 
 const Wrapper = styled.div`
-  margin: 2rem 0;
+  margin: 3rem 0;
   position: relative;
 
   span[data-type='required-field'] {
@@ -22,7 +22,11 @@ const Wrapper = styled.div`
     color: ${colorRed};
   }
 
-  ${media.phone`
+  ${media.mobileM`
+    margin: 4.5rem 0rem;
+  `}
+
+  ${media.mobileL`
     margin: 3rem 1.5rem;
   `}
 
@@ -82,17 +86,17 @@ const renderFieldByType = (field, answerTypes, value, error, onChange, setFieldV
         />
       );
     }
-    // case 'radio': {
-    //   return (
-    //     <YesNoField
-    //       field={field}
-    //       options={buildAnswerTypes(field, answerTypes)}
-    //       error={error}
-    //       value={value}
-    //       onChange={onChange}
-    //     />
-    //   );
-    // }
+    case 'radio': {
+      return (
+        <YesNoField
+          field={field}
+          options={buildAnswerTypes(field, answerTypes)}
+          error={error}
+          value={value}
+          onChange={onChange}
+        />
+      );
+    }
     case 'rating': {
       return (
         <RatingField

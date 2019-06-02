@@ -2,9 +2,7 @@
 
 exports[`COMPONENT - RatingIcon does not render if not matching icon 1`] = `
 <svg
-  height="75"
   viewBox="0 0 490 490"
-  width="75"
   x="0px"
   xmlns="http://www.w3.org/2000/svg"
   y="0px"
@@ -29,9 +27,7 @@ exports[`COMPONENT - RatingIcon does not render if not matching icon 1`] = `
 
 exports[`COMPONENT - RatingIcon renders correctly with average icon 1`] = `
 <svg
-  height="75"
   viewBox="0 0 490 490"
-  width="75"
   x="0px"
   xmlns="http://www.w3.org/2000/svg"
   y="0px"
@@ -59,9 +55,7 @@ exports[`COMPONENT - RatingIcon renders correctly with average icon 1`] = `
 
 exports[`COMPONENT - RatingIcon renders correctly with bad icon 1`] = `
 <svg
-  height="75"
   viewBox="0 0 490 490"
-  width="75"
   x="0px"
   xmlns="http://www.w3.org/2000/svg"
   y="0px"
@@ -86,9 +80,7 @@ exports[`COMPONENT - RatingIcon renders correctly with bad icon 1`] = `
 
 exports[`COMPONENT - RatingIcon renders correctly with excellent icon 1`] = `
 <svg
-  height="75"
   viewBox="0 0 490 490"
-  width="75"
   x="0px"
   xmlns="http://www.w3.org/2000/svg"
   y="0px"
@@ -116,9 +108,7 @@ exports[`COMPONENT - RatingIcon renders correctly with excellent icon 1`] = `
 
 exports[`COMPONENT - RatingIcon renders correctly with good icon 1`] = `
 <svg
-  height="75"
   viewBox="0 0 490 490"
-  width="75"
   x="0px"
   xmlns="http://www.w3.org/2000/svg"
   y="0px"

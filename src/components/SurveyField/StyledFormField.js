@@ -17,7 +17,7 @@ const StyledFormField = styled(FormField)`
     }
   }
   label:first-child {
-    margin: 0 0 2rem 0;
+    margin: 0 0 1rem 0;
     font-size: ${fontSmall};
 
     &:after {
@@ -28,8 +28,9 @@ const StyledFormField = styled(FormField)`
     }
   }
 
-  ${media.phone`
+  ${media.mobileL`
     label:first-child {
+      margin: 0 0 2rem 0;
       font-size: ${fontMedium};
     }
   `}

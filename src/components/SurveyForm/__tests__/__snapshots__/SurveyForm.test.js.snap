@@ -22,10 +22,10 @@ exports[`COMPONENT - SurveyForm renders correctly 1`] = `
     className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
   >
     <div
-      className="sc-bZQynM ChIOl"
+      className="sc-bZQynM eCWoqb"
     >
       <div
-        className="sc-EHOje ihCarz FormField__FormFieldBox-m9hood-0 eshLKp StyledBox-sc-13pk1d4-0 CAsMy"
+        className="sc-EHOje dYFYCA FormField__FormFieldBox-m9hood-0 eshLKp StyledBox-sc-13pk1d4-0 CAsMy"
       >
         <label
           className="StyledText-sc-1sadyjn-0 bMXxti"
@@ -82,10 +82,10 @@ exports[`COMPONENT - SurveyForm renders correctly with errors 1`] = `
     className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
   >
     <div
-      className="sc-bZQynM ChIOl"
+      className="sc-bZQynM eCWoqb"
     >
       <div
-        className="sc-EHOje ihCarz FormField__FormFieldBox-m9hood-0 eshLKp StyledBox-sc-13pk1d4-0 CAsMy"
+        className="sc-EHOje dYFYCA FormField__FormFieldBox-m9hood-0 eshLKp StyledBox-sc-13pk1d4-0 CAsMy"
       >
         <label
           className="StyledText-sc-1sadyjn-0 bMXxti"

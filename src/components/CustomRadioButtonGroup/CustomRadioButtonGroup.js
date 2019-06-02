@@ -8,14 +8,11 @@ import { radioOption } from '../../types';
 
 const Wrapper = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
 
-  ${media.phone`
-    flex-direction: row;
+  ${media.mobileL`
     justify-content: space-evenly;
-    align-items: baseline;
   `};
 `;
 

@@ -14,10 +14,10 @@ exports[`COMPONENT - SurveyPage renders Loading component if data loading 1`] = 
 
 exports[`COMPONENT - SurveyPage renders correctly with data 1`] = `
 <main
-  className="sc-bwzfXH kUHKbp"
+  className="sc-bwzfXH igWsZH"
 >
   <section
-    className="sc-bdVaJa bBGsNk"
+    className="sc-bdVaJa bTBWwK"
   >
     <form
       onSubmit={[Function]}
@@ -26,10 +26,10 @@ exports[`COMPONENT - SurveyPage renders correctly with data 1`] = `
         className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
       >
         <div
-          className="sc-dnqmqq gZRTRF"
+          className="sc-dnqmqq iidiAK"
         >
           <div
-            className="sc-htoDjs kUPRjY FormField__FormFieldBox-m9hood-0 eshLKp StyledBox-sc-13pk1d4-0 CAsMy"
+            className="sc-htoDjs fjzVeE FormField__FormFieldBox-m9hood-0 eshLKp StyledBox-sc-13pk1d4-0 CAsMy"
           >
             <label
               className="StyledText-sc-1sadyjn-0 bMXxti"
@@ -79,10 +79,10 @@ exports[`COMPONENT - SurveyPage renders correctly with data 1`] = `
 
 exports[`COMPONENT - SurveyPage renders correctly with params 1`] = `
 <main
-  className="sc-bwzfXH kUHKbp"
+  className="sc-bwzfXH igWsZH"
 >
   <section
-    className="sc-bdVaJa bBGsNk"
+    className="sc-bdVaJa bTBWwK"
   >
     <form
       onSubmit={[Function]}
@@ -91,10 +91,10 @@ exports[`COMPONENT - SurveyPage renders correctly with params 1`] = `
         className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
       >
         <div
-          className="sc-dnqmqq gZRTRF"
+          className="sc-dnqmqq iidiAK"
         >
           <div
-            className="sc-htoDjs kUPRjY FormField__FormFieldBox-m9hood-0 eshLKp StyledBox-sc-13pk1d4-0 CAsMy"
+            className="sc-htoDjs fjzVeE FormField__FormFieldBox-m9hood-0 eshLKp StyledBox-sc-13pk1d4-0 CAsMy"
           >
             <label
               className="StyledText-sc-1sadyjn-0 bMXxti"

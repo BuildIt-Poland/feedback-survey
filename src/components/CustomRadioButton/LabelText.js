@@ -14,7 +14,7 @@ const LabelText = styled.label`
   margin: 0;
   border-radius: 1rem;
 
-  ${media.phone`
+  ${media.mobileL`
     width: 25%;
     max-width: 15rem;
   `};
