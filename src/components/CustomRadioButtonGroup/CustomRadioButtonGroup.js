@@ -9,11 +9,7 @@ import { radioOption } from '../../types';
 const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: center;
-
-  ${media.mobileL`
-    justify-content: space-evenly;
-  `};
+  justify-content: space-evenly;
 `;
 
 const renderRadioButtons = (options, name, withIcon) =>
