@@ -2,9 +2,10 @@
 
 exports[`COMPONENT - CustomRadioButtonGroup renders correctly 1`] = `
 <div
-  className="sc-bxivhb iPHzoF"
+  className="sc-bxivhb cSJGRK"
 >
   <input
+    checked={false}
     className="sc-bdVaJa kRURFE"
     id="test1"
     name="test"
@@ -12,12 +13,13 @@ exports[`COMPONENT - CustomRadioButtonGroup renders correctly 1`] = `
     value="test"
   />
   <label
-    className="sc-htpNat kHxLtm"
+    className="sc-htpNat dlCvki"
     htmlFor="test1"
   >
     label-test
   </label>
   <input
+    checked={false}
     className="sc-bdVaJa kRURFE"
     id="test2"
     name="test"
@@ -25,7 +27,7 @@ exports[`COMPONENT - CustomRadioButtonGroup renders correctly 1`] = `
     value="test"
   />
   <label
-    className="sc-htpNat kHxLtm"
+    className="sc-htpNat dlCvki"
     htmlFor="test2"
   >
     label-test
@@ -35,9 +37,10 @@ exports[`COMPONENT - CustomRadioButtonGroup renders correctly 1`] = `
 
 exports[`COMPONENT - CustomRadioButtonGroup renders correctly with icon 1`] = `
 <div
-  className="sc-bxivhb iPHzoF"
+  className="sc-bxivhb cSJGRK"
 >
   <input
+    checked={false}
     className="sc-bdVaJa kRURFE"
     id="test1"
     name="test"
@@ -75,6 +78,7 @@ exports[`COMPONENT - CustomRadioButtonGroup renders correctly with icon 1`] = `
     </span>
   </label>
   <input
+    checked={false}
     className="sc-bdVaJa kRURFE"
     id="test2"
     name="test"

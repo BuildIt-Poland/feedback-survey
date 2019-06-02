@@ -5,7 +5,7 @@ exports[`COMPONENT - SurveyPage renders Loading component if data loading 1`] = 
   className="StyledBox-sc-13pk1d4-0 hUosMD"
 >
   <h3
-    className="sc-htpNat gwZFiw StyledHeading-sc-1rdh4aw-0 gRvHvF"
+    className="sc-htpNat mQgSm StyledHeading-sc-1rdh4aw-0 gRvHvF"
   >
     Loading...
   </h3>
@@ -61,7 +61,7 @@ exports[`COMPONENT - SurveyPage renders correctly with data 1`] = `
         className="StyledBox-sc-13pk1d4-0 dNgQiZ"
       >
         <button
-          className="sc-bxivhb ecUKhc StyledButton-sc-323bzc-0 bmExQD"
+          className="sc-bxivhb dWVDeW StyledButton-sc-323bzc-0 bmExQD"
           onBlur={[Function]}
           onFocus={[Function]}
           onMouseOut={[Function]}
@@ -126,7 +126,7 @@ exports[`COMPONENT - SurveyPage renders correctly with params 1`] = `
         className="StyledBox-sc-13pk1d4-0 dNgQiZ"
       >
         <button
-          className="sc-bxivhb ecUKhc StyledButton-sc-323bzc-0 bmExQD"
+          className="sc-bxivhb dWVDeW StyledButton-sc-323bzc-0 bmExQD"
           onBlur={[Function]}
           onFocus={[Function]}
           onMouseOut={[Function]}

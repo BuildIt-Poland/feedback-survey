@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { arrayOf, string, func } from 'prop-types';
 import { Grommet } from 'grommet';
 
-import { spacingLarge, fontMedium, spacingMedium, colorRed, colorBlue } from '../../styles/designTokens';
+import { spacingLarge, colorRed, colorBlue } from '../../styles/designTokens';
 import { formField, answerType } from '../../types';
 import RatingField from './RatingField';
 import ShortInputField from './ShortInputField';

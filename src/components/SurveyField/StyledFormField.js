@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { FormField } from 'grommet';
 
 import media from '../../styles/media';
-import { spacingMedium, fontMedium, fontSmall } from '../../styles/designTokens';
+import { fontMedium, fontSmall } from '../../styles/designTokens';
 
 const StyledFormField = styled(FormField)`
   max-width: 80rem;

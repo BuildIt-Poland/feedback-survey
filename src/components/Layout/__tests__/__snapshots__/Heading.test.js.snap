@@ -2,6 +2,6 @@
 
 exports[`COMPONENT - Layout Heading renders correctly 1`] = `
 <h1
-  className="sc-bdVaJa hFrVFs StyledHeading-sc-1rdh4aw-0 jVpYfH"
+  className="sc-bdVaJa kmATED StyledHeading-sc-1rdh4aw-0 jVpYfH"
 />
 `;

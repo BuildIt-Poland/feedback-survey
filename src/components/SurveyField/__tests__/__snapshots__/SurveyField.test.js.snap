@@ -89,9 +89,10 @@ exports[`COMPONENT - SurveyField renders correctly rating field 1`] = `
         className="StyledBox-sc-13pk1d4-0 gZSidW"
       >
         <div
-          className="sc-bxivhb iPHzoF"
+          className="sc-bxivhb cSJGRK"
         >
           <input
+            checked={false}
             className="sc-bdVaJa kRURFE"
             id="Bad_fieldName"
             name="fieldName"
@@ -129,6 +130,7 @@ exports[`COMPONENT - SurveyField renders correctly rating field 1`] = `
             </span>
           </label>
           <input
+            checked={false}
             className="sc-bdVaJa kRURFE"
             id="Average_fieldName"
             name="fieldName"
@@ -169,6 +171,7 @@ exports[`COMPONENT - SurveyField renders correctly rating field 1`] = `
             </span>
           </label>
           <input
+            checked={false}
             className="sc-bdVaJa kRURFE"
             id="Good_fieldName"
             name="fieldName"
@@ -210,6 +213,7 @@ c-105.857,78.955-210.188,3.26-214.584,0L119.375,325.465z"
             </span>
           </label>
           <input
+            checked={false}
             className="sc-bdVaJa kRURFE"
             id="Excellent_fieldName"
             name="fieldName"
@@ -396,9 +400,10 @@ exports[`COMPONENT - SurveyField renders correctly yes-no field 1`] = `
         className="StyledBox-sc-13pk1d4-0 gZSidW"
       >
         <div
-          className="sc-bxivhb iPHzoF"
+          className="sc-bxivhb cSJGRK"
         >
           <input
+            checked={false}
             className="sc-bdVaJa kRURFE"
             id="Yes_fieldName"
             name="fieldName"
@@ -406,12 +411,13 @@ exports[`COMPONENT - SurveyField renders correctly yes-no field 1`] = `
             value="Yes"
           />
           <label
-            className="sc-htpNat kHxLtm"
+            className="sc-htpNat dlCvki"
             htmlFor="Yes_fieldName"
           >
             Yes
           </label>
           <input
+            checked={false}
             className="sc-bdVaJa kRURFE"
             id="No_fieldName"
             name="fieldName"
@@ -419,7 +425,7 @@ exports[`COMPONENT - SurveyField renders correctly yes-no field 1`] = `
             value="No"
           />
           <label
-            className="sc-htpNat kHxLtm"
+            className="sc-htpNat dlCvki"
             htmlFor="No_fieldName"
           >
             No

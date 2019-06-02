@@ -4,7 +4,7 @@ import { Button } from 'grommet';
 import { string } from 'prop-types';
 
 import media from '../../styles/media';
-import { fontSmall, colorBlue, colorWhite, spacingLarge, spacingXLarge, fontMedium } from '../../styles/designTokens';
+import { fontSmall, colorBlue, colorWhite } from '../../styles/designTokens';
 
 const StyledButton = styled(Button)`
   color: ${colorBlue};

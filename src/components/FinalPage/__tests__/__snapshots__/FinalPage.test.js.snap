@@ -25,7 +25,7 @@ exports[`COMPONENT - FinalPage renders correctly if submit success 1`] = `
     className="sc-bdVaJa sc-ifAKCX lgQJkm"
   >
     <h1
-      className="sc-bwzfXH fIpTJf StyledHeading-sc-1rdh4aw-0 iDyXcl"
+      className="sc-bwzfXH VhCLn StyledHeading-sc-1rdh4aw-0 iDyXcl"
     >
       Thank you for taking the time to complete this survey.
     </h1>

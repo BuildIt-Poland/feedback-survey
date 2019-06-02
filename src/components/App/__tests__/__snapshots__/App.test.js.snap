@@ -118,12 +118,12 @@ exports[`COMPONENT - App renders correctly /final route 1`] = `
       className="sc-bdVaJa bTBWwK"
     >
       <h1
-        className="sc-bwzfXH fIpTJf StyledHeading-sc-1rdh4aw-0 cnPzet"
+        className="sc-bwzfXH VhCLn StyledHeading-sc-1rdh4aw-0 cnPzet"
       >
         Performance Snapshot on Consulting Talent - Consultant:
       </h1>
       <h2
-        className="sc-bwzfXH fIpTJf StyledHeading-sc-1rdh4aw-0 jgvbu"
+        className="sc-bwzfXH VhCLn StyledHeading-sc-1rdh4aw-0 jgvbu"
       >
         
       </h2>
@@ -151,7 +151,7 @@ exports[`COMPONENT - App renders correctly /final route 1`] = `
         onClick={[Function]}
       >
         <button
-          className="sc-bZQynM iuADUF StyledButton-sc-323bzc-0 bmExQD"
+          className="sc-bZQynM eHfrAS StyledButton-sc-323bzc-0 bmExQD"
           onBlur={[Function]}
           onFocus={[Function]}
           onMouseOut={[Function]}
@@ -294,12 +294,12 @@ exports[`COMPONENT - App renders correctly default route 1`] = `
       className="sc-bdVaJa bTBWwK"
     >
       <h1
-        className="sc-bwzfXH fIpTJf StyledHeading-sc-1rdh4aw-0 cnPzet"
+        className="sc-bwzfXH VhCLn StyledHeading-sc-1rdh4aw-0 cnPzet"
       >
         Performance Snapshot on Consulting Talent - Consultant:
       </h1>
       <h2
-        className="sc-bwzfXH fIpTJf StyledHeading-sc-1rdh4aw-0 jgvbu"
+        className="sc-bwzfXH VhCLn StyledHeading-sc-1rdh4aw-0 jgvbu"
       >
         
       </h2>
@@ -327,7 +327,7 @@ exports[`COMPONENT - App renders correctly default route 1`] = `
         onClick={[Function]}
       >
         <button
-          className="sc-bZQynM iuADUF StyledButton-sc-323bzc-0 bmExQD"
+          className="sc-bZQynM eHfrAS StyledButton-sc-323bzc-0 bmExQD"
           onBlur={[Function]}
           onFocus={[Function]}
           onMouseOut={[Function]}
@@ -470,12 +470,12 @@ exports[`COMPONENT - App renders correctly survey route 1`] = `
       className="sc-bdVaJa bTBWwK"
     >
       <h1
-        className="sc-bwzfXH fIpTJf StyledHeading-sc-1rdh4aw-0 cnPzet"
+        className="sc-bwzfXH VhCLn StyledHeading-sc-1rdh4aw-0 cnPzet"
       >
         Performance Snapshot on Consulting Talent - Consultant:
       </h1>
       <h2
-        className="sc-bwzfXH fIpTJf StyledHeading-sc-1rdh4aw-0 jgvbu"
+        className="sc-bwzfXH VhCLn StyledHeading-sc-1rdh4aw-0 jgvbu"
       >
         
       </h2>
@@ -503,7 +503,7 @@ exports[`COMPONENT - App renders correctly survey route 1`] = `
         onClick={[Function]}
       >
         <button
-          className="sc-bZQynM iuADUF StyledButton-sc-323bzc-0 bmExQD"
+          className="sc-bZQynM eHfrAS StyledButton-sc-323bzc-0 bmExQD"
           onBlur={[Function]}
           onFocus={[Function]}
           onMouseOut={[Function]}

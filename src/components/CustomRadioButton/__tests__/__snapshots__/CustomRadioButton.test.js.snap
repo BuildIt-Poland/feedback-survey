@@ -3,6 +3,7 @@
 exports[`COMPONENT - CustomRadioButton renders correctly 1`] = `
 Array [
   <input
+    checked={false}
     className="sc-bdVaJa kRURFE"
     id="123"
     name="name123"
@@ -10,7 +11,7 @@ Array [
     value="value123"
   />,
   <label
-    className="sc-htpNat kHxLtm"
+    className="sc-htpNat dlCvki"
     htmlFor="123"
   >
     label123
@@ -21,6 +22,7 @@ Array [
 exports[`COMPONENT - CustomRadioButton renders correctly with icon 1`] = `
 Array [
   <input
+    checked={false}
     className="sc-bdVaJa kRURFE"
     id="123"
     name="name123"

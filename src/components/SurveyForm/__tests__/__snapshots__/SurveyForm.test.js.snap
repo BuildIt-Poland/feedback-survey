@@ -57,7 +57,7 @@ exports[`COMPONENT - SurveyForm renders correctly 1`] = `
     className="StyledBox-sc-13pk1d4-0 dNgQiZ"
   >
     <button
-      className="sc-bdVaJa dGAbuL StyledButton-sc-323bzc-0 bmExQD"
+      className="sc-bdVaJa hZuWlY StyledButton-sc-323bzc-0 bmExQD"
       onBlur={[Function]}
       onFocus={[Function]}
       onMouseOut={[Function]}
@@ -122,7 +122,7 @@ exports[`COMPONENT - SurveyForm renders correctly with errors 1`] = `
     className="StyledBox-sc-13pk1d4-0 dNgQiZ"
   >
     <button
-      className="sc-bdVaJa dGAbuL StyledButton-sc-323bzc-0 bmExQD"
+      className="sc-bdVaJa hZuWlY StyledButton-sc-323bzc-0 bmExQD"
       onBlur={[Function]}
       onFocus={[Function]}
       onMouseOut={[Function]}
