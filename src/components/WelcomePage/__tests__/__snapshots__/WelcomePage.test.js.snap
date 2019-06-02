@@ -5,7 +5,7 @@ exports[`COMPONENT - WelcomePage renders correctly with params 1`] = `
   className="sc-EHOje gKsHfs"
 >
   <section
-    className="sc-bxivhb iSjaHl"
+    className="sc-bxivhb bQnzWI"
   >
     <h1
       className="sc-ifAKCX kVQrOt StyledHeading-sc-1rdh4aw-0 cnPzet"
@@ -60,7 +60,7 @@ exports[`COMPONENT - WelcomePage renders correctly without params 1`] = `
   className="sc-EHOje gKsHfs"
 >
   <section
-    className="sc-bxivhb iSjaHl"
+    className="sc-bxivhb bQnzWI"
   >
     <h1
       className="sc-ifAKCX kVQrOt StyledHeading-sc-1rdh4aw-0 cnPzet"

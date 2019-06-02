@@ -10,9 +10,10 @@ import ShortInputField from './ShortInputField';
 import LongInputField from './LongInputField';
 import SelectField from './SelectField';
 import YesNoField from './YesNoField';
+import media from '../../styles/media';
 
 const Wrapper = styled.div`
-  margin: 5rem ${spacingLarge};
+  margin: 2rem 0;
   position: relative;
 
   span[data-type='required-field'] {
@@ -20,17 +21,17 @@ const Wrapper = styled.div`
     top: 0.3rem;
     color: ${colorRed};
   }
+
+  ${media.phone`
+    margin: 3rem 1.5rem;
+  `}
+
+  ${media.tablet`
+    margin: 5rem ${spacingLarge};
+  `}
 `;
 
 const theme = {
-  formField: {
-    extend: {
-      label: {
-        'font-size': fontMedium,
-        'margin-bottom': spacingMedium
-      }
-    }
-  },
   select: {
     icons: {
       color: colorBlue
@@ -81,17 +82,17 @@ const renderFieldByType = (field, answerTypes, value, error, onChange, setFieldV
         />
       );
     }
-    case 'radio': {
-      return (
-        <YesNoField
-          field={field}
-          options={buildAnswerTypes(field, answerTypes)}
-          error={error}
-          value={value}
-          onChange={onChange}
-        />
-      );
-    }
+    // case 'radio': {
+    //   return (
+    //     <YesNoField
+    //       field={field}
+    //       options={buildAnswerTypes(field, answerTypes)}
+    //       error={error}
+    //       value={value}
+    //       onChange={onChange}
+    //     />
+    //   );
+    // }
     case 'rating': {
       return (
         <RatingField

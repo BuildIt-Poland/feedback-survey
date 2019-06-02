@@ -5,7 +5,7 @@ exports[`COMPONENT - FinalPage renders correctly if submit fail 1`] = `
   className="sc-bxivhb kbaKdC"
 >
   <section
-    className="sc-bdVaJa sc-ifAKCX eQlzkT"
+    className="sc-bdVaJa sc-ifAKCX daBrcN"
   >
     <p
       className="sc-htpNat kvSJNm"
@@ -22,7 +22,7 @@ exports[`COMPONENT - FinalPage renders correctly if submit success 1`] = `
   className="sc-bxivhb kbaKdC"
 >
   <section
-    className="sc-bdVaJa sc-ifAKCX eQlzkT"
+    className="sc-bdVaJa sc-ifAKCX daBrcN"
   >
     <h1
       className="sc-bwzfXH fIpTJf StyledHeading-sc-1rdh4aw-0 iDyXcl"
