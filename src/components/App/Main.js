@@ -13,13 +13,13 @@ const Main = styled.main`
     background: ${({ bgImage }) => (bgImage ? `url(${bgImage}) no-repeat` : 'none')};
     background-position-x: 2%;
     background-position-y: 99%;
-    background-size: 21%;
+    background-size: 16%;
   `}
 
   ${media.tablet`
     background-position-x: 1%;
     background-position-y: 99%;
-    background-size: 19%;
+    background-size: 17.5%;
   `}
 
   ${media.laptop`

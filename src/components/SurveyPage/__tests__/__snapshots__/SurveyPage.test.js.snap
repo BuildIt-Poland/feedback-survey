@@ -14,7 +14,7 @@ exports[`COMPONENT - SurveyPage renders Loading component if data loading 1`] = 
 
 exports[`COMPONENT - SurveyPage renders correctly with data 1`] = `
 <main
-  className="sc-bwzfXH igWsZH"
+  className="sc-bwzfXH iqvgfW"
 >
   <section
     className="sc-bdVaJa bTBWwK"
@@ -79,7 +79,7 @@ exports[`COMPONENT - SurveyPage renders correctly with data 1`] = `
 
 exports[`COMPONENT - SurveyPage renders correctly with params 1`] = `
 <main
-  className="sc-bwzfXH igWsZH"
+  className="sc-bwzfXH iqvgfW"
 >
   <section
     className="sc-bdVaJa bTBWwK"
