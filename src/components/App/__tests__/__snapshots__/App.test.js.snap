@@ -120,7 +120,7 @@ exports[`COMPONENT - App renders correctly /final route 1`] = `
       <h1
         className="sc-bwzfXH VhCLn StyledHeading-sc-1rdh4aw-0 cnPzet"
       >
-        Performance Snapshot on Consulting Talent - Consultant:
+        Please provide performance feedback on your Consultant:
       </h1>
       <h2
         className="sc-bwzfXH VhCLn StyledHeading-sc-1rdh4aw-0 jgvbu"
@@ -297,7 +297,7 @@ exports[`COMPONENT - App renders correctly default route 1`] = `
       <h1
         className="sc-bwzfXH VhCLn StyledHeading-sc-1rdh4aw-0 cnPzet"
       >
-        Performance Snapshot on Consulting Talent - Consultant:
+        Please provide performance feedback on your Consultant:
       </h1>
       <h2
         className="sc-bwzfXH VhCLn StyledHeading-sc-1rdh4aw-0 jgvbu"
@@ -474,7 +474,7 @@ exports[`COMPONENT - App renders correctly survey route 1`] = `
       <h1
         className="sc-bwzfXH VhCLn StyledHeading-sc-1rdh4aw-0 cnPzet"
       >
-        Performance Snapshot on Consulting Talent - Consultant:
+        Please provide performance feedback on your Consultant:
       </h1>
       <h2
         className="sc-bwzfXH VhCLn StyledHeading-sc-1rdh4aw-0 jgvbu"
