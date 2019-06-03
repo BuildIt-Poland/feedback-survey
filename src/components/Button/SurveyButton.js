@@ -11,8 +11,9 @@ const StyledButton = styled(Button)`
   border-color: ${colorBlue};
   margin: 1rem auto;
   border-radius: 0.55rem;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1rem;
   font-size: ${fontSmall};
+  min-width: 7rem;
 
   :hover {
     background-color: ${colorBlue};

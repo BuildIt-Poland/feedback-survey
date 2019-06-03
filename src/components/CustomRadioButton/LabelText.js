@@ -10,8 +10,9 @@ const LabelText = styled.label`
   cursor: pointer;
   margin: 0.3rem;
   border-radius: 0.55rem;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1rem;
   font-size: ${fontSmall};
+  min-width: 7rem;
 
   ${media.mobileM`
     margin: 0;

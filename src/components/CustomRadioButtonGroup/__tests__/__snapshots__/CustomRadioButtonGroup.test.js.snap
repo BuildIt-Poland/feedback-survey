@@ -13,7 +13,7 @@ exports[`COMPONENT - CustomRadioButtonGroup renders correctly 1`] = `
     value="test"
   />
   <label
-    className="sc-htpNat vDWcJ"
+    className="sc-htpNat fTkaXk"
     htmlFor="test1"
   >
     label-test
@@ -27,7 +27,7 @@ exports[`COMPONENT - CustomRadioButtonGroup renders correctly 1`] = `
     value="test"
   />
   <label
-    className="sc-htpNat vDWcJ"
+    className="sc-htpNat fTkaXk"
     htmlFor="test2"
   >
     label-test
