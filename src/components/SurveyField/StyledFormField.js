@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 import { FormField } from 'grommet';
 
+import media from '../../styles/media';
+import { fontMedium, fontSmall } from '../../styles/designTokens';
+
 const StyledFormField = styled(FormField)`
   max-width: 80rem;
   div {
@@ -14,6 +17,9 @@ const StyledFormField = styled(FormField)`
     }
   }
   label:first-child {
+    margin: 0 0 1rem 0;
+    font-size: ${fontSmall};
+
     &:after {
       color: red;
       content: ${props => (props.required ? "'*'" : "''")};
@@ -21,6 +27,13 @@ const StyledFormField = styled(FormField)`
       white-space: nowrap;
     }
   }
+
+  ${media.mobileL`
+    label:first-child {
+      margin: 0 0 2rem 0;
+      font-size: ${fontMedium};
+    }
+  `}
 `;
 
 export default StyledFormField;

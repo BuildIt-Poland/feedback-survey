@@ -20,7 +20,7 @@ const Paragraph = styled.p`
     };
   `};
 
-  ${media.desktop`
+  ${media.laptop`
     footer & {
       font-size: ${fontMedium};
     };

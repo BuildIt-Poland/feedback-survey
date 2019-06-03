@@ -5,7 +5,7 @@ exports[`COMPONENT - SurveyPage renders Loading component if data loading 1`] = 
   className="StyledBox-sc-13pk1d4-0 hUosMD"
 >
   <h3
-    className="sc-htpNat gwZFiw StyledHeading-sc-1rdh4aw-0 gRvHvF"
+    className="sc-htpNat mQgSm StyledHeading-sc-1rdh4aw-0 gRvHvF"
   >
     Loading...
   </h3>
@@ -14,10 +14,10 @@ exports[`COMPONENT - SurveyPage renders Loading component if data loading 1`] = 
 
 exports[`COMPONENT - SurveyPage renders correctly with data 1`] = `
 <main
-  className="sc-bwzfXH kUHKbp"
+  className="sc-bwzfXH iqvgfW"
 >
   <section
-    className="sc-bdVaJa jihNFi"
+    className="sc-bdVaJa bTBWwK"
   >
     <form
       onSubmit={[Function]}
@@ -26,10 +26,10 @@ exports[`COMPONENT - SurveyPage renders correctly with data 1`] = `
         className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
       >
         <div
-          className="sc-dnqmqq eGMfmX"
+          className="sc-dnqmqq iidiAK"
         >
           <div
-            className="sc-htoDjs fULGFU FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
+            className="sc-htoDjs fjzVeE FormField__FormFieldBox-m9hood-0 eshLKp StyledBox-sc-13pk1d4-0 CAsMy"
           >
             <label
               className="StyledText-sc-1sadyjn-0 bMXxti"
@@ -61,7 +61,7 @@ exports[`COMPONENT - SurveyPage renders correctly with data 1`] = `
         className="StyledBox-sc-13pk1d4-0 dNgQiZ"
       >
         <button
-          className="sc-bxivhb ecUKhc StyledButton-sc-323bzc-0 bmExQD"
+          className="sc-bxivhb cBqXry StyledButton-sc-323bzc-0 bmExQD"
           onBlur={[Function]}
           onFocus={[Function]}
           onMouseOut={[Function]}
@@ -79,10 +79,10 @@ exports[`COMPONENT - SurveyPage renders correctly with data 1`] = `
 
 exports[`COMPONENT - SurveyPage renders correctly with params 1`] = `
 <main
-  className="sc-bwzfXH kUHKbp"
+  className="sc-bwzfXH iqvgfW"
 >
   <section
-    className="sc-bdVaJa jihNFi"
+    className="sc-bdVaJa bTBWwK"
   >
     <form
       onSubmit={[Function]}
@@ -91,10 +91,10 @@ exports[`COMPONENT - SurveyPage renders correctly with params 1`] = `
         className="StyledGrommet-sc-19lkkz7-0 eUfLDp"
       >
         <div
-          className="sc-dnqmqq eGMfmX"
+          className="sc-dnqmqq iidiAK"
         >
           <div
-            className="sc-htoDjs fULGFU FormField__FormFieldBox-m9hood-0 igkoAa StyledBox-sc-13pk1d4-0 CAsMy"
+            className="sc-htoDjs fjzVeE FormField__FormFieldBox-m9hood-0 eshLKp StyledBox-sc-13pk1d4-0 CAsMy"
           >
             <label
               className="StyledText-sc-1sadyjn-0 bMXxti"
@@ -126,7 +126,7 @@ exports[`COMPONENT - SurveyPage renders correctly with params 1`] = `
         className="StyledBox-sc-13pk1d4-0 dNgQiZ"
       >
         <button
-          className="sc-bxivhb ecUKhc StyledButton-sc-323bzc-0 bmExQD"
+          className="sc-bxivhb cBqXry StyledButton-sc-323bzc-0 bmExQD"
           onBlur={[Function]}
           onFocus={[Function]}
           onMouseOut={[Function]}

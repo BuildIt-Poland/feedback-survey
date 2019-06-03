@@ -1,10 +1,13 @@
 import { css } from 'styled-components';
 
 const breakpoints = {
-  large: 1680,
-  desktop: 1024,
+  mobileXS: 300,
+  mobileS: 320,
+  mobileM: 375,
+  mobileL: 425,
   tablet: 768,
-  phone: 420
+  laptop: 1024,
+  laptopL: 1440
 };
 
 const media = Object.keys(breakpoints).reduce((acc, label) => {

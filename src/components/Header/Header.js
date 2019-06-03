@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import { Link as LinkBase } from 'react-router-dom';
 
+import media from '../../styles/media';
 import { colorDarkBlue } from '../../styles/designTokens';
 import LogoIcon from '../Icons/LogoIcon';
 
@@ -22,12 +23,16 @@ const Wrapper = styled.div`
   justify-content: center;
   background-color: ${colorDarkBlue};
   height: 8.5rem;
-  padding: 0 4rem;
+  padding: 0%;
 
   header {
     max-width: 107rem;
     width: 100%;
   }
+
+  ${media.mobileS`
+    padding: 0 1rem;
+  `};
 `;
 
 const Header = () => (

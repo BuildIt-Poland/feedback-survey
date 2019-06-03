@@ -14,11 +14,20 @@ const renderLabel = (label, id, withIcon) => {
   return <LabelText htmlFor={id}>{label}</LabelText>;
 };
 
-const CustomRadioButton = ({ radio, name, withIcon = false }) => {
+const CustomRadioButton = ({ radio, name, choosenValue, onChange, withIcon = false }) => {
   const { value, label, id } = radio;
+  const isChecked = value === choosenValue;
   return (
     <>
-      <InputRadio withIcon={withIcon} type="radio" name={name} value={value} id={id} />
+      <InputRadio
+        withIcon={withIcon}
+        type="radio"
+        name={name}
+        value={value}
+        onChange={onChange}
+        id={id}
+        checked={isChecked}
+      />
       {renderLabel(label, id, withIcon)}
     </>
   );

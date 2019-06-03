@@ -2,9 +2,10 @@
 
 exports[`COMPONENT - CustomRadioButtonGroup renders correctly 1`] = `
 <div
-  className="sc-bxivhb ftIiZY"
+  className="sc-bxivhb jSQIqC"
 >
   <input
+    checked={false}
     className="sc-bdVaJa kRURFE"
     id="test1"
     name="test"
@@ -12,12 +13,13 @@ exports[`COMPONENT - CustomRadioButtonGroup renders correctly 1`] = `
     value="test"
   />
   <label
-    className="sc-htpNat isTpFs"
+    className="sc-htpNat fTkaXk"
     htmlFor="test1"
   >
     label-test
   </label>
   <input
+    checked={false}
     className="sc-bdVaJa kRURFE"
     id="test2"
     name="test"
@@ -25,7 +27,7 @@ exports[`COMPONENT - CustomRadioButtonGroup renders correctly 1`] = `
     value="test"
   />
   <label
-    className="sc-htpNat isTpFs"
+    className="sc-htpNat fTkaXk"
     htmlFor="test2"
   >
     label-test
@@ -35,9 +37,10 @@ exports[`COMPONENT - CustomRadioButtonGroup renders correctly 1`] = `
 
 exports[`COMPONENT - CustomRadioButtonGroup renders correctly with icon 1`] = `
 <div
-  className="sc-bxivhb ftIiZY"
+  className="sc-bxivhb jSQIqC"
 >
   <input
+    checked={false}
     className="sc-bdVaJa kRURFE"
     id="test1"
     name="test"
@@ -45,13 +48,11 @@ exports[`COMPONENT - CustomRadioButtonGroup renders correctly with icon 1`] = `
     value="test"
   />
   <label
-    className="sc-bwzfXH hTdoZH"
+    className="sc-bwzfXH cxGQZ"
     htmlFor="test1"
   >
     <svg
-      height="75"
       viewBox="0 0 490 490"
-      width="75"
       x="0px"
       xmlns="http://www.w3.org/2000/svg"
       y="0px"
@@ -77,6 +78,7 @@ exports[`COMPONENT - CustomRadioButtonGroup renders correctly with icon 1`] = `
     </span>
   </label>
   <input
+    checked={false}
     className="sc-bdVaJa kRURFE"
     id="test2"
     name="test"
@@ -84,13 +86,11 @@ exports[`COMPONENT - CustomRadioButtonGroup renders correctly with icon 1`] = `
     value="test"
   />
   <label
-    className="sc-bwzfXH hTdoZH"
+    className="sc-bwzfXH cxGQZ"
     htmlFor="test2"
   >
     <svg
-      height="75"
       viewBox="0 0 490 490"
-      width="75"
       x="0px"
       xmlns="http://www.w3.org/2000/svg"
       y="0px"

@@ -5,7 +5,7 @@ exports[`COMPONENT - Loading renders correctly 1`] = `
   className="StyledBox-sc-13pk1d4-0 hUosMD"
 >
   <h3
-    className="sc-bdVaJa hFrVFs StyledHeading-sc-1rdh4aw-0 gRvHvF"
+    className="sc-bdVaJa kmATED StyledHeading-sc-1rdh4aw-0 gRvHvF"
   >
     Loading...
   </h3>

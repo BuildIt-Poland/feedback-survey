@@ -2,18 +2,18 @@
 
 exports[`COMPONENT - WelcomePage renders correctly with params 1`] = `
 <main
-  className="sc-EHOje gKsHfs"
+  className="sc-EHOje kfEkWq"
 >
   <section
-    className="sc-bxivhb iSjaHl"
+    className="sc-bxivhb dFHFAh"
   >
     <h1
-      className="sc-ifAKCX kVQrOt StyledHeading-sc-1rdh4aw-0 cnPzet"
+      className="sc-ifAKCX fqciGW StyledHeading-sc-1rdh4aw-0 cnPzet"
     >
       Performance Snapshot on Consulting Talent - Consultant:
     </h1>
     <h2
-      className="sc-ifAKCX kVQrOt StyledHeading-sc-1rdh4aw-0 jgvbu"
+      className="sc-ifAKCX fqciGW StyledHeading-sc-1rdh4aw-0 jgvbu"
     >
       
     </h2>
@@ -40,7 +40,7 @@ exports[`COMPONENT - WelcomePage renders correctly with params 1`] = `
       to=""
     >
       <button
-        className="sc-htpNat gwpUoE StyledButton-sc-323bzc-0 bmExQD"
+        className="sc-htpNat dBprKw StyledButton-sc-323bzc-0 bmExQD"
         onBlur={[Function]}
         onFocus={[Function]}
         onMouseOut={[Function]}
@@ -57,18 +57,18 @@ exports[`COMPONENT - WelcomePage renders correctly with params 1`] = `
 
 exports[`COMPONENT - WelcomePage renders correctly without params 1`] = `
 <main
-  className="sc-EHOje gKsHfs"
+  className="sc-EHOje kfEkWq"
 >
   <section
-    className="sc-bxivhb iSjaHl"
+    className="sc-bxivhb dFHFAh"
   >
     <h1
-      className="sc-ifAKCX kVQrOt StyledHeading-sc-1rdh4aw-0 cnPzet"
+      className="sc-ifAKCX fqciGW StyledHeading-sc-1rdh4aw-0 cnPzet"
     >
       Performance Snapshot on Consulting Talent - Consultant:
     </h1>
     <h2
-      className="sc-ifAKCX kVQrOt StyledHeading-sc-1rdh4aw-0 jgvbu"
+      className="sc-ifAKCX fqciGW StyledHeading-sc-1rdh4aw-0 jgvbu"
     >
       
     </h2>
@@ -95,7 +95,7 @@ exports[`COMPONENT - WelcomePage renders correctly without params 1`] = `
       to="/survey"
     >
       <button
-        className="sc-htpNat gwpUoE StyledButton-sc-323bzc-0 bmExQD"
+        className="sc-htpNat dBprKw StyledButton-sc-323bzc-0 bmExQD"
         onBlur={[Function]}
         onFocus={[Function]}
         onMouseOut={[Function]}

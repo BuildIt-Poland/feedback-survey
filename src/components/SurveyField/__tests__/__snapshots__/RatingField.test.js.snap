@@ -2,7 +2,7 @@
 
 exports[`COMPONENT - SurveyField RatingField does not render without field 1`] = `
 <div
-  className="sc-ifAKCX gweRqY FormField__FormFieldBox-m9hood-0 eshLKp StyledBox-sc-13pk1d4-0 CAsMy"
+  className="sc-ifAKCX ittBkw FormField__FormFieldBox-m9hood-0 eshLKp StyledBox-sc-13pk1d4-0 CAsMy"
 >
   <label
     className="StyledText-sc-1sadyjn-0 bMXxti"
@@ -13,9 +13,10 @@ exports[`COMPONENT - SurveyField RatingField does not render without field 1`] =
     className="StyledBox-sc-13pk1d4-0 gZSidW"
   >
     <div
-      className="sc-bxivhb ftIiZY"
+      className="sc-bxivhb jSQIqC"
     >
       <input
+        checked={false}
         className="sc-bdVaJa kRURFE"
         id="test123"
         name="fieldName"
@@ -23,13 +24,11 @@ exports[`COMPONENT - SurveyField RatingField does not render without field 1`] =
         value="test"
       />
       <label
-        className="sc-bwzfXH hTdoZH"
+        className="sc-bwzfXH cxGQZ"
         htmlFor="test123"
       >
         <svg
-          height="75"
           viewBox="0 0 490 490"
-          width="75"
           x="0px"
           xmlns="http://www.w3.org/2000/svg"
           y="0px"

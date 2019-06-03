@@ -2,12 +2,10 @@
 
 exports[`COMPONENT - CustomRadioButton LabelIcon renders correctly 1`] = `
 <label
-  className="sc-bdVaJa dHeiSD"
+  className="sc-bdVaJa cteEZU"
 >
   <svg
-    height="75"
     viewBox="0 0 490 490"
-    width="75"
     x="0px"
     xmlns="http://www.w3.org/2000/svg"
     y="0px"

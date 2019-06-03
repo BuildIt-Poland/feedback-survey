@@ -3,16 +3,17 @@ import styled from 'styled-components';
 import { arrayOf, string, func } from 'prop-types';
 import { Grommet } from 'grommet';
 
-import { spacingLarge, fontMedium, spacingMedium, colorRed, colorBlue } from '../../styles/designTokens';
+import { spacingLarge, colorRed, colorBlue } from '../../styles/designTokens';
 import { formField, answerType } from '../../types';
 import RatingField from './RatingField';
 import ShortInputField from './ShortInputField';
 import LongInputField from './LongInputField';
 import SelectField from './SelectField';
 import YesNoField from './YesNoField';
+import media from '../../styles/media';
 
 const Wrapper = styled.div`
-  margin: 5rem ${spacingLarge};
+  margin: 3rem 0;
   position: relative;
 
   span[data-type='required-field'] {
@@ -20,17 +21,21 @@ const Wrapper = styled.div`
     top: 0.3rem;
     color: ${colorRed};
   }
+
+  ${media.mobileM`
+    margin: 4.5rem 0rem;
+  `}
+
+  ${media.mobileL`
+    margin: 3rem 1.5rem;
+  `}
+
+  ${media.tablet`
+    margin: 5rem ${spacingLarge};
+  `}
 `;
 
 const theme = {
-  formField: {
-    extend: {
-      label: {
-        'font-size': fontMedium,
-        'margin-bottom': spacingMedium
-      }
-    }
-  },
   select: {
     icons: {
       color: colorBlue

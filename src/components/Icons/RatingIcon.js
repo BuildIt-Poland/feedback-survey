@@ -33,7 +33,7 @@ c-105.857,78.955-210.188,3.26-214.584,0L119.375,325.465z"
 const RatingIcon = ({ iconType }) => {
   return (
     <>
-      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 490 490" width="75" height="75">
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 490 490">
         <g>
           {renderRatingIconByName(iconType)}
           <circle cx="157.651" cy="175.288" r="42.642" />
