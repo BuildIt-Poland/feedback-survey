@@ -2,13 +2,20 @@ import React from 'react';
 import styled from 'styled-components';
 import { bool, string, arrayOf } from 'prop-types';
 
+import media from '../../styles/media';
 import CustomRadioButton from '../CustomRadioButton';
 import { radioOption } from '../../types';
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  ${media.mobileXS`
+    flex-direction: row;
+    justify-content: space-evenly;
+  `}
 `;
 
 const renderRadioButtons = (options, name, value, withIcon, onChange) =>

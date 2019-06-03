@@ -1,6 +1,7 @@
 import { css } from 'styled-components';
 
 const breakpoints = {
+  mobileXS: 300,
   mobileS: 320,
   mobileM: 375,
   mobileL: 425,

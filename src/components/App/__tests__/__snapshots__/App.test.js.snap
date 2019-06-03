@@ -5,7 +5,7 @@ exports[`COMPONENT - App renders correctly /final route 1`] = `
   className="sc-dnqmqq icmAsQ"
 >
   <div
-    className="sc-htoDjs eRfIlK"
+    className="sc-htoDjs flrETn"
   >
     <header>
       <a
@@ -181,7 +181,7 @@ exports[`COMPONENT - App renders correctly default route 1`] = `
   className="sc-dnqmqq icmAsQ"
 >
   <div
-    className="sc-htoDjs eRfIlK"
+    className="sc-htoDjs flrETn"
   >
     <header>
       <a
@@ -357,7 +357,7 @@ exports[`COMPONENT - App renders correctly survey route 1`] = `
   className="sc-dnqmqq icmAsQ"
 >
   <div
-    className="sc-htoDjs eRfIlK"
+    className="sc-htoDjs flrETn"
   >
     <header>
       <a

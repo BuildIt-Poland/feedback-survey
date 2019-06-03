@@ -2,7 +2,7 @@
 
 exports[`COMPONENT - CustomRadioButtonGroup renders correctly 1`] = `
 <div
-  className="sc-bxivhb cSJGRK"
+  className="sc-bxivhb jSQIqC"
 >
   <input
     checked={false}
@@ -13,7 +13,7 @@ exports[`COMPONENT - CustomRadioButtonGroup renders correctly 1`] = `
     value="test"
   />
   <label
-    className="sc-htpNat dlCvki"
+    className="sc-htpNat vDWcJ"
     htmlFor="test1"
   >
     label-test
@@ -27,7 +27,7 @@ exports[`COMPONENT - CustomRadioButtonGroup renders correctly 1`] = `
     value="test"
   />
   <label
-    className="sc-htpNat dlCvki"
+    className="sc-htpNat vDWcJ"
     htmlFor="test2"
   >
     label-test
@@ -37,7 +37,7 @@ exports[`COMPONENT - CustomRadioButtonGroup renders correctly 1`] = `
 
 exports[`COMPONENT - CustomRadioButtonGroup renders correctly with icon 1`] = `
 <div
-  className="sc-bxivhb cSJGRK"
+  className="sc-bxivhb jSQIqC"
 >
   <input
     checked={false}

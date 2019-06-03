@@ -8,10 +8,14 @@ const LabelText = styled.label`
   vertical-align: middle;
   text-align: center;
   cursor: pointer;
-  margin: 0;
+  margin: 0.3rem;
   border-radius: 0.55rem;
   padding: 0.5rem 1.5rem;
   font-size: ${fontSmall};
+
+  ${media.mobileM`
+    margin: 0;
+  `};
 
   ${media.mobileM`
     padding: 1rem 2rem;

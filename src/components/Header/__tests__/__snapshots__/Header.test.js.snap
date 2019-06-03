@@ -2,7 +2,7 @@
 
 exports[`COMPONENT - Header renders correctly 1`] = `
 <div
-  className="sc-bwzfXH hpkzIH"
+  className="sc-bwzfXH hRkAln"
 >
   <header>
     <Link
