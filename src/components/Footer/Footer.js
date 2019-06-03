@@ -12,12 +12,11 @@ const Wrapper = styled.footer`
   padding: 1rem 2rem;
 `;
 
+const currentYear = () => new Date().getFullYear();
+
 const Footer = () => (
   <Wrapper>
-    <Paragraph>
-      Randstad Sourceright (Hong Kong SAR) EA Licence No. 57155 | Randstad Sourceright (Singapore) EA Licence No.
-      94C3609
-    </Paragraph>
+    <Paragraph>&copy; Randstad Sourceright {currentYear()}</Paragraph>
   </Wrapper>
 );
 

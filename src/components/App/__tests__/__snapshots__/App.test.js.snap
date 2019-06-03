@@ -170,7 +170,8 @@ exports[`COMPONENT - App renders correctly /final route 1`] = `
     <p
       className="sc-htpNat kvSJNm"
     >
-      Randstad Sourceright (Hong Kong SAR) EA Licence No. 57155 | Randstad Sourceright (Singapore) EA Licence No. 94C3609
+      © Randstad Sourceright 
+      2019
     </p>
   </footer>
 </div>
@@ -346,7 +347,8 @@ exports[`COMPONENT - App renders correctly default route 1`] = `
     <p
       className="sc-htpNat kvSJNm"
     >
-      Randstad Sourceright (Hong Kong SAR) EA Licence No. 57155 | Randstad Sourceright (Singapore) EA Licence No. 94C3609
+      © Randstad Sourceright 
+      2019
     </p>
   </footer>
 </div>
@@ -522,7 +524,8 @@ exports[`COMPONENT - App renders correctly survey route 1`] = `
     <p
       className="sc-htpNat kvSJNm"
     >
-      Randstad Sourceright (Hong Kong SAR) EA Licence No. 57155 | Randstad Sourceright (Singapore) EA Licence No. 94C3609
+      © Randstad Sourceright 
+      2019
     </p>
   </footer>
 </div>
